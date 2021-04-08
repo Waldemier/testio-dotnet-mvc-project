@@ -4,6 +4,69 @@
     "E:\\VSProjects\\TestioProject\\TestioProject\\TestioProject.csproj": {}
   },
   "projects": {
+    "E:\\VSProjects\\TestioProject\\TestioProject.BLL\\TestioProject.BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\VSProjects\\TestioProject\\TestioProject.BLL\\TestioProject.BLL.csproj",
+        "projectName": "TestioProject.BLL",
+        "projectPath": "E:\\VSProjects\\TestioProject\\TestioProject.BLL\\TestioProject.BLL.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "E:\\VSProjects\\TestioProject\\TestioProject.BLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "E:\\VSProjects\\TestioProject\\TestioProject.DAL\\TestioProject.DAL.csproj": {
+                "projectPath": "E:\\VSProjects\\TestioProject\\TestioProject.DAL\\TestioProject.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "E:\\VSProjects\\TestioProject\\TestioProject.DAL\\TestioProject.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -67,11 +130,81 @@
               "target": "Package",
               "version": "[5.0.4, )"
             },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[5.0.2, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\VSProjects\\TestioProject\\TestioProject.PL\\TestioProject.PL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\VSProjects\\TestioProject\\TestioProject.PL\\TestioProject.PL.csproj",
+        "projectName": "TestioProject.PL",
+        "projectPath": "E:\\VSProjects\\TestioProject\\TestioProject.PL\\TestioProject.PL.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "E:\\VSProjects\\TestioProject\\TestioProject.PL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "E:\\VSProjects\\TestioProject\\TestioProject.BLL\\TestioProject.BLL.csproj": {
+                "projectPath": "E:\\VSProjects\\TestioProject\\TestioProject.BLL\\TestioProject.BLL.csproj"
+              },
+              "E:\\VSProjects\\TestioProject\\TestioProject.DAL\\TestioProject.DAL.csproj": {
+                "projectPath": "E:\\VSProjects\\TestioProject\\TestioProject.DAL\\TestioProject.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -120,8 +253,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "E:\\VSProjects\\TestioProject\\TestioProject.BLL\\TestioProject.BLL.csproj": {
+                "projectPath": "E:\\VSProjects\\TestioProject\\TestioProject.BLL\\TestioProject.BLL.csproj"
+              },
               "E:\\VSProjects\\TestioProject\\TestioProject.DAL\\TestioProject.DAL.csproj": {
                 "projectPath": "E:\\VSProjects\\TestioProject\\TestioProject.DAL\\TestioProject.DAL.csproj"
+              },
+              "E:\\VSProjects\\TestioProject\\TestioProject.PL\\TestioProject.PL.csproj": {
+                "projectPath": "E:\\VSProjects\\TestioProject\\TestioProject.PL\\TestioProject.PL.csproj"
               }
             }
           }

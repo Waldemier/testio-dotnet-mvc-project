@@ -165,3 +165,8 @@ E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Areas\Identity\
 E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
 E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_AuthLayout.cshtml.g.cs
+E:\VSProjects\TestioProject\TestioProject\bin\Debug\net5.0\TestioProject.BLL.dll
+E:\VSProjects\TestioProject\TestioProject\bin\Debug\net5.0\TestioProject.PL.dll
+E:\VSProjects\TestioProject\TestioProject\bin\Debug\net5.0\TestioProject.BLL.pdb
+E:\VSProjects\TestioProject\TestioProject\bin\Debug\net5.0\TestioProject.PL.pdb
+E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\TestioProject.MvcApplicationPartsAssemblyInfo.cs

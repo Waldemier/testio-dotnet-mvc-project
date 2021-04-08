@@ -13,6 +13,7 @@
           "Microsoft.AspNetCore.Identity.UI": "5.0.4",
           "Microsoft.EntityFrameworkCore": "5.0.4",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.4",
+          "Microsoft.Extensions.Identity.Core": "5.0.4",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.2"
         },
         "runtime": {

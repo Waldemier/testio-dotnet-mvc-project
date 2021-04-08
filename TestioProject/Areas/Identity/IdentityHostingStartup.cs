@@ -5,6 +5,9 @@ using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using TestioProject.BLL;
+using TestioProject.BLL.Implementations;
+using TestioProject.BLL.Interfaces;
 using TestioProject.DAL.Data;
 using TestioProject.DAL.Models;
 
@@ -29,6 +32,19 @@ namespace TestioProject.Areas.Identity
                 })
                     .AddRoles<IdentityRole>()
                     .AddEntityFrameworkStores<TestioDbContext>();
+
+                // services.AddTransient<Interface, Implementation>();
+                //To add datamanager 
+                //services.AddScoped<DataManager>();
+
+                services.AddTransient<IAnswersRepository, EFAnswersRepository>();
+                services.AddTransient<IQuestionsRepository, EFQuestionsRepository>();
+                services.AddTransient<ITestsRepository, EFTestsRepository>();
+                services.AddTransient<IUsersRepository, EFUsersRepository>();
+                services.AddTransient<IStatisticRepository, EFStatisticRepository>();
+
+                services.AddScoped<DataManager>();
+
             });
         }
     }

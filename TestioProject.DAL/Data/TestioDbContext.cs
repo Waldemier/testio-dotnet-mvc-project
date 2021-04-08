@@ -11,10 +11,11 @@ namespace TestioProject.DAL.Data
 {
     public class TestioDbContext : IdentityDbContext<ApplicationUser>
     {
-        public TestioDbContext(DbContextOptions<TestioDbContext> options)
-            : base(options)
-        {
-        }
+        public DbSet<Answer> Answers { get; set; }
+        public DbSet<Test> Tests { get; set; }
+        public DbSet<Question> Questions { get; set; }
+        public DbSet<Statistic> Statistics { get; set; }
+        public TestioDbContext(DbContextOptions<TestioDbContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

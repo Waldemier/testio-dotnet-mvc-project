@@ -16,7 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TestioProject.BLL\TestioProject.BLL.csproj" />
     <ProjectReference Include="..\TestioProject.DAL\TestioProject.DAL.csproj" />
+    <ProjectReference Include="..\TestioProject.PL\TestioProject.PL.csproj" />
   </ItemGroup>
 
 </Project>
