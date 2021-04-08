@@ -1,0 +1,12 @@
+E:\VSProjects\TestioProject\TestioProject.DAL\obj\Debug\netcoreapp3.1\TestioProject.DAL.csprojAssemblyReference.cache
+E:\VSProjects\TestioProject\TestioProject.DAL\obj\Debug\netcoreapp3.1\TestioProject.DAL.AssemblyInfoInputs.cache
+E:\VSProjects\TestioProject\TestioProject.DAL\obj\Debug\netcoreapp3.1\TestioProject.DAL.AssemblyInfo.cs
+E:\VSProjects\TestioProject\TestioProject.DAL\obj\Debug\netcoreapp3.1\TestioProject.DAL.csproj.CoreCompileInputs.cache
+E:\VSProjects\TestioProject\TestioProject.DAL\bin\Debug\netcoreapp3.1\TestioProject.DAL.deps.json
+E:\VSProjects\TestioProject\TestioProject.DAL\bin\Debug\netcoreapp3.1\TestioProject.DAL.runtimeconfig.json
+E:\VSProjects\TestioProject\TestioProject.DAL\bin\Debug\netcoreapp3.1\TestioProject.DAL.runtimeconfig.dev.json
+E:\VSProjects\TestioProject\TestioProject.DAL\bin\Debug\netcoreapp3.1\TestioProject.DAL.dll
+E:\VSProjects\TestioProject\TestioProject.DAL\bin\Debug\netcoreapp3.1\TestioProject.DAL.pdb
+E:\VSProjects\TestioProject\TestioProject.DAL\obj\Debug\netcoreapp3.1\TestioProject.DAL.dll
+E:\VSProjects\TestioProject\TestioProject.DAL\obj\Debug\netcoreapp3.1\TestioProject.DAL.pdb
+E:\VSProjects\TestioProject\TestioProject.DAL\obj\Debug\netcoreapp3.1\TestioProject.DAL.genruntimeconfig.cache
