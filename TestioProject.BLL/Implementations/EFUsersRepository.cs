@@ -5,6 +5,8 @@ using System.Text;
 using TestioProject.BLL.Interfaces;
 using TestioProject.DAL.Data;
 using TestioProject.DAL.Models;
+using Microsoft.AspNetCore.Identity;
+//using Microsoft.AspNetCore.Mvc;
 
 namespace TestioProject.BLL.Implementations
 {
@@ -18,6 +20,10 @@ namespace TestioProject.BLL.Implementations
         public ApplicationUser GetFirstFromDb()
         {
             return context.Users.First();
+        }
+        public string GetIdByEmail(string email)
+        {
+            return context.Users.Where(x => x.UserName == email).FirstOrDefault().Id.ToString();
         }
     }
 }

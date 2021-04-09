@@ -5,11 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\TestioProject.BLL\TestioProject.BLL.csproj" />
     <ProjectReference Include="..\TestioProject.DAL\TestioProject.DAL.csproj" />
   </ItemGroup>

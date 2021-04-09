@@ -170,3 +170,7 @@ E:\VSProjects\TestioProject\TestioProject\bin\Debug\net5.0\TestioProject.PL.dll
 E:\VSProjects\TestioProject\TestioProject\bin\Debug\net5.0\TestioProject.BLL.pdb
 E:\VSProjects\TestioProject\TestioProject\bin\Debug\net5.0\TestioProject.PL.pdb
 E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\TestioProject.MvcApplicationPartsAssemblyInfo.cs
+E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Tests\Index.cshtml.g.cs
+E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Tests\CreateOrEditTest.cshtml.g.cs
+E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Tests\PrivateChooser.cshtml.g.cs
+E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Tests\CreateOrEditQuestion.cshtml.g.cs

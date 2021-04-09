@@ -9,5 +9,6 @@ namespace TestioProject.BLL.Interfaces
     public interface IUsersRepository
     {
         ApplicationUser GetFirstFromDb();
+        string GetIdByEmail(string email);
     }
 }

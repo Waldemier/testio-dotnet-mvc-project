@@ -1,0 +1,22 @@
+﻿@using TestioProject.PL.Models;
+@model List<TestViewModel>
+
+@foreach (var item in Model)
+{
+    <div class="d-flex justify-content-center position-relative" style="margin-top: 100px;">
+        <div class="card" style="width: 18rem;">
+            <div class="card-header" style="cursor: pointer;">
+                @item.Title
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">@item.Description</li>
+                <li class="list-group-item">@item.Owner.FirstName @item.Owner.LastName</li>
+            </ul>
+        </div>
+    </div>
+
+}
+@*display: flex;
+justify-content: center;
+margin-top: 100px;
+position: relative;*@

@@ -1,0 +1,36 @@
+﻿@using TestioProject.PL.Models
+@model TestEditModel
+
+@{
+    ViewData["Title"] = "Create Test";
+}
+<div style="width: 500px; height: auto; margin-left: 30%; margin-top: 10%">
+    <form asp-controller="Tests" asp-action="CreateOrEditTest" method="post">
+        <div class="col">
+            <input type="hidden" name="testId" value="@ViewBag.testId" />
+            <div class="mb-2">
+                @if (ViewBag.testId == 0)
+                {
+                    <h1>Test creating form</h1>
+                }
+                else
+                {
+                    <h1>Test edit form</h1>
+                }
+                <label class="form-check-label">Title</label>
+                <input type="text" class="form-control" aria-label="Title" name="Title">
+            </div>
+            <div class="mb-2" style="width: 500px">
+                <label class="form-check-label">Description</label><br />
+                <textarea style="width: 470px" name="Description" rows="2"></textarea>
+            </div>
+            @if (ViewBag.isPrivate)
+            {
+                <div class="mb-2">
+                    <input style="width: 250px" type="text" class="form-control" placeholder="Code lock" aria-label="Code lock" name="CodeLock">
+                </div>
+            }
+            <button style="margin-top: 10px; width:200px" type="submit" class="btn btn-primary">Continue</button>
+        </div>
+    </form>
+</div>

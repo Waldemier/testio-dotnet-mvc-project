@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Add question";
+}
+<div style="margin-left:25%; margin-top:5%">
+    <form asp-controller="Tests" method="post">
+        <div class="col">
+            <div class="mb-2" style="width: 500px; height: auto;">
+                <h2>Input question</h2>
+                <input type="hidden" class="form-control" name="testId" value=@ViewBag.testId />
+                <input type="text" class="form-control" aria-label="question" name="questionName" />
+            </div>
+            <div class="mb-2 ml-5">
+                <h4>Input answers</h4>
+                @{
+
+                    var arr = Enumerable.Range(0, @ViewBag.AnswersAmount);
+                    foreach (var item in arr)
+                    {
+                        <div>
+                            <div style="display:flex; margin-top: 10px">
+                                <div>
+                                    <input type="text" class="form-control" aria-label="answer" name="answer" style="width: 452px;">
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="isTrue" name="check_@item" style="margin-left:10px">
+                                    <label for="scales">Truth</label>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                <button asp-action="CreateOrEditQuestion" style="margin-top: 10px" type="submit" class="btn btn-primary">Add more answer</button>
+            </div>
+            <div style="margin-left: 265px">
+                <button asp-action="" style="margin-top: 10px" type="submit" class="btn btn-primary">Add more question</button>
+            </div>
+        </div>
+    </form>
+    <form asp-controller="Test" asp-action="FinishedFormAction">
+        <button style="margin-top: 10px" type="submit" class="btn btn-primary">Finish</button>
+    </form>
+</div>

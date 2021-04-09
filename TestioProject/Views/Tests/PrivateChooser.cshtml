@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Type choosing";
+}
+<div class="d-flex position-relative" style="top: 120px;">
+    <div class="card">
+        <div class="card-header">
+            Test privacy
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Please, Choose the privacy type</h5>
+            <p class="card-text">Choose which type of test you wanna create. If you choose "Private", your test will can pass only the pupils with the code of test. If you choose "Public", other pupils can find it in the tab "Tests".</p>
+            <div class="form-row d-flex justify-content-center mb-1 mt-4">
+                <div class="ml-4">
+                    <a class="btn btn-danger btn-lg" asp-controller="Tests" asp-action="CreateOrEditTest" asp-route-isPrivate="true" style="width: 150px">Private</a>
+                </div>
+                <div class="ml-4">
+                    <a class="btn btn-primary btn-lg" asp-controller="Tests" asp-action="CreateOrEditTest" asp-route-isPrivate="false" style="width: 150px">Public</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
