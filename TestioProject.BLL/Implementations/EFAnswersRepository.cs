@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using TestioProject.BLL.Interfaces;
 using TestioProject.DAL.Data;
@@ -13,6 +14,11 @@ namespace TestioProject.BLL.Implementations
         public EFAnswersRepository(TestioDbContext _context)
         {
             context = _context;
+        }
+
+        public List<Answer> GetAnswersByQuestionId(int questionId)
+        {
+            return context.Answers.Where(x => x.QuestionId == questionId).ToList();
         }
 
         public void DeleteAnswer(Answer answer)

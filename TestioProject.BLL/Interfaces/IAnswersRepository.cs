@@ -7,6 +7,7 @@ namespace TestioProject.BLL.Interfaces
 {
     public interface IAnswersRepository
     {
+        List<Answer> GetAnswersByQuestionId(int questionId);
         void SaveAnswer(Answer answer);
         void DeleteAnswer(Answer answer);
     }

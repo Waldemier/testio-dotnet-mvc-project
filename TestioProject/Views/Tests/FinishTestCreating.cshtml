@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Create Test End";
+}
+
+<div style="
+        border: 4mm ridge rgba(108, 10, 161, .6);
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top: 20%;
+        background-color:azure;">
+    <div style="margin-left:5%;
+                margin-top:5%;">
+        <h3 class="modal-title">Congratulations!</h3>
+        <h5 class="modal-title">You created a new test</h5>
+
+        <div class="modal-body">
+            <div class="mb-3">
+                <label class="col-form-label">If you forget the password of test you can find it in:</label>
+                <label class="col-form-label">Profile->Your Tests</label>
+            </div>
+            <div class="form-row d-flex justify-content-end mr-3">
+                <div class="mb-2 mr-2">
+                    <a href="/" style="background-color: mediumpurple;" value="false" name="test_type">Back to the main page</a>
+                </div>
+                <div class="mb-2 mr-2">
+                    <a href="~/Tests/Test/@ViewData["testId"]" style="background-color: slateblue;" value="false" name="test_type">View</a>
+                </div>
+                <div class="mb-2 ml-2">
+                    <a href="/Tests/PrivateFormChooser" class="btn btn-secondary" data-bs-dismiss="modal">Create more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

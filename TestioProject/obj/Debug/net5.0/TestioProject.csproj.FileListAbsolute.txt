@@ -174,3 +174,4 @@ E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Tests\Ind
 E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Tests\CreateOrEditTest.cshtml.g.cs
 E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Tests\PrivateChooser.cshtml.g.cs
 E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Tests\CreateOrEditQuestion.cshtml.g.cs
+E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Tests\FinishTestCreating.cshtml.g.cs

@@ -24,6 +24,15 @@ namespace TestioProject.BLL.Implementations
             else
                 return context.Questions.Where(x => x.TestId == testId).ToList();
         }
+
+        public Question GetQuestionById(int questionId, bool includeAnswers = true)
+        {
+            if (includeAnswers)
+                return context.Questions.Include(x => x.Answers).Where(x => x.Id == questionId).FirstOrDefault();
+            else
+                return context.Questions.Where(x => x.Id == questionId).FirstOrDefault();
+        }
+
         public IEnumerable<Question> GetAllQuestions(bool includeAnswers = true)
         {
             if(includeAnswers)
@@ -31,6 +40,7 @@ namespace TestioProject.BLL.Implementations
             else
                 return context.Questions.ToList();
         }
+
         public void DeleteQuestion(Question question)
         {
             context.Questions.Remove(question);

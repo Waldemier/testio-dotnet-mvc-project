@@ -50,9 +50,9 @@ namespace TestioProject.Controllers
 
             //Test test = context.Tests.Include(x => x.Questions).First();
             //Question question = context.Questions.Include(x => x.Answers).Where(x => x.TestId == test.Id).FirstOrDefault();
-            Test test = dataManager.Tests.GetTestById(6);
-            List<Question> questions = dataManager.Questions.GetQuestionsByTestId(test.Id).ToList();
-            var x = "";
+            //Test test = dataManager.Tests.GetTestById(6);
+            //List<Question> questions = dataManager.Questions.GetQuestionsByTestId(test.Id).ToList();
+            //var x = "";
             return View();
         }
 

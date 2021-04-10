@@ -9,6 +9,7 @@ namespace TestioProject.BLL.Interfaces
     {
         IEnumerable<Question> GetAllQuestions(bool includeAnswers = true);
         IEnumerable<Question> GetQuestionsByTestId(int testId, bool includeAnswers = true);
+        Question GetQuestionById(int questionId, bool includeAnswers = true);
         void SaveQuestion(Question question);
         void DeleteQuestion(Question question);
     }
