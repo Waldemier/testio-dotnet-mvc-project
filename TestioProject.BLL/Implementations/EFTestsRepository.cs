@@ -29,10 +29,18 @@ namespace TestioProject.BLL.Implementations
         public Test GetTestById(int testId, bool includeQuestionsWithAnswers = true)
         {
             if (includeQuestionsWithAnswers)
-                return context.Tests.Include(x => x.Questions).Include(x => x.User).Where(x => x.Id == testId).FirstOrDefault();
+                return context.Tests.Include(x => x.Questions).ThenInclude(x => x.Answers).Include(x => x.User).Where(x => x.Id == testId).FirstOrDefault();
             else 
                 return context.Tests.Include(x => x.User).Where(x => x.Id == testId).FirstOrDefault();
         }
+
+        //public void GetQuestionIndexFromList(int testId, int questionId, bool includeQuestionsWithAnswers = true)
+        //{
+        //    if (includeQuestionsWithAnswers)
+        //        return context.Tests.Include(x => x.Questions).ThenInclude(x => x.Answers).Where(x => x. == testId).FirstOrDefault();
+        //    else
+        //        return context.Tests.Include(x => x.User).Where(x => x.Id == testId).FirstOrDefault();
+        //}
 
         public IEnumerable<Test> GetTestsByUserId(string userId, bool includeQuestionsWithAnswers = true)
         {

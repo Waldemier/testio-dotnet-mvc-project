@@ -6,22 +6,34 @@
     ViewData["Title"] = "Add question";
 }
 <div style="margin-left:25%; margin-top:5%">
+    @if(ViewBag.Error != null)
+    {
+        <div class="bg-danger">
+            <p style="color: white">@ViewBag.Error</p>
+        </div>
+    }
+    @*<span>@ViewBag.CurrentQuestion/@ViewBag.QuestionsAmount</span>*@
     <form asp-controller="Tests" asp-action="CreateOrEditQuestion" method="post">
         <div class="col">
             <div>
                 <div class="mb-2" style="width: 500px; height: auto;">
                     <h2>Input question</h2>
                     <input type="hidden" class="form-control" name="testId" value=@ViewBag.testId />
+                    @if(Model.questionId != 0) 
+                        @Html.HiddenFor(model => model.questionId)
+
                     @Html.TextBoxFor(model => model.Name, new { @class = "form-control", placeholder = "Input question" })
                     <div class="mb-2 ml-5" style="margin-top: 18px; border: 1px solid black;">
                         <div class="m-5">
                             <h4>Input answers</h4>
                             @{
-                                int answersAmount = @ViewBag.AnswersAmount != null ? @ViewBag.AnswersAmount : 1;
+                                int answersAmount = Model.Answers != null ? Model.Answers.Count : 1;
                                 var arr = Enumerable.Range(0, answersAmount);
                                 foreach (var item in arr)
                                 {
                                     <div>
+                                        @if (Model.questionId != 0)
+                                            @Html.HiddenFor(model => model.Answers[item].questionId)
                                         <div class="d-flex justify-content-between" style="margin-top: 10px">
                                             <div>
                                                 @Html.CheckBoxFor(model => model.Answers[item].isTruth, new { value = "true" })
@@ -31,7 +43,7 @@
                                                 @Html.TextBoxFor(model => model.Answers[item].Name, new { @class = "form-control", placeholder = "Input answer" })
                                             </div>
                                             <div>
-                                                <button class="btn btn-danger" type="submit" asp-route-actionType=@QuestionsActionType.RemoveAnswer style="margin-top: 10px">Delete</button>
+                                                <button class="btn btn-danger" type="submit" asp-route-actionType=@QuestionsActionType.RemoveAnswer asp-route-answerIdToDelete=@item style="margin-top: 10px">Delete</button>
                                             </div>
                                         </div>
                                     </div>
@@ -41,9 +53,30 @@
                         </div>
                     </div>
                     <div style="margin-top: 45px">
+                        @if (ViewBag.QuestionsAmount > 0 && ViewBag.CurrentQuestionIndex != 0)
+                        {
+                            <div>
+                                <button class="btn" type="submit" asp-route-actionType=@QuestionsActionType.PreviousQuestion style="width: 200px; background-color: #6310CB">Previous</button>
+                            </div>
+                        }
+                        @if (Model.questionId != 0)
+                        {
+                            <div>
+                                <button class="btn btn-danger" type="submit" asp-route-actionType=@QuestionsActionType.RemoveQuestion style="width: 200px;">Delete question</button>
+                            </div>
+                        }
                         <div class="col">
                             <div>
-                                <button class="btn btn-success" type="submit" asp-route-actionType=@QuestionsActionType.NextQuestion style="width: 200px;">Add more question</button>
+                                <button class="btn btn-success" type="submit" asp-route-actionType=@QuestionsActionType.NextQuestion style="width: 200px;">
+                                    @if (Model.questionId != 0)
+                                    {
+                                        <p>Next</p>
+                                    }
+                                    else
+                                    {
+                                        <p>Add more question</p>
+                                    }
+                                </button>
                             </div>
                             <div>
                                 <button class="btn btn-primary" type="submit" asp-route-actionType=@QuestionsActionType.Finish style="width: 200px; background-color: #6310CB">Create</button>

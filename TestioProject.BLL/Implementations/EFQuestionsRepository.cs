@@ -16,7 +16,7 @@ namespace TestioProject.BLL.Implementations
         {
             context = _context;
         }
-
+        
         public IEnumerable<Question> GetQuestionsByTestId(int testId, bool includeAnswers = true)
         {
             if (includeAnswers)
@@ -54,6 +54,14 @@ namespace TestioProject.BLL.Implementations
             else
                 context.Entry(question).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             context.SaveChanges();
+        }
+
+        public Question GetLastQuestionFromTable(bool includeAnswers = true)
+        {
+            if(includeAnswers)
+                return context.Questions.Include(x => x.Answers).LastOrDefault();
+            else
+                return context.Questions.LastOrDefault();
         }
     }
 }

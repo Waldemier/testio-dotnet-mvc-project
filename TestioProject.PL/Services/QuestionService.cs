@@ -4,6 +4,7 @@ using System.Text;
 using TestioProject.BLL;
 using TestioProject.DAL.Models;
 using TestioProject.PL.Models;
+using static TestioProject.PL.Models.AnswerModel;
 
 namespace TestioProject.PL.Services
 {
@@ -13,6 +14,101 @@ namespace TestioProject.PL.Services
         public QuestionService(DataManager _dataManager)
         {
             dataManager = _dataManager;
+        }
+
+        public int GetIndexOfSpecifierQuestionById(int testId, int questionId)
+        {
+            Test _currentTest = dataManager.Tests.GetTestById(testId);
+            int _currentQuestionIndex = -1;
+            foreach(var item in _currentTest.Questions)
+            {
+                if(item.Id == questionId)
+                {
+                    _currentQuestionIndex = _currentTest.Questions.IndexOf(item);
+                }
+            }
+            return _currentQuestionIndex;
+        }
+
+        public QuestionEditModel GetLastQuestionFromTestQuestionsList(int testId)
+        {
+            try
+            {
+                Question question = dataManager.Tests.GetTestById(testId).Questions[^1];
+                List<AnswerEditModel> answerEditModels = new List<AnswerEditModel>();
+                foreach (var item in question.Answers)
+                {
+                    answerEditModels.Add(new AnswerEditModel() { Name = item.Text, isTruth = item.isTruth, questionId = item.QuestionId });
+                }
+                QuestionEditModel questionEditModel = new QuestionEditModel() { Name = question.Name, testId = question.TestId, questionId = question.Id, Answers = answerEditModels };
+                return questionEditModel;
+            }
+            catch(Exception e)
+            {
+                return null;
+            }
+        }
+
+        public List<QuestionEditModel> GetAllEditQuestionsByTestId(int testId)
+        {
+            List<Question> _questions = dataManager.Tests.GetTestById(testId).Questions;
+            List<QuestionEditModel> _questionEditModels = new List<QuestionEditModel>();
+            foreach (var item in _questions)
+            {
+                List<AnswerEditModel> _answerEditModels = new List<AnswerEditModel>();
+                foreach (var ans in item.Answers)
+                {
+                    _answerEditModels.Add(new AnswerEditModel() { Name = ans.Text, isTruth = ans.isTruth, questionId = ans.QuestionId });
+                }
+                _questionEditModels.Add(new QuestionEditModel() { Name = item.Name, Answers = _answerEditModels, testId = item.TestId, questionId = item.Id });
+            }
+            return _questionEditModels;
+        }
+
+        public QuestionEditModel GetQuestionThatIsOneStepAheadFromTestQuestionsList(QuestionEditModel _model, int testId)
+        {
+            List<Question> questions = dataManager.Tests.GetTestById(testId).Questions;
+            bool detected = false;
+            foreach (var item in questions)
+            {
+                if(item.Id == _model.questionId)
+                {
+                    detected = true;
+                    continue;
+                }
+                if(detected == true)
+                {
+                    List<AnswerEditModel> answerEditModels = new List<AnswerEditModel>();
+                    foreach (var ans in item.Answers)
+                    {
+                        answerEditModels.Add(new AnswerEditModel() { Name = ans.Text, isTruth = ans.isTruth, questionId = ans.QuestionId });
+                    }
+                    QuestionEditModel questionEditModel = new QuestionEditModel() { Name = item.Name, testId = item.TestId, questionId = item.Id, Answers = answerEditModels };
+                    return questionEditModel;
+                }
+            }
+            return GetLastQuestionFromTestQuestionsList(testId);
+        }
+
+        //FIXME  
+        public void DeleteAnswer(AnswerEditModel _model)
+        {
+            List<Answer> _answers = dataManager.Questions.GetQuestionById(_model.questionId).Answers;
+            Answer _answer = new Answer();
+            foreach (var item in _answers)
+            {
+                if (item.Text == _model.Name)
+                {
+                    _answer = item;
+                }
+            }
+            dataManager.Answers.DeleteAnswer(_answer);
+        }
+
+        public void RemoveEditQuestionFromDb(QuestionEditModel _model)
+        {
+            Question question = dataManager.Questions.GetQuestionById(_model.questionId);
+            dataManager.Questions.DeleteQuestion(question);
         }
 
         public void SaveQuestionFromViewIntoDb(QuestionEditModel _model)
@@ -54,6 +150,5 @@ namespace TestioProject.PL.Services
                 }
             }
         }
-
     }
 }

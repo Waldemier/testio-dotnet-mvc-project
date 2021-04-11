@@ -12,7 +12,8 @@ namespace TestioProject.PL.Enums
             NextQuestion = 2,
             RemoveAnswer = 3,
             RemoveQuestion = 4,
-            Finish = 5
+            PreviousQuestion = 5,
+            Finish = 6
         }
         public enum TestsActionType
         {
