@@ -90,7 +90,6 @@ namespace TestioProject.PL.Services
             return GetLastQuestionFromTestQuestionsList(testId);
         }
 
-        //FIXME  
         public void DeleteAnswer(AnswerEditModel _model)
         {
             List<Answer> _answers = dataManager.Questions.GetQuestionById(_model.questionId).Answers;

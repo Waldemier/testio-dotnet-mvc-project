@@ -1,8 +1,51 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<style type="text/css">
+    .container__main {
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+    .conteiner__content {
+        width: 600px;
+        margin-top: 55px;
+    }
+    .conteiner__content__inside {
+        display: flex;
+        justify-content: center;
+    }
+    .conteiner__content__about {
+        max-width: 300px;
+        margin-left: 150px;
+    }
+    .container__image {
+        position: relative;
+        justify-content: end;
+    }
+    .conteiner__content__about__text__inside {
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    }
+</style>
+
+<div class="col d-flex container__main">
+    <div class="conteiner__content">
+        <div class="text-center conteiner__content__inside">
+            <div class="conteiner__content__about">
+                <div class="conteiner__content__about__text">
+                    <div>
+                        <h2>About service</h2>
+                        <p>This service gives oportunitues to create the test for everyone, check statistics of the test, edit tests and other</p>
+                    </div>
+                    <div style="margin-top: 30px;">
+                        <h2>How it works</h2>
+                        <p>In our project you can create your first "Public" test and show it for everyone. From other side you can create "Private" test and give other referal code for it</p>
+                    </div>
+                </div>
+                <button class="btn btn-secondary btn-lg" type="button" style="background-color: #6310CB; margin-top: 30px;">Create test</button>
+            </div>
+        </div>
+    </div>
+    <div class="container__image">
+        <img src="~/svg/fall_main.svg" style="width: 740px; height: auto; margin-right: 60px;" />
+    </div>
 </div>

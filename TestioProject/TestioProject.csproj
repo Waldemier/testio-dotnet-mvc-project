@@ -21,8 +21,4 @@
     <ProjectReference Include="..\TestioProject.PL\TestioProject.PL.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\svg\" />
-  </ItemGroup>
-
 </Project>

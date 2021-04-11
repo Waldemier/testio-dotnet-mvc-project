@@ -6,24 +6,41 @@
     <title>@ViewData["Title"] - TestioProject</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .nav__links {
+            margin-right: -20px !important;
+            justify-content: space-evenly;
+            width: 600px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">TestioProject</a>
-                
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <partial name="_LoginPartial.cshtml" />
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color: #6310CB; font-weight: bolder; font-size: 29px; font-weight: bold;">TESTIO</a>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end">
+                    <div class="d-flex nav__links" style="margin-right: 65px;">
+                        <div class="d-flex">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Main</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Tests page</a>
+                        </div>
+                        <div>
+                            <partial name="_LoginPartial.cshtml" />
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
+</nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
 
     <footer class="border-top footer text-muted">
         <div class="container">
