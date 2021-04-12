@@ -2,31 +2,39 @@
     ViewData["Title"] = "Create Test End";
 }
 
-<div style="
-        border: 4mm ridge rgba(108, 10, 161, .6);
-        margin-left: 30%;
-        margin-right: 30%;
-        margin-top: 20%;
-        background-color:azure;">
-    <div style="margin-left:5%;
-                margin-top:5%;">
-        <h3 class="modal-title">Congratulations!</h3>
-        <h5 class="modal-title">You created a new test</h5>
-
-        <div class="modal-body">
-            <div class="mb-3">
-                <label class="col-form-label">If you forget the password of test you can find it in:</label>
-                <label class="col-form-label">Profile->Your Tests</label>
-            </div>
-            <div class="form-row d-flex justify-content-end mr-3">
-                <div class="mb-2 mr-2">
-                    <a href="/" style="background-color: mediumpurple;" value="false" name="test_type">Back to the main page</a>
+<div class="d-flex justify-content-center" style="margin-top: 50px;">
+    <div style="position:relative">
+        <img src="~/svg/salut.svg" alt="Alternate Text" style="max-width: 1000px; margin-top: -7px; margin-left: -25px;" />
+    </div>
+    <div class="d-flex justify-content-center" style="margin-top: 204px; position:absolute">
+        <div class="d-flex justify-content-center" style="width: 500px;">
+            <div>
+                <div class="container__congrats">
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <div>
+                                <h2>Congratulations !</h2>
+                            </div>
+                            <div>
+                                <div class="d-flex justify-content-center">
+                                    <div style="margin-top: 20px;">
+                                        <p>You have created a new test</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-2 mr-2">
-                    <a href="~/Tests/Test/@ViewData["testId"]" style="background-color: slateblue;" value="false" name="test_type">View</a>
-                </div>
-                <div class="mb-2 ml-2">
-                    <a href="/Tests/PrivateFormChooser" class="btn btn-secondary" data-bs-dismiss="modal">Create more</a>
+                <div class="d-flex" style="margin-top: 20px">
+                    <div class="mb-2 mr-2">
+                        <a href="/" value="false" name="test_type" style="outline: inset; margin-right: 15px;">Back to main</a>
+                    </div>
+                    <div class="mb-2 mr-2">
+                        <a href="~/Tests/Test/@ViewData["testId"]" value="false" name="test_type" style="outline: inset; margin-right: 15px;">View</a>
+                    </div>
+                    <div class="mb-2 ml-2">
+                        <a href="/Tests/PrivateChooser" data-bs-dismiss="modal" style="outline: inset; margin-right: 15px;">Create more</a>
+                    </div>
                 </div>
             </div>
         </div>

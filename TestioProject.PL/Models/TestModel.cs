@@ -8,6 +8,7 @@ namespace TestioProject.PL.Models
 {
     public class TestViewModel
     {
+        public int testId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public UserViewModel Owner { get; set; }

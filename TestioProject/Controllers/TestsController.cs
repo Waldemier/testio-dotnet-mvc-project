@@ -30,6 +30,12 @@ namespace TestioProject.Controllers
             return View(_models);
         }
 
+        [HttpGet]
+        public IActionResult PrivateChooser()
+        {
+            return View("PrivateChooser");
+        }
+
         //TODO: edit form (response test data into view)
         [HttpGet]
         public IActionResult CreateOrEditTest(int testId = 0, string isPrivate = "false")
@@ -214,12 +220,6 @@ namespace TestioProject.Controllers
 
             ViewData["testId"] = testId;
             return View("FinishTestCreating");
-        }
-
-        [HttpGet]
-        public IActionResult PrivateChooser()
-        {
-            return View("PrivateChooser");
         }
     }
 }

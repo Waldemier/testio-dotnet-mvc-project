@@ -1,22 +1,29 @@
 ﻿@using TestioProject.PL.Models;
 @model List<TestViewModel>
 
-@foreach (var item in Model)
-{
-    <div class="d-flex justify-content-center position-relative" style="margin-top: 100px;">
-        <div class="card" style="width: 18rem;">
-            <div class="card-header" style="cursor: pointer;">
-                @item.Title
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">@item.Description</li>
-                <li class="list-group-item">@item.Owner.FirstName @item.Owner.LastName</li>
-            </ul>
-        </div>
+<div class="d-flex justify-content-center" style="margin-top: 70px">
+    <div style="position:relative; max-height: 400px;">
+        <img src="~/svg/choose_tests.svg" alt="Alternate Text" style="width: 740px; margin-top: 63px; height: 500px; margin-left: -157px; width: 659px; position:relative;" />
     </div>
+    <div style="position:absolute">
+        @foreach (var item in Model)
+        {
+            <div class="d-flex">
+                <a class="d-flex" href="/Tests/@item.testId"><p>#@item.testId |</p>&nbsp;<p>@item.Title |</p>&nbsp;<p>@item.Owner.FirstName&nbsp;@item.Owner.LastName</p></a>
+            </div>
+        }
+    </div>
+    <div style="left: 215px; position: relative;">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+        </div>
+        <div>
+            <a class="btn" href="/" style="background-color: #6310CB; color:white;">Display only your tests</a>
+        </div>
+        <div style="margin-top: 15px">
+            <a class="btn btn-success" href="/Tests/PrivateChooser" style="width: 150px">Create test</a>
+        </div>
 
-}
-@*display: flex;
-justify-content: center;
-margin-top: 100px;
-position: relative;*@
+    </div>
+</div>

@@ -32,7 +32,7 @@ namespace TestioProject.PL.Services
             var _test = dataManager.Tests.GetTestById(testId);
             UserViewModel _userModel = new UserViewModel() { FirstName = _test.User.FirstName, LastName = _test.User.LastName };
 
-            TestViewModel _model = new TestViewModel() { Title = _test.Name, Description = _test.Description, Owner = _userModel };
+            TestViewModel _model = new TestViewModel() { testId = testId, Title = _test.Name, Description = _test.Description, Owner = _userModel };
             return _model;
         }
 

@@ -1,22 +1,28 @@
 ﻿@{
     ViewData["Title"] = "Type choosing";
 }
-<div class="d-flex position-relative" style="top: 120px;">
-    <div class="card">
-        <div class="card-header">
-            Test privacy
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Please, Choose the privacy type</h5>
-            <p class="card-text">Choose which type of test you wanna create. If you choose "Private", your test will can pass only the pupils with the code of test. If you choose "Public", other pupils can find it in the tab "Tests".</p>
-            <div class="form-row d-flex justify-content-center mb-1 mt-4">
-                <div class="ml-4">
-                    <a class="btn btn-danger btn-lg" asp-controller="Tests" asp-action="CreateOrEditTest" asp-route-isPrivate="true" style="width: 150px">Private</a>
-                </div>
-                <div class="ml-4">
-                    <a class="btn btn-primary btn-lg" asp-controller="Tests" asp-action="CreateOrEditTest" asp-route-isPrivate="false" style="width: 150px">Public</a>
+<div class="d-flex">
+    <div style="position:relative; max-height: 400px;">
+        <img src="~/svg/a_day_off_private.svg" alt="Alternate Text" style="max-width: 500px; margin-top: 150px; margin-left: 100px;" />
+    </div>
+    <div style="margin-top: 70px; position:absolute">
+        <div class="card" style="max-width: 750px; left: 50%; border: 1px solid #d0d0d0;">
+
+            <div class="card-body">
+                <h5 class="card-title">Please, Choose the privacy type</h5>
+                <p class="card-text">Choose which type of test you wanna create. If you choose "Private", your test will can pass only the pupils with the code of test. If you choose "Public", other pupils can find it in the tab "Tests".</p>
+                <div class="form-row d-flex justify-content-center mb-1 mt-4">
+                    <div class="ml-4">
+                        <a class="btn btn-danger" asp-controller="Tests" asp-action="CreateOrEditTest" asp-route-isPrivate="true" style="width: 150px">Private</a>
+                    </div>
+                    <div class="ml-4">
+                        <a class="btn btn-success" asp-controller="Tests" asp-action="CreateOrEditTest" asp-route-isPrivate="false" style="width: 150px; background-color: #6310CB">Public</a>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div style="margin-left: 130px; margin-top: 40px; max-height: 500px;">
+        <img src="~/svg/secure_files_private.svg" alt="Alternate Text" style="width: 740px; margin-top: 70px; height: 500px; padding-right: 20px;" />
     </div>
 </div>
