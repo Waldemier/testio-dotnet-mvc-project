@@ -32,16 +32,35 @@
         <div class="text-center conteiner__content__inside">
             <div class="conteiner__content__about">
                 <div class="conteiner__content__about__text">
-                    <div>
-                        <h2>About service</h2>
-                        <p>This service gives oportunitues to create the test for everyone, check statistics of the test, edit tests and other</p>
-                    </div>
-                    <div style="margin-top: 30px;">
-                        <h2>How it works</h2>
-                        <p>In our project you can create your first "Public" test and show it for everyone. From other side you can create "Private" test and give other referal code for it</p>
-                    </div>
+                    @if (User?.IsInRole("Learner") ?? true)
+                    {
+                        <div>
+                            <h2>About service</h2>
+                            <p>This service gives oportunitues to create the test for everyone, check statistics, and other</p>
+                        </div>
+                        <div style="margin-top: 30px;">
+                            <h2>To become a teacher</h2>
+                            <p>To become a teacher you need to leave an application, which we will consider in the near future</p>
+                        </div>
+                        <a class="btn btn-secondary btn-lg" style="background-color: #6310CB; margin-top: 30px;" asp-action="BecomeATeacher">Leave a request</a>
+                    }
+                    else if(User?.IsInRole("Teacher") ?? true)
+                    {
+                        <div style="margin-top: 30px;">
+                            <h2>How you feel ?</h2>
+                            <div style="margin-top: 30px">
+                                <p>Dont forget the creating a new tests for the learners ! They are need it from you :)</p>
+                            </div>
+                            <a class="btn btn-secondary btn-lg" style="background-color: #6310CB; margin-top: 15px;" asp-controller="Tests" asp-action="PrivateChooser">Create test</a>
+                        </div>
+                    }
+                    else
+                    {
+                        <div>
+                            <h2>Administrator in system</h2>
+                        </div>
+                    }
                 </div>
-                <a class="btn btn-secondary btn-lg" style="background-color: #6310CB; margin-top: 30px;" asp-controller="Tests" asp-action="PrivateChooser">Create test</a>
             </div>
         </div>
     </div>

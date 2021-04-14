@@ -15,15 +15,18 @@ namespace TestioProject.PL
         private readonly TestService testService;
         private readonly QuestionService questionService;
         private readonly AnswerService answerService;
+        private readonly WrittenLetterService writtenLetterService;
         public ServicesManager(DataManager _dataManager)
         {
             dataManager = _dataManager;
             testService = new TestService(dataManager);
             questionService = new QuestionService(dataManager);
             answerService = new AnswerService(dataManager);
+            writtenLetterService = new WrittenLetterService(dataManager);
         }
         public TestService Tests { get { return testService; } }
         public QuestionService Questions { get { return questionService; } }
         public AnswerService Answers { get { return answerService; } }
+        public WrittenLetterService WrittenLetter { get { return writtenLetterService; } }
     }
 }

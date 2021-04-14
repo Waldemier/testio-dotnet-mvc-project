@@ -20,9 +20,17 @@ namespace TestioProject.BLL.Implementations
         {
             return context.Users.First();
         }
+
+        public ApplicationUser GetUserById(string userId)
+        {
+            ApplicationUser _user = context.Users.Where(x => x.Id == userId).FirstOrDefault();
+            return _user;
+        }
+
         public string GetIdByEmail(string email)
         {
             return context.Users.Where(x => x.UserName == email).FirstOrDefault().Id.ToString();
         }
+
     }
 }

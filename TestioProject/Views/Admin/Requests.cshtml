@@ -1,0 +1,57 @@
+﻿@using TestioProject.PL.Models
+@model  List<WrittenLetterModel>
+
+<div>
+    <div class="d-flex flex-xl-row-reverse" style="margin-right: 70px">
+        <div style="border: 1px solid black;">
+            <div style="margin: 4px 4px;">
+                <h5>Admin: @ViewData["AdminEmail"] in system</h5>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <div style="width: 1000px; margin-top: 30px;">
+            <h1>Requests</h1>
+            <form asp-action="UserInfo" method="post">
+                <table class="table table-success table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Id</th>
+                            <th>Fullname</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.Count > 0)
+                        {
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <th scope="row">@Model.IndexOf(item)</th>
+                                    <th scope="row">@item.User.Id</th>
+                                    <td>@item.User.FirstName&nbsp;@item.User.LastName</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <input type="hidden" name="userId" value="@item.User.Id" />
+                                            <input type="hidden" name="exp" value="@item.Experience" />
+                                            <input type="hidden" name="reason" value="@item.Reason" />
+                                            <button class="btn btn-primary" type="submit">Show</button>
+                                            @*<button class="btn btn-primary" type="submit" asp-action="UserInfo">Reject</button>*@
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <th colspan="4"><div class="d-flex justify-content-center"><p>Table is empty</p></div></th>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>

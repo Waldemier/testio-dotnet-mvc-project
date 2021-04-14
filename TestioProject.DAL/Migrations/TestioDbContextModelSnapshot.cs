@@ -268,6 +268,31 @@ namespace TestioProject.DAL.Migrations
                     b.ToTable("Questions");
                 });
 
+            modelBuilder.Entity("TestioProject.DAL.Models.Restricted", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<DateTime>("HowLong")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<string>("Reason")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Restricteds");
+                });
+
             modelBuilder.Entity("TestioProject.DAL.Models.Statistic", b =>
                 {
                     b.Property<int>("Id")
@@ -323,6 +348,56 @@ namespace TestioProject.DAL.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Tests");
+                });
+
+            modelBuilder.Entity("TestioProject.DAL.Models.UserAvatar", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<string>("AvatarUrl")
+                        .HasColumnType("text");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserAvatars");
+                });
+
+            modelBuilder.Entity("TestioProject.DAL.Models.WrittenLetter", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<string>("Experience")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Reason")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("WrittenLetters");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -398,6 +473,17 @@ namespace TestioProject.DAL.Migrations
                     b.Navigation("Test");
                 });
 
+            modelBuilder.Entity("TestioProject.DAL.Models.Restricted", b =>
+                {
+                    b.HasOne("TestioProject.DAL.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("TestioProject.DAL.Models.Statistic", b =>
                 {
                     b.HasOne("TestioProject.DAL.Models.Test", "Test")
@@ -418,6 +504,28 @@ namespace TestioProject.DAL.Migrations
                 });
 
             modelBuilder.Entity("TestioProject.DAL.Models.Test", b =>
+                {
+                    b.HasOne("TestioProject.DAL.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("TestioProject.DAL.Models.UserAvatar", b =>
+                {
+                    b.HasOne("TestioProject.DAL.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("TestioProject.DAL.Models.WrittenLetter", b =>
                 {
                     b.HasOne("TestioProject.DAL.Models.ApplicationUser", "User")
                         .WithMany()

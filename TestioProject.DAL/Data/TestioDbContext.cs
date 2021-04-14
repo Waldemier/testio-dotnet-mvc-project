@@ -15,6 +15,10 @@ namespace TestioProject.DAL.Data
         public DbSet<Test> Tests { get; set; }
         public DbSet<Question> Questions { get; set; }
         public DbSet<Statistic> Statistics { get; set; }
+        public DbSet<WrittenLetter> WrittenLetters { get; set; }
+        public DbSet<Restricted> Restricteds { get; set; }
+        public DbSet<UserAvatar> UserAvatars { get; set; }
+
         public TestioDbContext(DbContextOptions<TestioDbContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder builder)

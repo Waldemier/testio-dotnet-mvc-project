@@ -15,10 +15,11 @@ namespace TestioProject.PL.Enums
             PreviousQuestion = 5,
             Finish = 6
         }
-        public enum TestsActionType
+
+        public enum ActionType
         {
-            CreateTest = 1,
-            EditTest = 2
+            Confirm = 1,
+            Reject = 2
         }
     }
 }

@@ -16,6 +16,7 @@ namespace TestioProject.DAL.Models
         public string Description { get; set; }
         [DefaultValue(null)]
         public string CodeLock { get; set; }
+        [DefaultValue(DataType.DateTime)]
         public DateTime CreatedAt { get; set; }
         [Required]
         public string UserId { get; set; }

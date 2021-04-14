@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -31,6 +32,7 @@ namespace TestioProject.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Teacher")]
         public IActionResult PrivateChooser()
         {
             return View("PrivateChooser");
@@ -38,6 +40,7 @@ namespace TestioProject.Controllers
 
         //TODO: edit form (response test data into view)
         [HttpGet]
+        [Authorize(Roles = "Teacher")]
         public IActionResult CreateOrEditTest(int testId = 0, string isPrivate = "false")
         {
             TestEditModel _model;
@@ -52,6 +55,7 @@ namespace TestioProject.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Teacher")]
         public RedirectToActionResult CreateOrEditTest(TestEditModel _model)
         {
 
@@ -61,6 +65,7 @@ namespace TestioProject.Controllers
         }
 
         //TODO : 10.04 customize pages (+congrats buttons), test action, finalize (fix amout, add more/next)
+        [Authorize(Roles = "Teacher")]
         public IActionResult CreateOrEditQuestion(int testId, QuestionEditModel _questionModel, QuestionsActionType actionType, int answerIdToDelete)
         {
 
@@ -215,6 +220,7 @@ namespace TestioProject.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Teacher")]
         public IActionResult FinishTestCreating(int testId)
         {
 

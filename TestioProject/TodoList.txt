@@ -1,0 +1,14 @@
+﻿
+
+TODO :
+
+	- User profile panel
+	- ModelState.IsValid + Bootstrap validation
+	- Test passing process
+
+
+	- Reports table
+
+	======
+
+	- System testing

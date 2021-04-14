@@ -10,5 +10,6 @@ namespace TestioProject.BLL.Interfaces
     {
         ApplicationUser GetFirstFromDb();
         string GetIdByEmail(string email);
+        ApplicationUser GetUserById(string userId);
     }
 }

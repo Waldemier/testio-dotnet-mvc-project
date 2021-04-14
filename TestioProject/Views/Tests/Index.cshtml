@@ -6,10 +6,19 @@
         <img src="~/svg/choose_tests.svg" alt="Alternate Text" style="width: 740px; margin-top: 63px; height: 500px; margin-left: -157px; width: 659px; position:relative;" />
     </div>
     <div style="position:absolute">
-        @foreach (var item in Model)
+        @if (Model.Count > 0)
         {
-            <div class="d-flex">
-                <a class="d-flex" href="/Tests/@item.testId"><p>#@item.testId |</p>&nbsp;<p>@item.Title |</p>&nbsp;<p>@item.Owner.FirstName&nbsp;@item.Owner.LastName</p></a>
+            @foreach (var item in Model)
+            {
+                <div class="d-flex">
+                    <a class="d-flex" href="/Tests/@item.testId"><p>#@item.testId |</p>&nbsp;<p>@item.Title |</p>&nbsp;<p>@item.Owner.FirstName&nbsp;@item.Owner.LastName</p></a>
+                </div>
+            }
+        }
+        else
+        {
+            <div style="margin-top: 150px;">
+                <span><b>Tests is empty</b></span>
             </div>
         }
     </div>
@@ -18,12 +27,15 @@
             <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
             <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
         </div>
-        <div>
-            <a class="btn" href="/" style="background-color: #6310CB; color:white;">Display only your tests</a>
-        </div>
-        <div style="margin-top: 15px">
-            <a class="btn btn-success" href="/Tests/PrivateChooser" style="width: 150px">Create test</a>
-        </div>
+        @if (User?.IsInRole("Teacher") ?? true)
+         {
+            <div>
+                <a class="btn" href="/" style="background-color: #6310CB; color:white;">Display only your tests</a>
+            </div>
 
+            <div style="margin-top: 15px">
+                <a class="btn btn-success" href="/Tests/PrivateChooser" style="width: 150px">Create test</a>
+            </div>
+         }
     </div>
 </div>
