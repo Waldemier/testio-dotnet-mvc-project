@@ -28,7 +28,7 @@
                             @foreach (var item in Model)
                             {
                                 <tr>
-                                    <th scope="row">@Model.IndexOf(item)</th>
+                                    <th scope="row">@(Model.IndexOf(item)+1)</th>
                                     <th scope="row">@item.User.Id</th>
                                     <td>@item.User.FirstName&nbsp;@item.User.LastName</td>
                                     <td>

@@ -459,3 +459,6 @@ E:\VSProjects\TestioProject\TestioProject\bin\Debug\net5.0\Microsoft.Extensions.
 E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Home\BecomeATeacher.cshtml.g.cs
 E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Admin\Requests.cshtml.g.cs
 E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Admin\UserInfo.cshtml.g.cs
+E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Tests\ViewTest.cshtml.g.cs
+E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Tests\TestPassFinished.cshtml.g.cs
+E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Tests\TestPassing.cshtml.g.cs

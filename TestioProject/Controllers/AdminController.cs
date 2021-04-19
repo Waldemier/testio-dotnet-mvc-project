@@ -31,6 +31,7 @@ namespace TestioProject.Controllers
         private readonly DataManager dataManager;
         private readonly ServicesManager servicesManager;
         private readonly UserManager<ApplicationUser> userManager;
+
         public AdminController(DataManager _dataManager, UserManager<ApplicationUser> _userManager)
         {
             userManager = _userManager;
@@ -55,7 +56,7 @@ namespace TestioProject.Controllers
         public IActionResult UserInfo(string userId, string exp, string reason)
         {
             var _user = dataManager.Users.GetUserById(userId);
-            WrittenLetterModel _model = new WrittenLetterModel() { User = _user, Experience = exp, Reason = reason };
+            WrittenLetterModel _model = new WrittenLetterModel() {User = _user, Experience = exp, Reason = reason};
             return View(_model);
         }
 
@@ -76,15 +77,16 @@ namespace TestioProject.Controllers
                 default:
                     break;
             }
+
             ModelState.Clear();
-            return RedirectToRoute(new { action = "Requests" });
+            return RedirectToRoute(new {action = "Requests"});
         }
 
-        [HttpGet]
-        //[Route("/Admin/AdminPanel")]
-        public IActionResult AdminControllPanel()
-        {
-            return View();
-        }
+        // [HttpGet]
+        // [Route("/Admin/AdminPanel")]
+        // public IActionResult AdminControllPanel()
+        // {
+        //     return View();
+        // }
     }
 }

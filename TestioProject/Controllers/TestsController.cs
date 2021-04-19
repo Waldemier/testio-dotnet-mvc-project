@@ -1,11 +1,14 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Threading.Tasks;
 using TestioProject.BLL;
+using TestioProject.DAL.Models;
 using TestioProject.PL;
 using TestioProject.PL.Models;
 using static TestioProject.PL.Enums.Common;
@@ -36,6 +39,78 @@ namespace TestioProject.Controllers
         public IActionResult PrivateChooser()
         {
             return View("PrivateChooser");
+        }
+
+        [HttpGet]
+        public IActionResult ViewTest(int testId)
+        {
+            TestViewModel _model = servicesManager.Tests.TestFromDbToViewModelById(testId);
+            return View(_model);
+        }
+
+        [HttpPost]
+        [Authorize]
+        //FIX. INVALID PARAMS AFTER SECOND QUESTION
+        public IActionResult TestPassing(int testId, int currentQuestionIndex, int previousesQuestionCorrectAnswersAmount, QuestionEditModel _model, ActionType actionType)
+        {
+            List<QuestionViewModel> _listQuestionModels = servicesManager.Questions.GetAllViewQuestionsByTestId(_model.testId);
+            ViewData["TestTitle"] = servicesManager.Tests.TestFromDbToViewModelById(_model.testId).Title;
+            ViewBag.testId = testId != 0 ? testId : _model.testId;
+            
+            ViewBag.Questions = _listQuestionModels;
+
+            switch (actionType)
+            {
+                case ActionType.Start:
+                    ViewBag.QuestionIndex = 0;
+                    return View(); //.Questions[0]
+                case ActionType.Next:
+                    
+                    int currentQuestionCorrectAnswersAmount = 0;
+                    //loop (export)
+                    for(int i = 0; i < _listQuestionModels[currentQuestionIndex].Answers.Count; i++)
+                    {
+                        var currentAnswerChecked = _model.Answers[i].isTruth;
+                        if (_listQuestionModels[currentQuestionIndex].Answers[i].isTruth && currentAnswerChecked)
+                        {
+                            currentQuestionCorrectAnswersAmount++;
+                        }
+                    }
+
+                    int totalCorrectAnswersAmount = currentQuestionCorrectAnswersAmount + previousesQuestionCorrectAnswersAmount;
+                    ViewBag.TotalCorrectAnswers = totalCorrectAnswersAmount;
+
+                    int nextQuestionIndex = currentQuestionIndex + 1;
+                    //if it last question in the list
+                    if(nextQuestionIndex > _listQuestionModels.Count - 1)
+                    {
+                        ViewBag.Finish = true;
+                        
+                        //ViewBag.LastQuestion = nextQuestionIndex - 1;
+                        ModelState.Clear();
+                        return View();
+                    }
+                    ViewBag.QuestionIndex = nextQuestionIndex;
+                    ModelState.Clear();
+                    return View(); //.Questions[nextQuestionIndex])
+                case ActionType.Cancel:
+                    return Redirect("/Tests");
+                default:
+                    return Redirect("~/");
+            }
+            
+        }
+
+        //FIX. WE CALC THE ANSWERS. NEED QUESTIONS
+        [HttpPost]
+        [Authorize]
+        public IActionResult TestPassFinished(int testId, int previousesQuestionCorrectAnswersAmount)
+        {
+            string userName = User.Identity.Name;
+            string userId = dataManager.Users.GetIdByEmail(userName);
+            StatiscticViewModel _statiscticViewModel = new StatiscticViewModel() { testId = testId, Result = previousesQuestionCorrectAnswersAmount };
+            servicesManager.Statistics.SaveStatisticEditModelIntoDb(new StatisticEditModel() { userId = userId, testId = testId, Result = previousesQuestionCorrectAnswersAmount });
+            return View(_statiscticViewModel);
         }
 
         //TODO: edit form (response test data into view)

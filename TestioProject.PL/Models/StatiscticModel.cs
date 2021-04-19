@@ -6,14 +6,17 @@ namespace TestioProject.PL.Models
 {
     public class StatiscticViewModel
     {
-        //Should be a test, user who pass a test, and his result
+        public int testId { get; set; }
+        public int Result { get; set; }
     }
-    public class StatiscticViewOwnerModel
+    //public class StatiscticViewOwnerModel
+    //{
+    //    //Should be a test and our result.
+    //}
+    public class StatisticEditModel
     {
-        //Should be a test and our result.
-    }
-    public class StatiscticEditModel
-    {
+        public int testId { get; set; }
+        public string userId { get; set; }
         public int Result { get; set; }
     }
 }

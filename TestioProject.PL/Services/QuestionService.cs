@@ -16,6 +16,22 @@ namespace TestioProject.PL.Services
             dataManager = _dataManager;
         }
 
+        public List<QuestionViewModel> GetAllViewQuestionsByTestId(int testId)
+        {
+            IEnumerable<Question> _questions = dataManager.Questions.GetQuestionsByTestId(testId);
+            List<QuestionViewModel> _questionsModel = new List<QuestionViewModel>();
+            foreach(var item in _questions)
+            {
+                List<AnswerViewModel> _answersModel = new List<AnswerViewModel>();
+                foreach (var ans in item.Answers)
+                {
+                    _answersModel.Add(new AnswerViewModel() { Name = ans.Text, isTruth = ans.isTruth });
+                }
+                _questionsModel.Add(new QuestionViewModel() { questionId = item.Id, testId = item.TestId, Name = item.Name, Answers = _answersModel });
+            }
+            return _questionsModel;
+        }
+
         public int GetIndexOfSpecifierQuestionById(int testId, int questionId)
         {
             Test _currentTest = dataManager.Tests.GetTestById(testId);

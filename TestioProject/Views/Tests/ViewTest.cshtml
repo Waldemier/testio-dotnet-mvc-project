@@ -1,0 +1,42 @@
+﻿@using TestioProject.PL.Models
+@using static TestioProject.PL.Enums.Common
+@model TestViewModel
+
+<div class="d-flex justify-content-center">
+    <div style="max-width: 500px;">
+        <form asp-action="TestPassing" method="post">
+            <div class="d-flex justify-content-center">
+                <div style="margin-top: 30px">
+                    <input type="hidden" name="testId" value="@Model.testId" />
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <h2>@Model.Title</h2>
+                        </div>
+                    </div>
+                    <hr />
+                    <div>
+                        <div class="d-flex justify-content-center" style="margin-top: 30px">
+                            <h4>Description</h4>
+                        </div>
+                        <div>
+                            <p>@Model.Description</p>
+                        </div>
+                    </div>
+                    <hr />
+                    <div>
+                        <div class="d-flex justify-content-center" style="margin-top: 30px">
+                            <h5>Owner</h5>
+                        </div>
+                        <div>
+                            <p>@Model.Owner.FirstName&nbsp;@Model.Owner.LastName</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between flex-row-reverse" style="margin-top: 40px">
+                        <button class="btn btn-success" name="actionType" value=@ActionType.Start type="submit">Start</button>
+                        <button class="btn btn-danger" name="actionType" value=@ActionType.Cancel type="submit">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

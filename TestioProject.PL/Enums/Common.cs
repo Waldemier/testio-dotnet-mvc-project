@@ -18,8 +18,15 @@ namespace TestioProject.PL.Enums
 
         public enum ActionType
         {
+            //For admin actions
             Confirm = 1,
-            Reject = 2
+            Reject = 2,
+            //For test passing
+            Start = 3,
+            Cancel = 4,
+            Next = 5,
+            Finish = 6,
+            Previous = 7
         }
     }
 }

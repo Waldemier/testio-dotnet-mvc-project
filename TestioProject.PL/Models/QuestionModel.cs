@@ -9,6 +9,8 @@ namespace TestioProject.PL.Models
 {
     public class QuestionViewModel
     {
+        public int questionId { get; set; }
+        public int testId { get; set; }
         public string Name { get; set; }
         public List<AnswerViewModel> Answers { get; set; }
     }

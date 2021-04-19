@@ -3,12 +3,17 @@
 TODO :
 
 	- User profile panel
-	- ModelState.IsValid + Bootstrap validation
 	- Test passing process
 
+	- Search
 
+	- Fix tests date and other date in project data
+
+	- To set the max mark for question
+
+	- ModelState.IsValid + Bootstrap validation
 	- Reports table
 
 	======
 
-	- System testing
+	- System testing (check proj)

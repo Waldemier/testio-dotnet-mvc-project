@@ -11,6 +11,7 @@ namespace TestioProject.PL.Models
         public class AnswerViewModel
         {
             public string Name { get; set; }
+            [DefaultValue(false)]
             public bool isTruth { get; set; }
         }
         public class AnswerEditModel

@@ -1,14 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace TestioProject
+﻿namespace TestioProject
 {
-    public class SeedData
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+    public static class SeedData
     {
-        public static async Task EnsureSeedData(IServiceProvider serviceProvider)
-        {
+        //public static async Task EnsureSeedData(IServiceProvider serviceProvider)
+        //{
+            //var roleMng = serverProvader.GetRequiredService<RoleManager> < IdentityRole >>();
+            //roleMng.CreateAsync(new IdentityRole { Name = "Student", NormalizedName = "STUDENT" });
+            //roleMng.CreateAsync(new IdentityRole { Name = "Admin", NormalizedName = "ADMIN" });
             //context.Roles.Add(new IdentityRole { Name = "Learner", NormalizedName = "LEARNER" });
             //context.Roles.Add(new IdentityRole { Name = "Teacher", NormalizedName = "TEACHER" });
             //context.Roles.Add(new IdentityRole { Name = "Admin", NormalizedName = "ADMIN" });
@@ -42,6 +44,6 @@ namespace TestioProject
             //Test test = dataManager.Tests.GetTestById(6);
             //List<Question> questions = dataManager.Questions.GetQuestionsByTestId(test.Id).ToList();
             //var x = "";
-        }
+        //}
     }
 }

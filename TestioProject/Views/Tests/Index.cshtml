@@ -11,7 +11,7 @@
             @foreach (var item in Model)
             {
                 <div class="d-flex">
-                    <a class="d-flex" href="/Tests/@item.testId"><p>#@item.testId |</p>&nbsp;<p>@item.Title |</p>&nbsp;<p>@item.Owner.FirstName&nbsp;@item.Owner.LastName</p></a>
+                    <a class="d-flex" asp-action="ViewTest" asp-route-testId=@item.testId><p>#@item.testId |</p>&nbsp;<p>@item.Title |</p>&nbsp;<p>@item.Owner.FirstName&nbsp;@item.Owner.LastName</p></a>
                 </div>
             }
         }

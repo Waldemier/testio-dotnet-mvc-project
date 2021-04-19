@@ -16,6 +16,7 @@ namespace TestioProject.PL
         private readonly QuestionService questionService;
         private readonly AnswerService answerService;
         private readonly WrittenLetterService writtenLetterService;
+        private readonly StatisticService statisticService;
         public ServicesManager(DataManager _dataManager)
         {
             dataManager = _dataManager;
@@ -23,10 +24,12 @@ namespace TestioProject.PL
             questionService = new QuestionService(dataManager);
             answerService = new AnswerService(dataManager);
             writtenLetterService = new WrittenLetterService(dataManager);
+            statisticService = new StatisticService(dataManager);
         }
         public TestService Tests { get { return testService; } }
         public QuestionService Questions { get { return questionService; } }
         public AnswerService Answers { get { return answerService; } }
         public WrittenLetterService WrittenLetter { get { return writtenLetterService; } }
+        public StatisticService Statistics { get { return statisticService; } }
     }
 }
