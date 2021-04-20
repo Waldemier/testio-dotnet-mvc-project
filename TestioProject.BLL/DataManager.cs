@@ -4,7 +4,7 @@ using TestioProject.BLL.Interfaces;
 
 namespace TestioProject.BLL
 {
-    public class DataManager
+    public class DataManager: IDataManager
     {
         private readonly IAnswersRepository answersRepository;
         private readonly IQuestionsRepository questionsRepository;

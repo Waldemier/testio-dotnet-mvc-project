@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TestioProject.BLL;
+using Serilog;
 
 namespace TestioProject
 {
@@ -43,6 +44,7 @@ namespace TestioProject
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseSerilogRequestLogging();
 
             app.UseRouting();
 

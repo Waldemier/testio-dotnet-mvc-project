@@ -35,6 +35,7 @@ namespace TestioProject.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogInformation("You are on the main page");
             return View();
         }
 
