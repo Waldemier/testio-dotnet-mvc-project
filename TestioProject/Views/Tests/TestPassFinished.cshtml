@@ -1,10 +1,29 @@
 ﻿@using TestioProject.PL.Models
 @model StatiscticViewModel
 
-    <div>
-        <div>
-            <h2>Congrats !</h2>
-            <h3>Your result:</h3>
-            <h4>@Model.Result</h4>
+<div class="d-flex justify-content-center">
+    <div style="margin-top: 50px;">
+        <h4 style="margin-bottom: 9px; ">Test name: @ViewBag.TestTitle</h4>
+        <div class="card" style="width: 800px; height: 310px">
+            <div class="card-body">
+                <h4 style="margin-left: 15px;">Test summary</h4>
+                <div class="d-flex justify-content-center">
+                    <div class="card" style="width: 600px; margin-top: 40px; background: aliceblue;">
+                        <div class="d-flex justify-content-center card-body">
+                            <div>
+                                <h5 style="color: #3be25f; font-weight: bold;">You have passed your test</h5>
+                                <div class="d-flex justify-content-xl-center">
+                                    <div class="d-flex" style="margin-top: 20px;">
+                                        <h6>Your result:&nbsp;&nbsp;</h6>
+                                        <h6>@Model.Result/@(ViewBag.QuestionsAmount)p. @(ViewBag.PercentEquivalent)%</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h5 style="margin-top: 40px;margin-left: 15px;">Congratulations on completing the test!</h5>
+            </div>
         </div>
     </div>
+</div>

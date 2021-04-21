@@ -27,13 +27,13 @@
                 </div>
                 <div class="d-flex" style="margin-top: 20px">
                     <div class="mb-2 mr-2">
-                        <a href="/" value="false" name="test_type" style="outline: inset; margin-right: 15px;">Back to main</a>
+                        <a href="/" value="false" style="outline: inset; margin-right: 15px;">Back to main</a>
                     </div>
                     <div class="mb-2 mr-2">
-                        <a href="~/Tests/Test/@ViewData["testId"]" value="false" name="test_type" style="outline: inset; margin-right: 15px;">View</a>
+                        <a asp-controller="Tests" asp-action="ViewTest" asp-route-testId=@ViewData["testId"] style="outline: inset; margin-right: 15px;">View</a>
                     </div>
                     <div class="mb-2 ml-2">
-                        <a href="/Tests/PrivateChooser" data-bs-dismiss="modal" style="outline: inset; margin-right: 15px;">Create more</a>
+                        <a href="/Tests/PrivateChooser" style="outline: inset; margin-right: 15px;">Create more</a>
                     </div>
                 </div>
             </div>

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Dynamic;
@@ -16,20 +17,25 @@ using static TestioProject.PL.Models.AnswerModel;
 
 namespace TestioProject.Controllers
 {
+    [Authorize]
     public class TestsController : Controller
     {
+        private readonly ILogger<TestsController> _logger;
         private readonly DataManager dataManager;
         private readonly ServicesManager servicesManager;
 
-        public TestsController(DataManager _dataManager)
+        public TestsController(ILogger<TestsController> logger, DataManager _dataManager)
         {
+            _logger = logger;
             dataManager = _dataManager;
             servicesManager = new ServicesManager(dataManager);
         }
 
         [HttpGet]
+        //[AllowAnonymous]
         public IActionResult Index()
         {
+            _logger.LogInformation("Index tests controller action");
             List<TestViewModel> _models = servicesManager.Tests.GetTestsList();
             return View(_models);
         }
@@ -38,21 +44,24 @@ namespace TestioProject.Controllers
         [Authorize(Roles = "Teacher")]
         public IActionResult PrivateChooser()
         {
+            _logger.LogInformation("PrivateChooser action");
             return View("PrivateChooser");
         }
 
         [HttpGet]
         public IActionResult ViewTest(int testId)
         {
+            _logger.LogInformation("ViewTest action");
             TestViewModel _model = servicesManager.Tests.TestFromDbToViewModelById(testId);
             return View(_model);
         }
 
         [HttpPost]
         [Authorize]
-        //FIX. INVALID PARAMS AFTER SECOND QUESTION
         public IActionResult TestPassing(int testId, int currentQuestionIndex, int previousesQuestionCorrectAnswersAmount, QuestionEditModel _model, ActionType actionType)
         {
+            _logger.LogInformation("TestPassing(post) action");
+
             List<QuestionViewModel> _listQuestionModels = servicesManager.Questions.GetAllViewQuestionsByTestId(_model.testId);
             ViewData["TestTitle"] = servicesManager.Tests.TestFromDbToViewModelById(_model.testId).Title;
             ViewBag.testId = testId != 0 ? testId : _model.testId;
@@ -62,54 +71,70 @@ namespace TestioProject.Controllers
             switch (actionType)
             {
                 case ActionType.Start:
+                    _logger.LogInformation("TestPassing action: Switch Start");
+
                     ViewBag.QuestionIndex = 0;
-                    return View(); //.Questions[0]
+                    return View();
+
                 case ActionType.Next:
-                    
-                    int currentQuestionCorrectAnswersAmount = 0;
-                    //loop (export)
+                    _logger.LogInformation("TestPassing action: Switch Next");
+
+                    int currentQuestionCorrectAnswersCounter = 0;
                     for(int i = 0; i < _listQuestionModels[currentQuestionIndex].Answers.Count; i++)
                     {
                         var currentAnswerChecked = _model.Answers[i].isTruth;
                         if (_listQuestionModels[currentQuestionIndex].Answers[i].isTruth && currentAnswerChecked)
                         {
-                            currentQuestionCorrectAnswersAmount++;
+                            currentQuestionCorrectAnswersCounter++;
                         }
                     }
-
-                    int totalCorrectAnswersAmount = currentQuestionCorrectAnswersAmount + previousesQuestionCorrectAnswersAmount;
+                    int totalCorrectAnswersAmount = currentQuestionCorrectAnswersCounter + previousesQuestionCorrectAnswersAmount;
                     ViewBag.TotalCorrectAnswers = totalCorrectAnswersAmount;
 
                     int nextQuestionIndex = currentQuestionIndex + 1;
-                    //if it last question in the list
                     if(nextQuestionIndex > _listQuestionModels.Count - 1)
                     {
                         ViewBag.Finish = true;
                         
-                        //ViewBag.LastQuestion = nextQuestionIndex - 1;
                         ModelState.Clear();
                         return View();
                     }
                     ViewBag.QuestionIndex = nextQuestionIndex;
                     ModelState.Clear();
-                    return View(); //.Questions[nextQuestionIndex])
+                    return View();
+
                 case ActionType.Cancel:
+                    _logger.LogInformation("TestPassing action: Switch Cancel");
+
                     return Redirect("/Tests");
+
                 default:
                     return Redirect("~/");
             }
             
         }
 
-        //FIX. WE CALC THE ANSWERS. NEED QUESTIONS
         [HttpPost]
         [Authorize]
         public IActionResult TestPassFinished(int testId, int previousesQuestionCorrectAnswersAmount)
         {
+            _logger.LogInformation("TestPassFinished(post) action");
+
             string userName = User.Identity.Name;
             string userId = dataManager.Users.GetIdByEmail(userName);
             StatiscticViewModel _statiscticViewModel = new StatiscticViewModel() { testId = testId, Result = previousesQuestionCorrectAnswersAmount };
             servicesManager.Statistics.SaveStatisticEditModelIntoDb(new StatisticEditModel() { userId = userId, testId = testId, Result = previousesQuestionCorrectAnswersAmount });
+
+            var testTitle = servicesManager.Tests.TestFromDbToViewModelById(testId);
+            var questionsAmount = servicesManager.Questions.GetAllViewQuestionsByTestId(testId).Count;
+
+            double devide = ((double)_statiscticViewModel.Result / (double)questionsAmount);
+            var percentage = devide * 100;
+
+            ViewBag.TestTitle = testTitle.Title;
+            ViewBag.QuestionsAmount = questionsAmount;
+            ViewBag.PercentEquivalent = percentage;
+
             return View(_statiscticViewModel);
         }
 
@@ -118,6 +143,8 @@ namespace TestioProject.Controllers
         [Authorize(Roles = "Teacher")]
         public IActionResult CreateOrEditTest(int testId = 0, string isPrivate = "false")
         {
+            _logger.LogInformation("CreateOrEditTest action");
+
             TestEditModel _model;
             if (testId != 0)
                 _model = servicesManager.Tests.GetTestEditModel(testId);
@@ -133,6 +160,7 @@ namespace TestioProject.Controllers
         [Authorize(Roles = "Teacher")]
         public RedirectToActionResult CreateOrEditTest(TestEditModel _model)
         {
+            _logger.LogInformation("CreateOrEditTest(post) action");
 
             string owner = User.Identity.Name;
             int testId = servicesManager.Tests.SaveTestFromViewIntoDb(_model, owner);
@@ -159,6 +187,8 @@ namespace TestioProject.Controllers
                     - Tests and Questions services
             */
 
+            _logger.LogInformation("CreateOrEditQuestion action");
+
             ViewBag.testId = testId;
             bool detected = false;
             /*the value may be null when we have just created a test and gone to the questions page*/
@@ -176,11 +206,14 @@ namespace TestioProject.Controllers
             switch (actionType)
             {
                 case QuestionsActionType.AddAnswer:
+                    _logger.LogInformation("CreateOrEditQuestion action: Switch AddAnswer");
+
                     _questionModel.Answers.Add(new AnswerEditModel() { });
                     break;
                 case QuestionsActionType.NextQuestion:
+                    _logger.LogInformation("CreateOrEditQuestion action: Switch NextQuestion");
                     //if any answer is empty - detected and throw error on frontend
-                    
+
                     QuestionEditModel _lastModelInList = servicesManager.Questions.GetLastQuestionFromTestQuestionsList(testId);
                     if (_questionModel.Name != null && _questionModel.questionId != 0 && /*not last in list*/ _lastModelInList.questionId != _questionModel.questionId)
                     {
@@ -216,6 +249,8 @@ namespace TestioProject.Controllers
                     ModelState.Clear(); //For clear razor state
                     break;
                 case QuestionsActionType.RemoveAnswer:
+                    _logger.LogInformation("CreateOrEditQuestion action: Switch RemoveAnswer");
+
                     AnswerEditModel _answerToDelete = _questionModel.Answers[answerIdToDelete];
                     if(_questionModel.Answers.Count > 1) //if this input not last
                     {
@@ -232,6 +267,8 @@ namespace TestioProject.Controllers
                     }
                     break;
                 case QuestionsActionType.PreviousQuestion:
+                    _logger.LogInformation("CreateOrEditQuestion action: Switch PreviousQuestion");
+
                     if (_questionModel.questionId == 0 && _questionModel.Name != null)
                     {
                         /*
@@ -264,6 +301,8 @@ namespace TestioProject.Controllers
                     ModelState.Clear();
                     break;
                 case QuestionsActionType.RemoveQuestion:
+                    _logger.LogInformation("CreateOrEditQuestion action: Switch RemoveQuestion");
+
                     servicesManager.Questions.RemoveEditQuestionFromDb(_questionModel);
                     QuestionEditModel lastQuestionModel = servicesManager.Questions.GetLastQuestionFromTestQuestionsList(testId);
                     _questionModel = lastQuestionModel != null ? lastQuestionModel : new QuestionEditModel() { testId = testId };
@@ -298,6 +337,7 @@ namespace TestioProject.Controllers
         [Authorize(Roles = "Teacher")]
         public IActionResult FinishTestCreating(int testId)
         {
+            _logger.LogInformation("FinishTestCreating action");
 
             ViewData["testId"] = testId;
             return View("FinishTestCreating");

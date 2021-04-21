@@ -2,8 +2,7 @@
 
 TODO :
 
-	- User profile panel
-	- Test passing process
+	- User profile panel*
 
 	- Search
 
@@ -12,8 +11,9 @@ TODO :
 	- To set the max mark for question
 
 	- ModelState.IsValid + Bootstrap validation
+
 	- Reports table
 
 	======
 
-	- System testing (check proj)
+	- System testing

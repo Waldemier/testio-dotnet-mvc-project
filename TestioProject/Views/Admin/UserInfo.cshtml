@@ -3,40 +3,51 @@
 @model WrittenLetterModel
 
 <div class="d-flex justify-content-center">
-    <div style="max-width: 500px;">
-        <form asp-controller="Admin" asp-action="TeacherRoleConfirm" method="post">
-            <div class="d-flex justify-content-center">
-                <div style="margin-top: 30px">
-                    <input type="hidden" name="userId" value="@Model.User.Id" />
+    <div class="card" style="width:500px; height: auto">
+        <div class="card-body">
+            <div style="max-width: 500px;">
+                <form asp-controller="Admin" asp-action="TeacherRoleConfirm" method="post">
                     <div class="d-flex justify-content-center">
-                        <div>
-                            <h2>@Model.User.FirstName&nbsp;@Model.User.LastName</h2>
+                        <div style="margin-top: 30px">
+                            <input type="hidden" name="userId" value="@Model.User.Id" />
+                            <div class="d-flex justify-content-center">
+                                <div>
+                                    <h2>@Model.User.FirstName&nbsp;@Model.User.LastName</h2>
+                                </div>
+                            </div>
+                            <hr />
+                            <div>
+                                <div class="d-flex justify-content-center" style="margin-top: 20px">
+                                    <h3>Experience</h3>
+                                </div>
+                                <div class="card" style="width: 400px">
+                                    <div class="card-body">
+                                        <div>
+                                            <p>@Model.Experience</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-flex justify-content-center" style="margin-top: 20px">
+                                    <h3>Reason</h3>
+                                </div>
+                                <div class="card" style="width: 400px">
+                                    <div class="card-body">
+                                        <div>
+                                            <p>@Model.Reason</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between" style="margin-top: 35px">
+                                <button class="btn btn-success" name="actionType" value=@ActionType.Confirm type="submit">Confirm</button>
+                                <button class="btn btn-danger" name="actionType" value=@ActionType.Reject type="submit">Reject</button>
+                            </div>
                         </div>
                     </div>
-                    <hr />
-                    <div>
-                        <div class="d-flex justify-content-center">
-                            <h3>Experience</h3>
-                        </div>
-                        <div>
-                            <p>@Model.Experience</p>
-                        </div>
-                    </div>
-                    <hr />
-                    <div>
-                        <div class="d-flex justify-content-center">
-                            <h3>Reason</h3>
-                        </div>
-                        <div>
-                            <p>@Model.Reason</p>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <button class="btn btn-success" name="actionType" value=@ActionType.Confirm type="submit">Confirm</button>
-                        <button class="btn btn-danger" name="actionType" value=@ActionType.Reject type="submit">Reject</button>
-                    </div>
-                </div>
+                </form>
             </div>
-        </form>
+        </div>
     </div>
 </div>

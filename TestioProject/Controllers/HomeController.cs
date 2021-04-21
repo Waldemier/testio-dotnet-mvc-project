@@ -33,6 +33,7 @@ namespace TestioProject.Controllers
             servicesManager = new ServicesManager(dataManager);
         }
 
+        //[AllowAnonymous]
         public IActionResult Index()
         {
             _logger.LogInformation("You are on the main page");
@@ -43,6 +44,8 @@ namespace TestioProject.Controllers
         [Authorize(Roles = "Learner")]
         public async Task<IActionResult> BecomeATeacher()
         {
+            _logger.LogInformation("BecomeATeacher action");
+
             var user = await userManager.FindByEmailAsync(User.Identity.Name);
             ViewBag.userId = user.Id;
             return View("BecomeATeacher");
@@ -52,6 +55,8 @@ namespace TestioProject.Controllers
         [Authorize(Roles = "Learner")]
         public RedirectResult RequestToBecomeATeacher(WrittenLetterModel _model)
         {
+            _logger.LogInformation("RequestToBecomeATeacher(post) action");
+
             servicesManager.WrittenLetter.SaveWrittenLetterModelIntoDb(_model);
             return Redirect("/");
         }
