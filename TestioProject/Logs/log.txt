@@ -648,3 +648,525 @@ System.Threading.Tasks.TaskCanceledException: A task was canceled.
 2021-04-21 08:33:09.560 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 12.2550 ms
 2021-04-21 08:33:09.568 +03:00 [INF] HTTP GET / responded 302 in 0.2155 ms
 2021-04-21 08:33:09.580 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 4.4659 ms
+2021-04-21 15:52:53.948 +03:00 [INF] Application starting up
+2021-04-21 15:52:57.453 +03:00 [INF] HTTP GET / responded 302 in 66.1276 ms
+2021-04-21 15:52:58.035 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 546.4743 ms
+2021-04-21 15:55:08.308 +03:00 [WRN] Invalid password for user.
+2021-04-21 15:55:08.312 +03:00 [WRN] User failed to provide the correct password.
+2021-04-21 15:55:08.334 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 200 in 2281.6890 ms
+2021-04-21 15:55:12.667 +03:00 [WRN] Invalid password for user.
+2021-04-21 15:55:12.670 +03:00 [WRN] User failed to provide the correct password.
+2021-04-21 15:55:12.672 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 200 in 45.8069 ms
+2021-04-21 15:55:22.468 +03:00 [INF] User logged in.
+2021-04-21 15:55:22.471 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 202.2166 ms
+2021-04-21 15:55:22.486 +03:00 [INF] You are on the main page
+2021-04-21 15:55:22.507 +03:00 [INF] HTTP GET / responded 200 in 29.9519 ms
+2021-04-21 15:55:25.823 +03:00 [INF] Index tests controller action
+2021-04-21 15:55:25.891 +03:00 [INF] HTTP GET /Tests responded 200 in 72.2094 ms
+2021-04-21 15:55:30.013 +03:00 [INF] Index tests controller action
+2021-04-21 15:55:30.021 +03:00 [INF] HTTP GET /Tests responded 200 in 10.3839 ms
+2021-04-21 15:55:30.954 +03:00 [INF] You are on the main page
+2021-04-21 15:55:30.958 +03:00 [INF] HTTP GET / responded 200 in 4.5140 ms
+2021-04-21 15:55:31.548 +03:00 [INF] PrivateChooser action
+2021-04-21 15:55:31.560 +03:00 [INF] HTTP GET /Tests/PrivateChooser responded 200 in 14.4676 ms
+2021-04-21 15:55:32.480 +03:00 [INF] CreateOrEditTest action
+2021-04-21 15:55:32.566 +03:00 [INF] HTTP GET /Tests/CreateOrEditTest?isPrivate=false responded 200 in 105.1866 ms
+2021-04-21 15:55:39.658 +03:00 [INF] CreateOrEditTest(post) action
+2021-04-21 15:55:40.029 +03:00 [INF] HTTP POST /Tests/CreateOrEditTest?actionType=1 responded 302 in 378.9653 ms
+2021-04-21 15:55:40.043 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 15:55:40.079 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-04-21 15:55:40.282 +03:00 [INF] HTTP GET /Tests/CreateOrEditQuestion?testId=190 responded 200 in 247.2422 ms
+2021-04-21 15:55:46.188 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 15:55:46.190 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-04-21 15:55:46.200 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 21.6556 ms
+2021-04-21 15:55:50.083 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 15:55:50.085 +03:00 [INF] CreateOrEditQuestion action: Switch NextQuestion
+2021-04-21 15:55:50.312 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=NextQuestion responded 200 in 230.4920 ms
+2021-04-21 15:55:56.368 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 15:55:56.370 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-04-21 15:55:56.384 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 16.7101 ms
+2021-04-21 15:56:03.589 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 15:56:03.591 +03:00 [INF] CreateOrEditQuestion action: Switch PreviousQuestion
+2021-04-21 15:56:03.717 +03:00 [ERR] Failed executing DbCommand (108ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Answers" ("QuestionId", "Text", "isTruth")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id";
+2021-04-21 15:56:03.793 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'TestioProject.DAL.Data.TestioDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null значення у стовпці "Text" порушує not-null обмеження
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ПОМИЛКА
+    SqlState: 23502
+    MessageText: null значення у стовпці "Text" порушує not-null обмеження
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Answers
+    ColumnName: Text
+    File: d:\pginstaller_12.auto\postgres.windows-x64\src\backend\executor\execmain.c
+    Line: 1953
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null значення у стовпці "Text" порушує not-null обмеження
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ПОМИЛКА
+    SqlState: 23502
+    MessageText: null значення у стовпці "Text" порушує not-null обмеження
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Answers
+    ColumnName: Text
+    File: d:\pginstaller_12.auto\postgres.windows-x64\src\backend\executor\execmain.c
+    Line: 1953
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2021-04-21 15:56:17.976 +03:00 [INF] Application starting up
+2021-04-21 15:56:21.467 +03:00 [INF] You are on the main page
+2021-04-21 15:56:21.623 +03:00 [INF] HTTP GET / responded 200 in 415.3052 ms
+2021-04-21 15:56:23.778 +03:00 [INF] PrivateChooser action
+2021-04-21 15:56:23.798 +03:00 [INF] HTTP GET /Tests/PrivateChooser responded 200 in 28.5909 ms
+2021-04-21 15:56:25.043 +03:00 [INF] CreateOrEditTest action
+2021-04-21 15:56:25.137 +03:00 [INF] HTTP GET /Tests/CreateOrEditTest?isPrivate=false responded 200 in 150.8723 ms
+2021-04-21 15:56:31.639 +03:00 [INF] CreateOrEditTest(post) action
+2021-04-21 15:56:33.250 +03:00 [INF] HTTP POST /Tests/CreateOrEditTest?actionType=1 responded 302 in 1627.5768 ms
+2021-04-21 15:56:33.274 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 15:56:33.373 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-04-21 15:56:33.477 +03:00 [INF] HTTP GET /Tests/CreateOrEditQuestion?testId=191 responded 200 in 220.5735 ms
+2021-04-21 15:56:36.244 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 15:56:36.246 +03:00 [INF] CreateOrEditQuestion action: Switch RemoveAnswer
+2021-04-21 15:56:36.282 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=RemoveAnswer&answerIdToDelete=0 responded 200 in 45.2319 ms
+2021-04-21 15:59:15.807 +03:00 [INF] Application starting up
+2021-04-21 15:59:18.228 +03:00 [INF] You are on the main page
+2021-04-21 15:59:18.386 +03:00 [INF] HTTP GET / responded 200 in 453.2858 ms
+2021-04-21 15:59:20.036 +03:00 [INF] Index tests controller action
+2021-04-21 15:59:21.487 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-04-21 15:59:21.637 +03:00 [INF] HTTP GET /Tests responded 200 in 1606.9943 ms
+2021-04-21 15:59:24.135 +03:00 [INF] You are on the main page
+2021-04-21 15:59:24.139 +03:00 [INF] HTTP GET / responded 200 in 19.6172 ms
+2021-04-21 15:59:24.847 +03:00 [INF] PrivateChooser action
+2021-04-21 15:59:24.859 +03:00 [INF] HTTP GET /Tests/PrivateChooser responded 200 in 15.2109 ms
+2021-04-21 15:59:25.740 +03:00 [INF] CreateOrEditTest action
+2021-04-21 15:59:25.828 +03:00 [INF] HTTP GET /Tests/CreateOrEditTest?isPrivate=false responded 200 in 126.8417 ms
+2021-04-21 15:59:31.370 +03:00 [INF] CreateOrEditTest(post) action
+2021-04-21 15:59:31.537 +03:00 [INF] HTTP POST /Tests/CreateOrEditTest?actionType=1 responded 302 in 187.2636 ms
+2021-04-21 15:59:31.562 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 15:59:31.616 +03:00 [INF] HTTP GET /Tests/CreateOrEditQuestion?testId=192 responded 200 in 72.4140 ms
+2021-04-21 15:59:36.475 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 15:59:36.476 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-04-21 15:59:36.489 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 20.3427 ms
+2021-04-21 15:59:42.472 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 15:59:42.474 +03:00 [INF] CreateOrEditQuestion action: Switch NextQuestion
+2021-04-21 15:59:42.589 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=NextQuestion responded 200 in 120.7289 ms
+2021-04-21 15:59:46.278 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 15:59:46.281 +03:00 [INF] CreateOrEditQuestion action: Switch PreviousQuestion
+2021-04-21 16:04:24.791 +03:00 [INF] Application starting up
+2021-04-21 16:04:27.374 +03:00 [INF] You are on the main page
+2021-04-21 16:04:27.530 +03:00 [INF] HTTP GET / responded 200 in 435.7293 ms
+2021-04-21 16:04:28.905 +03:00 [INF] Index tests controller action
+2021-04-21 16:04:30.324 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-04-21 16:04:30.468 +03:00 [INF] HTTP GET /Tests responded 200 in 1572.5722 ms
+2021-04-21 16:04:32.100 +03:00 [INF] You are on the main page
+2021-04-21 16:04:32.102 +03:00 [INF] HTTP GET / responded 200 in 15.5658 ms
+2021-04-21 16:04:35.171 +03:00 [INF] PrivateChooser action
+2021-04-21 16:04:35.182 +03:00 [INF] HTTP GET /Tests/PrivateChooser responded 200 in 15.4286 ms
+2021-04-21 16:04:36.053 +03:00 [INF] CreateOrEditTest action
+2021-04-21 16:04:36.139 +03:00 [INF] HTTP GET /Tests/CreateOrEditTest?isPrivate=false responded 200 in 120.0140 ms
+2021-04-21 16:04:38.291 +03:00 [INF] CreateOrEditTest(post) action
+2021-04-21 16:04:38.477 +03:00 [INF] HTTP POST /Tests/CreateOrEditTest?actionType=1 responded 302 in 203.9707 ms
+2021-04-21 16:04:38.504 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:04:38.570 +03:00 [INF] HTTP GET /Tests/CreateOrEditQuestion?testId=193 responded 200 in 83.8508 ms
+2021-04-21 16:04:43.647 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:04:43.649 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-04-21 16:04:43.662 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 22.4519 ms
+2021-04-21 16:04:47.330 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:04:47.332 +03:00 [INF] CreateOrEditQuestion action: Switch NextQuestion
+2021-04-21 16:04:47.464 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=NextQuestion responded 200 in 135.4031 ms
+2021-04-21 16:04:52.128 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:04:52.131 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-04-21 16:04:52.138 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 14.0256 ms
+2021-04-21 16:04:54.737 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:04:54.739 +03:00 [INF] CreateOrEditQuestion action: Switch PreviousQuestion
+2021-04-21 16:04:57.470 +03:00 [ERR] Failed executing DbCommand (17ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Answers" ("QuestionId", "Text", "isTruth")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id";
+2021-04-21 16:04:57.520 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'TestioProject.DAL.Data.TestioDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null значення у стовпці "Text" порушує not-null обмеження
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ПОМИЛКА
+    SqlState: 23502
+    MessageText: null значення у стовпці "Text" порушує not-null обмеження
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Answers
+    ColumnName: Text
+    File: d:\pginstaller_12.auto\postgres.windows-x64\src\backend\executor\execmain.c
+    Line: 1953
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null значення у стовпці "Text" порушує not-null обмеження
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ПОМИЛКА
+    SqlState: 23502
+    MessageText: null значення у стовпці "Text" порушує not-null обмеження
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Answers
+    ColumnName: Text
+    File: d:\pginstaller_12.auto\postgres.windows-x64\src\backend\executor\execmain.c
+    Line: 1953
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2021-04-21 16:07:19.490 +03:00 [INF] Application starting up
+2021-04-21 16:07:22.231 +03:00 [INF] You are on the main page
+2021-04-21 16:07:22.391 +03:00 [INF] HTTP GET / responded 200 in 435.1874 ms
+2021-04-21 16:07:24.952 +03:00 [INF] PrivateChooser action
+2021-04-21 16:07:24.971 +03:00 [INF] HTTP GET /Tests/PrivateChooser responded 200 in 30.8859 ms
+2021-04-21 16:07:25.891 +03:00 [INF] CreateOrEditTest action
+2021-04-21 16:07:26.005 +03:00 [INF] HTTP GET /Tests/CreateOrEditTest?isPrivate=false responded 200 in 172.0926 ms
+2021-04-21 16:07:28.241 +03:00 [INF] CreateOrEditTest(post) action
+2021-04-21 16:07:29.808 +03:00 [INF] HTTP POST /Tests/CreateOrEditTest?actionType=1 responded 302 in 1585.3893 ms
+2021-04-21 16:07:29.828 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:07:29.921 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-04-21 16:07:30.023 +03:00 [INF] HTTP GET /Tests/CreateOrEditQuestion?testId=194 responded 200 in 208.7237 ms
+2021-04-21 16:07:34.195 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:07:34.197 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-04-21 16:07:34.214 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 29.8124 ms
+2021-04-21 16:07:36.278 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:07:36.280 +03:00 [INF] CreateOrEditQuestion action: Switch NextQuestion
+2021-04-21 16:07:36.453 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=NextQuestion responded 200 in 176.0704 ms
+2021-04-21 16:07:40.732 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:07:40.735 +03:00 [INF] CreateOrEditQuestion action: Switch PreviousQuestion
+2021-04-21 16:07:40.769 +03:00 [ERR] Failed executing DbCommand (11ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Answers" ("QuestionId", "Text", "isTruth")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id";
+2021-04-21 16:07:40.816 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'TestioProject.DAL.Data.TestioDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null значення у стовпці "Text" порушує not-null обмеження
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ПОМИЛКА
+    SqlState: 23502
+    MessageText: null значення у стовпці "Text" порушує not-null обмеження
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Answers
+    ColumnName: Text
+    File: d:\pginstaller_12.auto\postgres.windows-x64\src\backend\executor\execmain.c
+    Line: 1953
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null значення у стовпці "Text" порушує not-null обмеження
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ПОМИЛКА
+    SqlState: 23502
+    MessageText: null значення у стовпці "Text" порушує not-null обмеження
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Answers
+    ColumnName: Text
+    File: d:\pginstaller_12.auto\postgres.windows-x64\src\backend\executor\execmain.c
+    Line: 1953
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2021-04-21 16:08:45.242 +03:00 [INF] Application starting up
+2021-04-21 16:08:47.810 +03:00 [INF] You are on the main page
+2021-04-21 16:08:47.969 +03:00 [INF] HTTP GET / responded 200 in 400.5716 ms
+2021-04-21 16:08:49.360 +03:00 [INF] PrivateChooser action
+2021-04-21 16:08:49.377 +03:00 [INF] HTTP GET /Tests/PrivateChooser responded 200 in 27.5048 ms
+2021-04-21 16:08:50.293 +03:00 [INF] CreateOrEditTest action
+2021-04-21 16:08:50.379 +03:00 [INF] HTTP GET /Tests/CreateOrEditTest?isPrivate=false responded 200 in 136.4043 ms
+2021-04-21 16:08:53.330 +03:00 [INF] CreateOrEditTest(post) action
+2021-04-21 16:08:54.928 +03:00 [INF] HTTP POST /Tests/CreateOrEditTest?actionType=1 responded 302 in 1615.4712 ms
+2021-04-21 16:08:54.948 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:08:55.043 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-04-21 16:08:55.139 +03:00 [INF] HTTP GET /Tests/CreateOrEditQuestion?testId=195 responded 200 in 204.7806 ms
+2021-04-21 16:08:58.935 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:08:58.937 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-04-21 16:08:58.953 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 25.3067 ms
+2021-04-21 16:09:00.774 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:09:00.777 +03:00 [INF] CreateOrEditQuestion action: Switch NextQuestion
+2021-04-21 16:09:00.911 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=NextQuestion responded 200 in 139.1480 ms
+2021-04-21 16:09:03.304 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:09:03.306 +03:00 [INF] CreateOrEditQuestion action: Switch PreviousQuestion
+2021-04-21 16:09:03.326 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=PreviousQuestion responded 200 in 23.7718 ms
+2021-04-21 16:09:05.229 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:09:05.232 +03:00 [INF] CreateOrEditQuestion action: Switch NextQuestion
+2021-04-21 16:09:05.358 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=NextQuestion responded 200 in 130.9281 ms
+2021-04-21 16:09:08.992 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:09:08.994 +03:00 [INF] CreateOrEditQuestion action: Switch NextQuestion
+2021-04-21 16:09:09.011 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=NextQuestion responded 200 in 20.0600 ms
+2021-04-21 16:09:30.284 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 78.9980 ms
+2021-04-21 16:09:30.295 +03:00 [INF] HTTP GET / responded 302 in 2.9686 ms
+2021-04-21 16:09:30.364 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 62.3208 ms
+2021-04-21 16:51:57.089 +03:00 [INF] Application starting up
+2021-04-21 16:52:18.735 +03:00 [INF] HTTP GET / responded 302 in 98.3883 ms
+2021-04-21 16:52:24.412 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 5232.0154 ms
+2021-04-21 16:52:46.442 +03:00 [INF] HTTP GET /Identity/Account/Register responded 200 in 132.7864 ms
+2021-04-21 16:53:12.206 +03:00 [INF] User created a new account with password.
+2021-04-21 16:53:12.378 +03:00 [INF] HTTP POST /Identity/Account/Register responded 302 in 4762.0241 ms
+2021-04-21 16:53:12.403 +03:00 [INF] You are on the main page
+2021-04-21 16:53:12.458 +03:00 [INF] HTTP GET / responded 200 in 71.9946 ms
+2021-04-21 16:53:41.593 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 46.1996 ms
+2021-04-21 16:53:41.600 +03:00 [INF] HTTP GET / responded 302 in 0.4960 ms
+2021-04-21 16:53:41.607 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 2.6791 ms
+2021-04-21 16:53:50.344 +03:00 [INF] HTTP GET /Identity/Account/Register responded 200 in 11.4370 ms
+2021-04-21 16:54:02.675 +03:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 3.4322 ms
+2021-04-21 16:54:05.964 +03:00 [INF] HTTP GET /Identity/Account/Register responded 200 in 4.1963 ms
+2021-04-21 16:54:17.562 +03:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 3.7838 ms
+2021-04-21 16:54:25.212 +03:00 [INF] User logged in.
+2021-04-21 16:54:25.215 +03:00 [INF] HTTP POST /Identity/Account/Login responded 302 in 98.3249 ms
+2021-04-21 16:54:25.231 +03:00 [INF] You are on the main page
+2021-04-21 16:54:25.235 +03:00 [INF] HTTP GET / responded 200 in 10.0519 ms
+2021-04-21 16:54:29.403 +03:00 [INF] Index tests controller action
+2021-04-21 16:54:29.761 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-04-21 16:54:29.985 +03:00 [INF] HTTP GET /Tests responded 200 in 584.6108 ms
+2021-04-21 16:54:34.345 +03:00 [INF] ViewTest action
+2021-04-21 16:54:34.416 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=190 responded 200 in 78.9137 ms
+2021-04-21 16:54:57.185 +03:00 [INF] You are on the main page
+2021-04-21 16:54:57.196 +03:00 [INF] HTTP GET / responded 200 in 30.0243 ms
+2021-04-21 16:55:04.496 +03:00 [INF] BecomeATeacher action
+2021-04-21 16:55:04.685 +03:00 [INF] HTTP GET /Home/BecomeATeacher responded 200 in 265.4869 ms
+2021-04-21 16:55:14.558 +03:00 [INF] Index tests controller action
+2021-04-21 16:55:14.571 +03:00 [INF] HTTP GET /Tests responded 200 in 13.4933 ms
+2021-04-21 16:55:16.168 +03:00 [INF] ViewTest action
+2021-04-21 16:55:16.176 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=190 responded 200 in 10.0522 ms
+2021-04-21 16:55:20.705 +03:00 [INF] TestPassing(post) action
+2021-04-21 16:55:20.736 +03:00 [INF] TestPassing action: Switch Start
+2021-04-21 16:55:20.888 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 199.3726 ms
+2021-04-21 16:55:25.491 +03:00 [INF] TestPassing(post) action
+2021-04-21 16:55:25.498 +03:00 [INF] TestPassing action: Switch Next
+2021-04-21 16:55:25.511 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 35.3888 ms
+2021-04-21 16:55:27.329 +03:00 [INF] TestPassing(post) action
+2021-04-21 16:55:27.345 +03:00 [INF] TestPassing action: Switch Next
+2021-04-21 16:55:27.378 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 50.4290 ms
+2021-04-21 16:55:28.418 +03:00 [INF] TestPassFinished(post) action
+2021-04-21 16:55:28.923 +03:00 [INF] HTTP POST /Tests/TestPassFinished responded 200 in 509.2172 ms
+2021-04-21 16:55:31.849 +03:00 [INF] Index tests controller action
+2021-04-21 16:55:31.872 +03:00 [INF] HTTP GET /Tests responded 200 in 23.2474 ms
+2021-04-21 16:55:36.673 +03:00 [INF] ViewTest action
+2021-04-21 16:55:36.684 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=194 responded 200 in 12.5614 ms
+2021-04-21 16:55:37.962 +03:00 [INF] TestPassing(post) action
+2021-04-21 16:55:37.974 +03:00 [INF] TestPassing action: Switch Start
+2021-04-21 16:55:37.993 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 33.6510 ms
+2021-04-21 16:55:39.959 +03:00 [INF] TestPassing(post) action
+2021-04-21 16:55:39.974 +03:00 [INF] TestPassing action: Switch Next
+2021-04-21 16:55:39.979 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 21.8686 ms
+2021-04-21 16:55:43.435 +03:00 [INF] TestPassing(post) action
+2021-04-21 16:55:43.446 +03:00 [INF] TestPassing action: Switch Next
+2021-04-21 16:55:43.451 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 19.6811 ms
+2021-04-21 16:55:46.695 +03:00 [INF] TestPassFinished(post) action
+2021-04-21 16:55:46.714 +03:00 [INF] HTTP POST /Tests/TestPassFinished responded 200 in 19.6007 ms
+2021-04-21 16:56:02.891 +03:00 [INF] You are on the main page
+2021-04-21 16:56:02.895 +03:00 [INF] HTTP GET / responded 200 in 5.0807 ms
+2021-04-21 16:56:05.545 +03:00 [INF] Index tests controller action
+2021-04-21 16:56:05.569 +03:00 [INF] HTTP GET /Tests responded 200 in 24.6775 ms
+2021-04-21 16:56:36.050 +03:00 [INF] You are on the main page
+2021-04-21 16:56:36.054 +03:00 [INF] HTTP GET / responded 200 in 3.9052 ms
+2021-04-21 16:56:37.836 +03:00 [INF] BecomeATeacher action
+2021-04-21 16:56:37.859 +03:00 [INF] HTTP GET /Home/BecomeATeacher responded 200 in 27.8903 ms
+2021-04-21 16:56:41.166 +03:00 [INF] RequestToBecomeATeacher(post) action
+2021-04-21 16:56:41.287 +03:00 [INF] HTTP POST /Home/RequestToBecomeATeacher responded 302 in 128.5384 ms
+2021-04-21 16:56:41.295 +03:00 [INF] You are on the main page
+2021-04-21 16:56:41.297 +03:00 [INF] HTTP GET / responded 200 in 2.2781 ms
+2021-04-21 16:56:42.757 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 1.9437 ms
+2021-04-21 16:56:42.771 +03:00 [INF] HTTP GET / responded 302 in 0.4119 ms
+2021-04-21 16:56:42.787 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 1.7043 ms
+2021-04-21 16:56:52.678 +03:00 [INF] User logged in.
+2021-04-21 16:56:52.681 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 47.0281 ms
+2021-04-21 16:56:52.696 +03:00 [INF] You are on the main page
+2021-04-21 16:56:52.703 +03:00 [INF] HTTP GET / responded 200 in 8.6257 ms
+2021-04-21 16:56:56.869 +03:00 [INF] Index tests controller action
+2021-04-21 16:56:56.891 +03:00 [INF] HTTP GET /Tests responded 200 in 21.7009 ms
+2021-04-21 16:56:58.719 +03:00 [INF] Admin panel page
+2021-04-21 16:56:58.757 +03:00 [INF] HTTP GET /Admin responded 200 in 39.2667 ms
+2021-04-21 16:57:02.673 +03:00 [INF] Requests action
+2021-04-21 16:57:02.756 +03:00 [INF] HTTP GET /Admin/Requests responded 200 in 90.0806 ms
+2021-04-21 16:57:11.467 +03:00 [INF] UserInfo action
+2021-04-21 16:57:11.532 +03:00 [INF] HTTP POST /Admin/UserInfo responded 200 in 75.1709 ms
+2021-04-21 16:57:21.437 +03:00 [INF] TeacherRoleConfirm(post) action
+2021-04-21 16:57:21.441 +03:00 [INF] TeacherRoleConfirm(post) action: Switch: Confirm
+2021-04-21 16:57:21.538 +03:00 [INF] HTTP POST /Admin/TeacherRoleConfirm responded 302 in 111.5424 ms
+2021-04-21 16:57:21.546 +03:00 [INF] Requests action
+2021-04-21 16:57:21.556 +03:00 [INF] HTTP GET /Admin/Requests responded 200 in 11.4082 ms
+2021-04-21 16:57:24.908 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 2.9185 ms
+2021-04-21 16:57:24.919 +03:00 [INF] HTTP GET / responded 302 in 0.8538 ms
+2021-04-21 16:57:24.930 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 2.0838 ms
+2021-04-21 16:57:30.334 +03:00 [INF] User logged in.
+2021-04-21 16:57:30.338 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 34.2815 ms
+2021-04-21 16:57:30.354 +03:00 [INF] You are on the main page
+2021-04-21 16:57:30.362 +03:00 [INF] HTTP GET / responded 200 in 7.8112 ms
+2021-04-21 16:57:32.037 +03:00 [INF] PrivateChooser action
+2021-04-21 16:57:32.098 +03:00 [INF] HTTP GET /Tests/PrivateChooser responded 200 in 62.4960 ms
+2021-04-21 16:57:36.323 +03:00 [INF] CreateOrEditTest action
+2021-04-21 16:57:36.449 +03:00 [INF] HTTP GET /Tests/CreateOrEditTest?isPrivate=false responded 200 in 136.1029 ms
+2021-04-21 16:57:41.379 +03:00 [INF] CreateOrEditTest(post) action
+2021-04-21 16:57:41.439 +03:00 [INF] HTTP POST /Tests/CreateOrEditTest?actionType=1 responded 302 in 64.8263 ms
+2021-04-21 16:57:41.462 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:57:41.672 +03:00 [INF] HTTP GET /Tests/CreateOrEditQuestion?testId=196 responded 200 in 225.4105 ms
+2021-04-21 16:57:47.136 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:57:47.141 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-04-21 16:57:47.159 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 23.9673 ms
+2021-04-21 16:57:52.192 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:57:52.196 +03:00 [INF] CreateOrEditQuestion action: Switch NextQuestion
+2021-04-21 16:57:52.464 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=NextQuestion responded 200 in 273.3710 ms
+2021-04-21 16:57:54.224 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:57:54.226 +03:00 [INF] CreateOrEditQuestion action: Switch RemoveAnswer
+2021-04-21 16:57:54.252 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=RemoveAnswer&answerIdToDelete=0 responded 200 in 29.1817 ms
+2021-04-21 16:57:59.929 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:57:59.931 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-04-21 16:57:59.950 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 21.5942 ms
+2021-04-21 16:58:00.808 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:58:00.814 +03:00 [INF] CreateOrEditQuestion action: Switch RemoveAnswer
+2021-04-21 16:58:00.845 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=RemoveAnswer&answerIdToDelete=1 responded 200 in 44.3936 ms
+2021-04-21 16:58:03.019 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:58:03.023 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-04-21 16:58:03.055 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 37.3208 ms
+2021-04-21 16:58:04.085 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:58:04.089 +03:00 [INF] CreateOrEditQuestion action: Switch PreviousQuestion
+2021-04-21 16:58:04.120 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=PreviousQuestion responded 200 in 35.9533 ms
+2021-04-21 16:58:06.471 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:58:06.472 +03:00 [INF] CreateOrEditQuestion action: Switch NextQuestion
+2021-04-21 16:58:06.612 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=NextQuestion responded 200 in 141.0101 ms
+2021-04-21 16:58:13.924 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:58:13.926 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-04-21 16:58:14.086 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 167.5010 ms
+2021-04-21 16:58:18.600 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:58:18.603 +03:00 [INF] CreateOrEditQuestion action: Switch PreviousQuestion
+2021-04-21 16:58:18.666 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=PreviousQuestion responded 200 in 66.9026 ms
+2021-04-21 16:58:20.852 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:58:20.854 +03:00 [INF] CreateOrEditQuestion action: Switch RemoveQuestion
+2021-04-21 16:58:20.903 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=RemoveQuestion responded 200 in 51.7045 ms
+2021-04-21 16:58:23.253 +03:00 [INF] CreateOrEditQuestion action
+2021-04-21 16:58:23.264 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=Finish responded 302 in 18.4816 ms
+2021-04-21 16:58:23.272 +03:00 [INF] FinishTestCreating action
+2021-04-21 16:58:23.325 +03:00 [INF] HTTP GET /Tests/FinishTestCreating?testId=196 responded 200 in 55.0106 ms
+2021-04-21 16:58:31.366 +03:00 [INF] ViewTest action
+2021-04-21 16:58:31.373 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=196 responded 200 in 8.4092 ms
+2021-04-21 16:58:33.655 +03:00 [INF] TestPassing(post) action
+2021-04-21 16:58:33.666 +03:00 [INF] TestPassing action: Switch Start
+2021-04-21 16:58:33.679 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 26.5955 ms
+2021-04-21 16:58:38.645 +03:00 [INF] TestPassing(post) action
+2021-04-21 16:58:38.653 +03:00 [INF] TestPassing action: Switch Next
+2021-04-21 16:58:38.655 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 13.6647 ms
+2021-04-21 16:58:39.772 +03:00 [INF] TestPassFinished(post) action
+2021-04-21 16:58:39.794 +03:00 [INF] HTTP POST /Tests/TestPassFinished responded 200 in 22.0589 ms
+2021-04-21 16:58:51.574 +03:00 [INF] You are on the main page
+2021-04-21 16:58:51.577 +03:00 [INF] HTTP GET / responded 200 in 4.2368 ms
+2021-04-21 16:58:52.411 +03:00 [INF] Index tests controller action
+2021-04-21 16:58:52.432 +03:00 [INF] HTTP GET /Tests responded 200 in 22.2407 ms
+2021-04-21 16:58:58.344 +03:00 [INF] You are on the main page
+2021-04-21 16:58:58.348 +03:00 [INF] HTTP GET / responded 200 in 5.4504 ms
+2021-04-21 17:01:31.421 +03:00 [INF] PrivateChooser action
+2021-04-21 17:01:31.425 +03:00 [INF] HTTP GET /Tests/PrivateChooser responded 200 in 21.2104 ms

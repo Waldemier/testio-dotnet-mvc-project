@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qPNdEtiDJhkvsbV/XyKHKCd2Lvl2YgW+PS+mjZ6k1fit0kspg91d8IDXIi8ugOUZvy6bcxB/lptn8+DAHNIfcQ==",
+  "dgSpecHash": "tG7RiyNHlImJYgO6o1+irUQoJmDYpExe7YjP+7SZt9SeI6sTmh1hPLWN3fWShIwy6Q/YZlHttW5JX4oTZOLLkg==",
   "success": true,
   "projectFilePath": "E:\\VSProjects\\TestioProject\\TestioProject.BLL\\TestioProject.BLL.csproj",
   "expectedPackageFiles": [
@@ -46,6 +46,9 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\npgsql\\5.0.2\\npgsql.5.0.2.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\5.0.2\\npgsql.entityframeworkcore.postgresql.5.0.2.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\roslynator.analyzers\\3.1.0\\roslynator.analyzers.3.1.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\sonaranalyzer.csharp\\8.21.0.30542\\sonaranalyzer.csharp.8.21.0.30542.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",

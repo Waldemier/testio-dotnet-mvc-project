@@ -478,3 +478,4 @@ E:\VSProjects\TestioProject\TestioProject\bin\Debug\net5.0\Logs\log.json
 E:\VSProjects\TestioProject\TestioProject\bin\Debug\net5.0\Logs\Seq.json
 E:\VSProjects\TestioProject\TestioProject\bin\Debug\net5.0\Serilog.Sinks.PeriodicBatching.dll
 E:\VSProjects\TestioProject\TestioProject\bin\Debug\net5.0\Serilog.Sinks.Seq.dll
+E:\VSProjects\TestioProject\TestioProject\bin\Debug\net5.0\stylecop.json

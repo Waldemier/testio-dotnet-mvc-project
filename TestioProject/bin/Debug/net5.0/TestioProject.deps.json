@@ -39,12 +39,15 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.4",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.4",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
+          "Roslynator.Analyzers": "3.1.0",
           "Serilog.AspNetCore": "4.1.0",
           "Serilog.Enrichers.Environment": "2.1.3",
           "Serilog.Enrichers.Process": "2.0.1",
           "Serilog.Enrichers.Thread": "3.1.0",
           "Serilog.Settings.Configuration": "3.1.0",
           "Serilog.Sinks.Seq": "5.0.0",
+          "SonarAnalyzer.CSharp": "8.21.0.30542",
+          "StyleCop.Analyzers": "1.1.118",
           "TestioProject.BLL": "1.0.0",
           "TestioProject.DAL": "1.0.0",
           "TestioProject.PL": "1.0.0",
@@ -1467,6 +1470,7 @@
           "lib/netstandard2.1/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
         }
       },
+      "Roslynator.Analyzers/3.1.0": {},
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
@@ -1736,6 +1740,8 @@
           "lib/net5.0/Serilog.Sinks.Seq.dll": {}
         }
       },
+      "SonarAnalyzer.CSharp/8.21.0.30542": {},
+      "StyleCop.Analyzers/1.1.118": {},
       "System.AppContext/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -5030,6 +5036,13 @@
       "path": "npgsql.entityframeworkcore.postgresql/5.0.2",
       "hashPath": "npgsql.entityframeworkcore.postgresql.5.0.2.nupkg.sha512"
     },
+    "Roslynator.Analyzers/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-K9qNjlkXqKd/8zOfedaNcbqPLFGZL0I8pTKENbwlrCJ4dm0b5N4ci2h4x3fpcwr5433ievJJXlRSr4JBQQKsvw==",
+      "path": "roslynator.analyzers/3.1.0",
+      "hashPath": "roslynator.analyzers.3.1.0.nupkg.sha512"
+    },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -5239,6 +5252,20 @@
       "sha512": "sha512-jBVpmd7O5YdY9mOkn+k6hmjjrejeq7FOfT64MeMr0Rdmy+AeQbYKOirlOKuX/Vl0xvHWQEtICC34J7TZZkrY6g==",
       "path": "serilog.sinks.seq/5.0.0",
       "hashPath": "serilog.sinks.seq.5.0.0.nupkg.sha512"
+    },
+    "SonarAnalyzer.CSharp/8.21.0.30542": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LDF5qnv7AAhbI1djB8BgBv/ZkRZ7BpdNREFfoEkXwLv22yBeh5gU/ZAThHqPP35C2TgxXFXxDl05s50YbqQ7qQ==",
+      "path": "sonaranalyzer.csharp/8.21.0.30542",
+      "hashPath": "sonaranalyzer.csharp.8.21.0.30542.nupkg.sha512"
+    },
+    "StyleCop.Analyzers/1.1.118": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Onx6ovGSqXSK07n/0eM3ZusiNdB6cIlJdabQhWGgJp3Vooy9AaLS/tigeybOJAobqbtggTamoWndz72JscZBvw==",
+      "path": "stylecop.analyzers/1.1.118",
+      "hashPath": "stylecop.analyzers.1.1.118.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",

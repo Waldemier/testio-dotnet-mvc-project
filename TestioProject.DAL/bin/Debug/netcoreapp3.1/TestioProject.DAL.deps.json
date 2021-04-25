@@ -14,7 +14,10 @@
           "Microsoft.EntityFrameworkCore": "5.0.4",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.4",
           "Microsoft.Extensions.Identity.Core": "5.0.4",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.2"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.2",
+          "Roslynator.Analyzers": "3.1.0",
+          "SonarAnalyzer.CSharp": "8.21.0.30542",
+          "StyleCop.Analyzers": "1.1.118"
         },
         "runtime": {
           "TestioProject.DAL.dll": {}
@@ -518,6 +521,9 @@
           }
         }
       },
+      "Roslynator.Analyzers/3.1.0": {},
+      "SonarAnalyzer.CSharp/8.21.0.30542": {},
+      "StyleCop.Analyzers/1.1.118": {},
       "System.Buffers/4.5.0": {},
       "System.Collections.Immutable/5.0.0": {
         "runtime": {
@@ -928,6 +934,27 @@
       "sha512": "sha512-xdhI0Y1uMxEUbH00T9kLk5m4JN8b4bAHv8fX+nU3GzdEsIgI0k0tKM4ZJ/RjkvGE1L5h4Y+oBZNNqzgetOTBtg==",
       "path": "npgsql.entityframeworkcore.postgresql/5.0.2",
       "hashPath": "npgsql.entityframeworkcore.postgresql.5.0.2.nupkg.sha512"
+    },
+    "Roslynator.Analyzers/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-K9qNjlkXqKd/8zOfedaNcbqPLFGZL0I8pTKENbwlrCJ4dm0b5N4ci2h4x3fpcwr5433ievJJXlRSr4JBQQKsvw==",
+      "path": "roslynator.analyzers/3.1.0",
+      "hashPath": "roslynator.analyzers.3.1.0.nupkg.sha512"
+    },
+    "SonarAnalyzer.CSharp/8.21.0.30542": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LDF5qnv7AAhbI1djB8BgBv/ZkRZ7BpdNREFfoEkXwLv22yBeh5gU/ZAThHqPP35C2TgxXFXxDl05s50YbqQ7qQ==",
+      "path": "sonaranalyzer.csharp/8.21.0.30542",
+      "hashPath": "sonaranalyzer.csharp.8.21.0.30542.nupkg.sha512"
+    },
+    "StyleCop.Analyzers/1.1.118": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Onx6ovGSqXSK07n/0eM3ZusiNdB6cIlJdabQhWGgJp3Vooy9AaLS/tigeybOJAobqbtggTamoWndz72JscZBvw==",
+      "path": "stylecop.analyzers/1.1.118",
+      "hashPath": "stylecop.analyzers.1.1.118.nupkg.sha512"
     },
     "System.Buffers/4.5.0": {
       "type": "package",

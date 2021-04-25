@@ -1,84 +1,85 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using TestioProject.BLL;
-using TestioProject.DAL.Models;
-using TestioProject.PL.Models;
-
-namespace TestioProject.PL.Services
+﻿namespace TestioProject.PL.Services
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+    using TestioProject.BLL;
+    using TestioProject.DAL.Models;
+    using TestioProject.PL.Models;
     public class TestService
     {
         private readonly DataManager dataManager;
-        public TestService(DataManager _dataManager)
+        public TestService(DataManager dataManager)
         {
-            dataManager = _dataManager;
+            this.dataManager = dataManager;
         }
 
         public List<TestViewModel> GetTestsList()
         {
-            var _tests = dataManager.Tests.GetAllTests(false);
-            List<TestViewModel> _testModelsList = new List<TestViewModel>();
+            var tests = this.dataManager.Tests.GetAllTests(false);
+            List<TestViewModel> testModelsList = new List<TestViewModel>();
 
-            foreach(var item in _tests)
+            foreach (var item in tests)
             {
-                _testModelsList.Add(TestFromDbToViewModelById(item.Id));
+                testModelsList.Add(this.TestFromDbToViewModelById(item.Id));
             }
-            return _testModelsList;
+
+            return testModelsList;
         }
 
         public TestViewModel TestFromDbToViewModelById(int testId)
         {
-            var _test = dataManager.Tests.GetTestById(testId);
-            UserViewModel _userModel = new UserViewModel() { FirstName = _test.User.FirstName, LastName = _test.User.LastName };
+            var test = this.dataManager.Tests.GetTestById(testId);
+            UserViewModel userModel = new UserViewModel() { FirstName = test.User.FirstName, LastName = test.User.LastName };
 
-            TestViewModel _model = new TestViewModel() { testId = testId, Title = _test.Name, Description = _test.Description, Owner = _userModel };
-            return _model;
+            TestViewModel model = new TestViewModel() { testId = testId, Title = test.Name, Description = test.Description, Owner = userModel };
+            return model;
         }
 
-        public int SaveTestFromViewIntoDb(TestEditModel _model, string OwnerEmail)
+        public int SaveTestFromViewIntoDb(TestEditModel model, string ownerEmail)
         {
-            Test _test;
-            if(_model.testId != 0)
+            Test test;
+            if (model.testId != 0)
             {
-                _test = dataManager.Tests.GetTestById(_model.testId);
-                _test.Name = _model.Title;
-                _test.Description = _model.Description;
-                _test.CodeLock = _model.CodeLock;
+                test = this.dataManager.Tests.GetTestById(model.testId);
+                test.Name = model.Title;
+                test.Description = model.Description;
+                test.CodeLock = model.CodeLock;
             }
             else
             {
-                string userId = dataManager.Users.GetIdByEmail(OwnerEmail);
-                _test = new Test()
+                string userId = this.dataManager.Users.GetIdByEmail(ownerEmail);
+                test = new Test()
                 {
-                    Name = _model.Title,
-                    Description = _model.Description,
-                    CodeLock = _model.CodeLock,
-                    UserId = userId
+                    Name = model.Title,
+                    Description = model.Description,
+                    CodeLock = model.CodeLock,
+                    UserId = userId,
                 };
             }
-            dataManager.Tests.SaveTest(_test);
 
-            return _test.Id;
+            this.dataManager.Tests.SaveTest(test);
+
+            return test.Id;
         }
 
         public TestEditModel GetTestEditModel(int testId = 0)
         {
             if(testId != 0)
             {
-                var _test = dataManager.Tests.GetTestById(testId);
-                var _testEditModel = new TestEditModel()
+                var test = this.dataManager.Tests.GetTestById(testId);
+                var testEditModel = new TestEditModel()
                 {
-                    testId = _test.Id,
-                    Title = _test.Name,
-                    Description = _test.Description,
-                    CodeLock = _test.CodeLock
+                    testId = test.Id,
+                    Title = test.Name,
+                    Description = test.Description,
+                    CodeLock = test.CodeLock,
                 };
-                return _testEditModel;
+                return testEditModel;
             }
             else
             {
-                return new TestEditModel() { };
+                return new TestEditModel();
             }
         }
     }
