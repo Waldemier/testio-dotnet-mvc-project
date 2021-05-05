@@ -1,26 +1,26 @@
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Logging.Configuration;
-using Serilog;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace TestioProject
+﻿namespace TestioProject
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Hosting;
+    using Microsoft.Extensions.Logging;
+    using Microsoft.Extensions.Logging.Configuration;
+    using Serilog;
+
     public class Program
     {
         public static void Main(string[] args)
         {
-            //For SeedData
-            //var host = CreateHostBuilder(args).Build();
-            //using var scope = host.Services.GetRequiredService<IServiceScopeFactory>().CreateScope();
-            //SeedData.EnsureSeedData(scope.ServiceProvider);
-            //host.Run();
+            // For SeedData
+            // var host = CreateHostBuilder(args).Build();
+            // using var scope = host.Services.GetRequiredService<IServiceScopeFactory>().CreateScope();
+            // SeedData.EnsureSeedData(scope.ServiceProvider);
+            // host.Run();
 
             var configuration = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json")
@@ -33,8 +33,8 @@ namespace TestioProject
             {
                 Log.Information("Application starting up");
                 CreateHostBuilder(args).Build().Run();
-            } 
-            catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 Log.Fatal(ex, "The application faild to start correctly");
             }

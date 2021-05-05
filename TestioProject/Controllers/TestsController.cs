@@ -1,10 +1,14 @@
 ﻿namespace TestioProject.Controllers
 {
+    using System;
     using System.Collections.Generic;
+    using System.Linq;
     using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Logging;
     using TestioProject.BLL;
+    using TestioProject.DAL.Models;
     using TestioProject.PL;
     using TestioProject.PL.Models;
     using static TestioProject.PL.Enums.Common;
@@ -16,23 +20,64 @@
         private readonly ILogger<TestsController> logger;
         private readonly DataManager dataManager;
         private readonly ServicesManager servicesManager;
+        private readonly UserManager<ApplicationUser> userManager;
 
-        public TestsController(ILogger<TestsController> logger, DataManager dataManager)
+        public TestsController(ILogger<TestsController> logger, DataManager dataManager, UserManager<ApplicationUser> userManager)
         {
             this.logger = logger;
             this.dataManager = dataManager;
             this.servicesManager = new ServicesManager(this.dataManager);
+            this.userManager = userManager;
         }
 
         [HttpGet]
         // [AllowAnonymous]
-        public IActionResult Index()
+        public IActionResult Index(bool search = false, List<int> searchModelsIds = null)
         {
             this.logger.LogInformation("Index tests controller action");
             List<TestViewModel> models = this.servicesManager.Tests.GetTestsList();
+            if (search)
+            {
+                List<TestViewModel> searchedModels = new List<TestViewModel>();
+                
+                    foreach (var Id in searchModelsIds)
+                    {
+                        foreach (var model in models)
+                        {
+                            if (Id == model.testId)
+                            {
+                                searchedModels.Add(model);
+                            }
+                        }
+                    }
+
+                    models = searchedModels;
+            }
             return this.View(models);
         }
 
+        [HttpPost]
+        public IActionResult Search(string search, bool display = false)
+        {
+            List<TestViewModel> searchModels = new List<TestViewModel>();
+            /*if (search != null)
+            {
+                string[] searchSplitForFullName = search.Split(" ");
+            }*/
+            if (display)
+            {
+                var Id = userManager.FindByEmailAsync(User.Identity.Name).Result.Id;
+                searchModels = this.servicesManager.Tests.GetTestsList().Where(x => x.Owner.Id == Id).ToList();
+            }
+            else
+            {
+                searchModels = this.servicesManager.Tests.GetTestsList().Where(x => x.Title == search || x.Owner.FirstName == search || x.Owner.LastName == search /* || x.testId == int.Parse(search)*/).ToList();
+            }
+            List<int> Ids = new List<int>();
+            searchModels.ForEach(x => Ids.Add(x.testId));
+            return RedirectToAction("Index", new { search = (search != null || display) ? true: false, searchModelsIds = Ids });
+        }
+        
         [HttpGet]
         [Authorize(Roles = "Teacher")]
         public IActionResult PrivateChooser()
@@ -41,14 +86,34 @@
             return this.View("PrivateChooser");
         }
 
+        [HttpDelete]
+        [Route("/Tests/Delete/{testId:int}")]
+        public IActionResult Delete(int testId)
+        {
+            var test = dataManager.Tests.GetTestById(testId);
+            dataManager.Tests.DeleteTest(test);
+            return Ok();
+        }
+        
         [HttpGet]
         public IActionResult ViewTest(int testId)
         {
-            this.logger.LogInformation("ViewTest action");
-            TestViewModel model = this.servicesManager.Tests.TestFromDbToViewModelById(testId);
-            return this.View(model);
+            try
+            {
+                this.logger.LogInformation("ViewTest action");
+                TestViewModel model = this.servicesManager.Tests.TestFromDbToViewModelById(testId);
+                ViewBag.CurrentUserId = userManager.FindByEmailAsync(User.Identity.Name).Result.Id;
+                return this.View(model);
+            }
+            catch (Exception e)
+            {
+                this.logger.LogInformation("Test was deleted");
+                return RedirectToAction("Index");
+            }
+            
         }
 
+        // FIXME: incorrect form when answers more then 2
         [HttpPost]
         [Authorize]
         public IActionResult TestPassing(int testId, int currentQuestionIndex, int previousesQuestionCorrectAnswersAmount, QuestionEditModel model, ActionType actionType)
@@ -106,6 +171,7 @@
             }
         }
 
+        // FIXME: Do not resaving the result into db. 
         [HttpPost]
         [Authorize]
         public IActionResult TestPassFinished(int testId, int previousesQuestionCorrectAnswersAmount)
@@ -163,6 +229,11 @@
             return this.RedirectToAction("CreateOrEditQuestion", new { testId });
         }
 
+        // FIXME (with CreateOrEditTest action): 
+        /*
+             After creating a test we can move to another page, but test has been created without questions,
+            and when we want to passing the test - there throws the exception.
+        */
         [Authorize(Roles = "Teacher")]
         public IActionResult CreateOrEditQuestion(int testId, QuestionEditModel questionModel, QuestionsActionType actionType, int answerIdToDelete)
         {
@@ -203,12 +274,12 @@
                 case QuestionsActionType.AddAnswer:
                     logger.LogInformation("CreateOrEditQuestion action: Switch AddAnswer");
 
-                    questionModel.Answers.Add(new AnswerEditModel() { });
+                    questionModel.Answers.Add(new AnswerEditModel());
                     break;
                 case QuestionsActionType.NextQuestion:
                     this.logger.LogInformation("CreateOrEditQuestion action: Switch NextQuestion");
-                    // if any answer is empty - detected and throw error on frontend
 
+                    // if any answer is empty - detected and throw error on frontend
                     QuestionEditModel lastModelInList = this.servicesManager.Questions.GetLastQuestionFromTestQuestionsList(testId);
                     if (questionModel.Name != null && questionModel.questionId != 0 && /*not last in list*/ lastModelInList.questionId != questionModel.questionId)
                     {
@@ -325,6 +396,7 @@
                 default:
                     break;
             }
+
             int questionsAmount = this.servicesManager.Questions.GetAllEditQuestionsByTestId(testId).Count;
             this.ViewBag.QuestionsAmount = questionsAmount;
             int currentQuestionIndexInList = this.servicesManager.Questions.GetIndexOfSpecifierQuestionById(testId, questionModel.questionId);

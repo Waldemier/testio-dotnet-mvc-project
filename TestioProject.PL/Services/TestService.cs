@@ -30,7 +30,7 @@
         public TestViewModel TestFromDbToViewModelById(int testId)
         {
             var test = this.dataManager.Tests.GetTestById(testId);
-            UserViewModel userModel = new UserViewModel() { FirstName = test.User.FirstName, LastName = test.User.LastName };
+            UserViewModel userModel = new UserViewModel() { Id = test.UserId, FirstName = test.User.FirstName, LastName = test.User.LastName };
 
             TestViewModel model = new TestViewModel() { testId = testId, Title = test.Name, Description = test.Description, Owner = userModel };
             return model;

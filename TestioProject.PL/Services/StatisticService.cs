@@ -1,23 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using TestioProject.BLL;
-using TestioProject.DAL.Models;
-using TestioProject.PL.Models;
-
-namespace TestioProject.PL.Services
+﻿namespace TestioProject.PL.Services
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+    using TestioProject.BLL;
+    using TestioProject.DAL.Models;
+    using TestioProject.PL.Models;
+
     public class StatisticService
     {
         private readonly DataManager dataManager;
-        public StatisticService(DataManager _dataManager)
+
+        public StatisticService(DataManager dataManager)
         {
-            dataManager = _dataManager;
+            this.dataManager = dataManager;
         }
-        public void SaveStatisticEditModelIntoDb(StatisticEditModel _model)
+
+        public void SaveStatisticEditModelIntoDb(StatisticEditModel model)
         {
-            Statistic result = new Statistic() { UserId = _model.userId, TestId = _model.testId, Result = _model.Result };
-            dataManager.Statistic.SaveStatistic(result);
-        }  
+            Statistic result = new Statistic() { UserId = model.userId, TestId = model.testId, Result = model.Result };
+            this.dataManager.Statistic.SaveStatistic(result);
+        }
     }
 }

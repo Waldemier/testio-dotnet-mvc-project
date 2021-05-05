@@ -23,19 +23,21 @@
         }
     </div>
     <div style="left: 215px; position: relative;">
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
-        </div>
-        @if (User?.IsInRole("Teacher") ?? true)
-         {
-            <div>
-                <a class="btn" href="/" style="background-color: #6310CB; color:white;">Display only your tests</a>
+        <form asp-controller="Tests" asp-action="Search" method="post">
+            <div class="input-group mb-3">
+                <input class="form-control" type="text" name="search" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i class="fas fa-search"></i></button>
             </div>
+            @if (User?.IsInRole("Teacher") ?? true)
+             {
+                 <div>
+                     <button class="btn" type="submit" name="display" value="true" style="background-color: #6310CB; color:white;">Display own tests</button>
+                 </div>
 
-            <div style="margin-top: 15px">
-                <a class="btn btn-success" href="/Tests/PrivateChooser" style="width: 150px">Create test</a>
-            </div>
-         }
+                <div style="margin-top: 15px">
+                    <a class="btn btn-success" href="/Tests/PrivateChooser" style="width: 150px"><i class="fas fa-plus"></i>&nbsp;&nbsp;Create test</a>
+                </div>
+             }
+        </form>
     </div>
 </div>

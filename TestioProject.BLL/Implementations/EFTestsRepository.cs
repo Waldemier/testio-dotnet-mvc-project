@@ -1,14 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using TestioProject.BLL.Interfaces;
-using TestioProject.DAL.Data;
-using TestioProject.DAL.Models;
-
-namespace TestioProject.BLL.Implementations
+﻿namespace TestioProject.BLL.Implementations
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using Microsoft.EntityFrameworkCore;
+    using TestioProject.BLL.Interfaces;
+    using TestioProject.DAL.Data;
+    using TestioProject.DAL.Models; 
+
     public class EFTestsRepository : ITestsRepository
     {
         private readonly TestioDbContext context;

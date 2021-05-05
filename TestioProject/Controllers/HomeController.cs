@@ -1,22 +1,21 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using TestioProject.BLL;
-using TestioProject.DAL.Data;
-using TestioProject.DAL.Models;
-using TestioProject.Models;
-using TestioProject.PL;
-using TestioProject.PL.Models;
-
-namespace TestioProject.Controllers
+﻿namespace TestioProject.Controllers
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Diagnostics;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Identity;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.EntityFrameworkCore;
+    using Microsoft.Extensions.Logging;
+    using TestioProject.BLL;
+    using TestioProject.DAL.Data;
+    using TestioProject.DAL.Models;
+    using TestioProject.Models;
+    using TestioProject.PL;
+    using TestioProject.PL.Models;
 
     [Authorize]
     public class HomeController : Controller

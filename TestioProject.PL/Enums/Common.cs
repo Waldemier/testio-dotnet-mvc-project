@@ -26,7 +26,8 @@ namespace TestioProject.PL.Enums
             Cancel = 4,
             Next = 5,
             Finish = 6,
-            Previous = 7
+            Previous = 7,
+            Delete = 8
         }
     }
 }

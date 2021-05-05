@@ -2,17 +2,19 @@
 
 TODO :
 
-	- User profile panel*
+	- User profile panel //*
+	
+	- Modal window after sending letter
 
-	- Search
-
+	- Fix all pages markup //*
+    
+    - Test actions bug fix
+    
 	- Fix tests date and other date in project data
 
 	- To set the max mark for question
 
-	- ModelState.IsValid + Bootstrap validation
-
-	- Reports table
+	- Reports table || remove table, add new property for user as boolean ban indicator
 
 	======
 
