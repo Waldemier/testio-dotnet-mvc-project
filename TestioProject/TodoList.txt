@@ -2,22 +2,18 @@
 
 TODO :
 
-    - History
+    - Fix all pages markup --> IMPORTANT
+    - Admin panel --> IMPORTANT
     
-    - Statistic for teacher
-    
-    - Search fix
-    
+    - To set the max mark for question //*
+
+
+
+    - Search fix 
     - Test Edit //NOT IMPORTANT
-        	
-	- Admin panel --> IMPORTANT
-	
 	- Modal window after sending letter + test creating
 
-	- Fix all pages markup --> IMPORTANT
-    
-	- To set the max mark for question //*
-
+	
 	======
 
 	- System testing --> IMPORTANT

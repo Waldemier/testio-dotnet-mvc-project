@@ -1,0 +1,58 @@
+﻿@model List<TestioProject.PL.Models.StatiscticViewModel>
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 style="color:#6310CB;">History</h2>
+        </div>
+    </div>
+    
+    <br /><br />
+
+    @if(Model.Any())
+    {
+        <table class="table table-bordered table-striped" style="width: 100%">
+            <thead>
+                <tr>
+                    <th>
+                        Test Title
+                    </th>
+                    <th>
+                        Owner
+                    </th>
+                    <th>
+                        Mark                        
+                    </th>
+                    <th>
+                        Passed at                        
+                    </th>
+                    <th>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="table-body-area">
+            @foreach(var item in Model)
+                {
+                    <tr>
+                        <td>@item.TestName</td>
+                        <td>@item.OwnerName</td>
+                        <td class="text-center">
+                            @item.Result
+                        </td>
+                        <td class="text-center" width="10%">
+                            @item.PassedAt
+                        </td>
+                        <td class="text-center" width="30px">
+                            <a class="btn" asp-controller="Tests" asp-action="ViewTest" asp-route-testId="@item.testId" style="background-color: #6310CB; color:white;width: 100px;">Try again</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No content exists.</p>
+    }
+
+</div>

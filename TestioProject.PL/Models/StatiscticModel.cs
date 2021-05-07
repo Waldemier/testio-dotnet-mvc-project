@@ -8,6 +8,13 @@ namespace TestioProject.PL.Models
     public class StatiscticViewModel
     {
         public int testId { get; set; }
+        
+        public string TestName { get; set; }
+        
+        public string ownerId { get; set; }
+        
+        public string OwnerName { get; set; }
+        
         public int Result { get; set; }
         
         [DisplayName("Passed at")]

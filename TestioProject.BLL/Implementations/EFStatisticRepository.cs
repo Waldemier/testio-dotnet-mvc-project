@@ -1,4 +1,6 @@
-﻿namespace TestioProject.BLL.Implementations
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace TestioProject.BLL.Implementations
 {
     using System;
     using System.Collections.Generic;
@@ -16,15 +18,14 @@
             this.context = context;
         }
         
-
         public IEnumerable<Statistic> GetAllByTestId(int testId)
         {
-            return this.context.Statistics.Where(x => x.TestId == testId).ToList();
+            return this.context.Statistics.Include(x => x.Test).Include(x => x.User).Where(x => x.TestId == testId).ToList();
         }
 
         public IEnumerable<Statistic> GetAllByUserId(string userId)
         {
-            return this.context.Statistics.Where(x => x.UserId == userId).ToList();
+            return this.context.Statistics.Include(x => x.Test).Include(x => x.User).Where(x => x.UserId == userId).ToList();
         }
 
         public void SaveStatistic(Statistic result)

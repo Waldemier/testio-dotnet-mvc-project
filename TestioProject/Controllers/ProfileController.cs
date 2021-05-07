@@ -36,6 +36,7 @@ namespace TestioProject.Controllers
             this._logger = logger;
             this.servicesManager = new ServicesManager(dataManager);
             this.userManager = userManager;
+            this.dataManager = dataManager;
             this.signInManager = signInManager;
 
         }
@@ -59,6 +60,31 @@ namespace TestioProject.Controllers
             return View(model);
         }
 
+        [HttpGet]
+        [Authorize(Roles = "Teacher")]
+        public IActionResult Statistic()
+        {
+            var userId = userManager.FindByEmailAsync(User.Identity.Name).Result.Id;
+            List<TeacherStatisticViewModel> models = servicesManager.Statistics.GetAllTeacherStatModelsByTeacherId(userId);
+            return View(models);
+        }
+
+        [HttpGet]
+        [Authorize(Roles = "Teacher")]
+        public IActionResult StatisticMoreDetails(int testId)
+        {
+            var statistics = dataManager.Statistic.GetAllByTestId(testId);
+            return View(statistics);
+        }
+        
+        [HttpGet]
+        public IActionResult History()
+        {
+            var userId = userManager.FindByEmailAsync(User.Identity.Name).Result.Id;
+            List<StatiscticViewModel> models = servicesManager.Statistics.GetAllByUserId(userId);
+            return View(models);
+        }
+        
         [HttpGet]
         public IActionResult DeleteAccountModalWindow()
         {

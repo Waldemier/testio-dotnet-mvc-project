@@ -1,0 +1,47 @@
+﻿@model IEnumerable<TestioProject.DAL.Models.Statistic>
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 style="color:#6310CB;">More Details</h2>
+        </div>
+    </div>
+    
+    <br /><br />
+
+    @if(Model.Any())
+    {
+        <table class="table table-bordered table-striped" style="width: 100%">
+            <thead>
+                <tr>
+                    <th>
+                        User
+                    </th>
+                    <th>
+                        Passed At
+                    </th>
+                    <th>
+                        Mark                       
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="table-body-area">
+            @foreach(var item in Model)
+                {
+                    <tr>
+                        <td width="25%">@item.User.FirstName @item.User.LastName</td>
+                        <td class="text-center" width="15%">@item.PassedAt</td>
+                        <td class="text-center" width="15%">
+                            @item.Result
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No content exists.</p>
+    }
+
+</div>
