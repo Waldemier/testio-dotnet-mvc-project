@@ -13,7 +13,5 @@ namespace TestioProject.BLL
         IStatisticRepository Statistic { get; }
         IUsersRepository Users { get; }
         IWrittenLettersRepository WrittenLetters { get; }
-        IRestrictedRepository Restricted { get; }
-        IUserAvatarsRepository UserAvatars { get; }
     }
 }

@@ -12,20 +12,37 @@
     public class EFTestsRepository : ITestsRepository
     {
         private readonly TestioDbContext context;
-        public EFTestsRepository(TestioDbContext _context)
+        public EFTestsRepository(TestioDbContext context)
         {
-            context = _context;
+            this.context = context;
         }
-
 
         public IEnumerable<Test> GetAllTests(bool includeQuestionsWithAnswers = true)
         {
+            var tests = context.Tests.Include(x => x.Questions).ToList();
+
+            // Because we need valid tests (with Questions)
+            foreach (var test in tests)
+            {
+                if (test.Questions.Count == 0)
+                {
+                    this.context.Tests.Remove(test);
+                }
+            }
+
+            this.context.SaveChanges();
             if (includeQuestionsWithAnswers)
-                return context.Tests.Include(x => x.Questions).ToList();
-            else
-                return context.Tests.ToList();
+            {
+                return this.context.Tests.Include(x => x.Questions).ToList();
+            }
+            return this.context.Tests.ToList();
         }
 
+        public int GetTestIdByReferrerToken(Guid referrerToken)
+        {
+            return context.Tests.FirstOrDefault(x => x.ReferrerToken == referrerToken).Id;
+        }
+        
         public Test GetTestById(int testId, bool includeQuestionsWithAnswers = true)
         {
             if (includeQuestionsWithAnswers)
@@ -53,9 +70,16 @@
         public void SaveTest(Test test)
         {
             if (test.Id == 0)
+            {
+                test.CreatedAt = DateTime.Now;
+                test.ReferrerToken = Guid.NewGuid();
                 context.Tests.Add(test);
+            }
             else
+            {
                 context.Entry(test).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            }
+
             context.SaveChanges();
         }
         public void DeleteTest(Test test)

@@ -17,19 +17,23 @@ namespace TestioProject.PL
         private readonly AnswerService answerService;
         private readonly WrittenLetterService writtenLetterService;
         private readonly StatisticService statisticService;
-        public ServicesManager(DataManager _dataManager)
+        private readonly UserService userService;
+        public ServicesManager(DataManager dataManager)
         {
-            dataManager = _dataManager;
-            testService = new TestService(dataManager);
-            questionService = new QuestionService(dataManager);
-            answerService = new AnswerService(dataManager);
-            writtenLetterService = new WrittenLetterService(dataManager);
-            statisticService = new StatisticService(dataManager);
+            this.dataManager = dataManager;
+            this.testService = new TestService(this.dataManager);
+            this.questionService = new QuestionService(this.dataManager);
+            this.answerService = new AnswerService(this.dataManager);
+            this.writtenLetterService = new WrittenLetterService(this.dataManager);
+            this.statisticService = new StatisticService(this.dataManager);
+            this.userService = new UserService(this.dataManager);
         }
-        public TestService Tests { get { return testService; } }
-        public QuestionService Questions { get { return questionService; } }
-        public AnswerService Answers { get { return answerService; } }
-        public WrittenLetterService WrittenLetter { get { return writtenLetterService; } }
-        public StatisticService Statistics { get { return statisticService; } }
+        public TestService Tests { get { return this.testService; } }
+        public QuestionService Questions { get { return this.questionService; } }
+        public AnswerService Answers { get { return this.answerService; } }
+        public WrittenLetterService WrittenLetter { get { return this.writtenLetterService; } }
+        public StatisticService Statistics { get { return this.statisticService; } }
+        public UserService Users { get { return this.userService; } }
+
     }
 }

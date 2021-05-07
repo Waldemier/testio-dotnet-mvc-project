@@ -29,11 +29,19 @@
 
         public void SaveStatistic(Statistic result)
         {
-            if (result.Id == 0)
+            var dbStat = this.context.Statistics.FirstOrDefault(x => x.UserId == result.UserId && x.TestId == result.TestId);
+            
+            if (dbStat == null)
+            {
+                result.PassedAt = DateTime.Now;
                 this.context.Statistics.Add(result);
+            }
             else
-                this.context.Entry(result).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-
+            {
+                dbStat.Result = result.Result;
+                //this.context.Statistics.Update(dbStat); // The same as under line code
+                this.context.Entry(dbStat).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            }
             this.context.SaveChanges();
         }
 

@@ -42,8 +42,6 @@ namespace TestioProject.Areas.Identity
                 services.AddTransient<ITestsRepository, EFTestsRepository>();
                 services.AddTransient<IUsersRepository, EFUsersRepository>();
                 services.AddTransient<IStatisticRepository, EFStatisticRepository>();
-                services.AddTransient<IRestrictedRepository, EFRestrictedRepository>();
-                services.AddTransient<IUserAvatarsRepository, EFUserAvatarRepository>();
                 services.AddTransient<IWrittenLettersRepository, EFWrittenLettersRepository>();
 
                 services.AddScoped<DataManager>();

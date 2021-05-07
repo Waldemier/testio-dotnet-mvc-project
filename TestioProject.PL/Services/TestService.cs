@@ -1,4 +1,6 @@
-﻿namespace TestioProject.PL.Services
+﻿using System.Net.Mime;
+
+namespace TestioProject.PL.Services
 {
     using System;
     using System.Collections.Generic;
@@ -27,12 +29,18 @@
             return testModelsList;
         }
 
+        public int GetTestIdByReferrerToken(Guid referrerToken)
+        {
+            int Id = dataManager.Tests.GetTestIdByReferrerToken(referrerToken);
+            return Id;
+        }
+
         public TestViewModel TestFromDbToViewModelById(int testId)
         {
             var test = this.dataManager.Tests.GetTestById(testId);
-            UserViewModel userModel = new UserViewModel() { Id = test.UserId, FirstName = test.User.FirstName, LastName = test.User.LastName };
+            UserViewModel userModel = new UserViewModel() { Id = test.UserId, FirstName = test.User.FirstName, LastName = test.User.LastName, AvatarUri = test.User.AvatarUri, Email = test.User.Email };
 
-            TestViewModel model = new TestViewModel() { testId = testId, Title = test.Name, Description = test.Description, Owner = userModel };
+            TestViewModel model = new TestViewModel() { testId = testId, Title = test.Name, Description = test.Description, Owner = userModel, CreatedAt = test.CreatedAt, ReferrerToken = test.ReferrerToken };
             return model;
         }
 

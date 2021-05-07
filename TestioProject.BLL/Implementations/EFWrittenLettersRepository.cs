@@ -18,6 +18,7 @@ namespace TestioProject.BLL.Implementations
         }
         public void SaveWrittenLetterIntoDb(WrittenLetter _model)
         {
+            _model.CreatedAt = DateTime.Now;
             context.WrittenLetters.Add(_model);
             context.SaveChanges();
         }

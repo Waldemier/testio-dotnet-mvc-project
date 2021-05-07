@@ -1,0 +1,21 @@
+﻿<div class="modal fade" id="deleteModalId">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form asp-controller="Profile" asp-action="DeleteAccount" method="post">
+                <div class="modal-body" style="margin-top: 10px">
+                    <input type="text" hidden name="userId" value="@ViewBag.UserId">
+                    <div class="form-group d-flex justify-content-center">
+                        <label>Are you sure?</label>
+                    </div>
+                    <div class="form-group d-flex justify-content-center">
+                        <label>Your data will be permanently deleted</label>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-around">
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-danger" data-save="modal">Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -10,13 +10,17 @@ namespace TestioProject.DAL.Models
     {
         [Key]
         public int Id { get; set; }
+        
         [Required]
         public string UserId { get; set; }
         public ApplicationUser User { get; set; }
+        
         [Required]
         public int TestId { get; set; }
         public Test Test { get; set; }
-        [DefaultValue(0)]
+        
+        [DefaultValue(null)]
+        public DateTime PassedAt { get; set; }
         public int Result { get; set; }
     }
 }

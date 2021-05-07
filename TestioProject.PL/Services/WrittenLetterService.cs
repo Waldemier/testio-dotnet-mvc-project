@@ -21,7 +21,7 @@ namespace TestioProject.PL.Services
             List<WrittenLetterModel> _listModel = new List<WrittenLetterModel>();
             foreach(var item in _list)
             {
-                _listModel.Add(new WrittenLetterModel() { User = item.User, Reason = item.Reason, Experience = item.Experience });
+                _listModel.Add(new WrittenLetterModel() { User = item.User, Reason = item.Reason, Experience = item.Experience, WrittenAt = item.CreatedAt });
             }
             return _listModel;
         }

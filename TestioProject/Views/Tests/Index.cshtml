@@ -3,7 +3,7 @@
 
 <div class="d-flex justify-content-center" style="margin-top: 70px">
     <div style="position:relative; max-height: 400px;">
-        <img src="~/svg/choose_tests.svg" alt="Alternate Text" style="width: 740px; margin-top: 63px; height: 500px; margin-left: -157px; width: 659px; position:relative;" />
+        <img src="~/svg/choose_tests.svg" alt="Alternate Text" style="width: 740px; margin-top: 35px; height: 500px; margin-left: -157px; width: 659px; position:relative;" />
     </div>
     <div style="position:absolute">
         @if (Model.Count > 0)
@@ -23,21 +23,31 @@
         }
     </div>
     <div style="left: 215px; position: relative;">
+        
+        <div id="ShowModalHere"></div>
+
         <form asp-controller="Tests" asp-action="Search" method="post">
             <div class="input-group mb-3">
                 <input class="form-control" type="text" name="search" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
                 <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i class="fas fa-search"></i></button>
             </div>
             @if (User?.IsInRole("Teacher") ?? true)
-             {
-                 <div>
-                     <button class="btn" type="submit" name="display" value="true" style="background-color: #6310CB; color:white;">Display own tests</button>
-                 </div>
-
+            {
+                <div>
+                    <button class="btn" type="submit" name="display" value="true" style="background-color: #6310CB; color:white;">Display own tests</button>
+                </div>
                 <div style="margin-top: 15px">
                     <a class="btn btn-success" href="/Tests/PrivateChooser" style="width: 150px"><i class="fas fa-plus"></i>&nbsp;&nbsp;Create test</a>
                 </div>
-             }
+            }
         </form>
+        <div style="margin-top: 15px">
+            <button class="btn" data-toggle="ajax-modal" data-target="#findByReferrerToken" data-url="/Tests/ReferrerModalWindow" style="background-color: #6310CB; color:white;">Referrer token</button>
+        </div>
     </div>
 </div>
+
+@section Scripts
+{
+    <script src="~/js/modals.js"></script>
+}

@@ -479,3 +479,5 @@ E:\VSProjects\TestioProject\TestioProject\bin\Debug\net5.0\Logs\Seq.json
 E:\VSProjects\TestioProject\TestioProject\bin\Debug\net5.0\Serilog.Sinks.PeriodicBatching.dll
 E:\VSProjects\TestioProject\TestioProject\bin\Debug\net5.0\Serilog.Sinks.Seq.dll
 E:\VSProjects\TestioProject\TestioProject\bin\Debug\net5.0\stylecop.json
+E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Tests\_ReferrerTokenPartial.cshtml.g.cs
+E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Profile\_DeleteAccountPartial.cshtml.g.cs

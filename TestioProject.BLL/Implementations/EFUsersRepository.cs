@@ -27,6 +27,19 @@ namespace TestioProject.BLL.Implementations
             return _user;
         }
 
+        public void DeleteUserById(string userId)
+        {
+            var user = context.Users.FirstOrDefault(x => x.Id == userId);
+            context.Users.Remove(user);
+            context.SaveChanges();
+        }    
+        
+        public void Update(ApplicationUser user)
+        {
+            context.Users.Update(user);
+            context.SaveChanges();
+        }
+
         public string GetIdByEmail(string email)
         {
             return context.Users.Where(x => x.UserName == email).FirstOrDefault().Id.ToString();

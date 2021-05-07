@@ -1,1 +1,87 @@
-﻿<h1>Profile page</h1>
+﻿@model TestioProject.PL.Models.UserViewModel
+
+<style>
+    .form-control {
+        width: 250px;
+    }
+</style>
+
+<div class="d-flex justify-content-center" style="margin-top: 110px;">
+    <div id="ShowModalHere2"></div>
+    <div class="row">
+        <div class="col">
+            <div class="left-side-content d-flex">
+                <div class="left-side-content__avatar" style="margin-right: 72px;">
+                    <img src="@Model.AvatarUri" alt="UserAvatar" style="width: 300px; height: 300px">
+                </div>
+                <div class="left-side-content__info">
+                    <div>
+                        <form method="post">
+                            <div>
+                                <input type="text" hidden asp-for="Id">
+                                <div class="left-side-content__fl d-flex">
+                                    <div>
+                                        <label asp-for="FirstName"></label>
+                                        <input class="form-control" type="text" asp-for="FirstName" style="margin-right: 5px;">
+                                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                                    </div>
+                                    <div>
+                                        <label asp-for="LastName"></label>
+                                        <input class="form-control" type="text" asp-for="LastName">
+                                        <span asp-validation-for="LastName" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 20px;">
+                                <div>
+                                    <div>
+                                        <label asp-for="Email"></label>
+                                    </div>
+                                    <input class="form-control" type="text" asp-for="Email">
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+                                <div style="margin-top: 20px;">
+                                    <div>
+                                        <label asp-for="AvatarUri"></label>
+                                    </div>
+                                    <input class="form-control" type="text" asp-for="AvatarUri">
+                                    <span asp-validation-for="AvatarUri" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div style="margin-top: 30px;">
+                                <button class="btn btn-success" type="submit">Save</button>
+                                <div style="margin-top: 10px; width: 220px">
+                                    <span>*If you change the information, you will have to authentication to the site again</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="buttons-leftside-group" style="margin-top: 33px;margin-left: 75px;">
+                <div>
+                    @if (User.IsInRole("Teacher"))
+                    {
+                        <div>
+                            <a class="btn btn-success" href="#" style="width: 110px; margin-bottom: 20px">Statistic</a>
+                        </div>
+                    }
+                    <div>
+                        <a class="btn btn-success" href="#" style="width: 110px;">History</a>
+                    </div>
+                </div>
+                <div class="delete-button" style="margin-top: 270px;">
+                    <button class="btn btn-danger" data-toggle="ajax-modal" data-target="#deleteAccountButton" data-url="/Profile/DeleteAccountModalWindow" style="width: 110px;">Delete account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial"></partial>
+    <script src="~/js/modals.js"></script>
+}

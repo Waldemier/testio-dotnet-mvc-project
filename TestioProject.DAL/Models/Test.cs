@@ -20,9 +20,11 @@
         [DefaultValue(null)]
         public string CodeLock { get; set; }
 
-        // FIXME: Incorrect property value
-        [DefaultValue(DataType.DateTime)]
+        [DefaultValue(null)]
         public DateTime CreatedAt { get; set; }
+
+        [DefaultValue(null)]
+        public Guid ReferrerToken { get; set; }
 
         [Required]
         public string UserId { get; set; }

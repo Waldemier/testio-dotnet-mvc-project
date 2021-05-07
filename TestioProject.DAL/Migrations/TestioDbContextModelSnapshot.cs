@@ -185,6 +185,12 @@ namespace TestioProject.DAL.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("integer");
 
+                    b.Property<string>("AvatarUri")
+                        .HasColumnType("text");
+
+                    b.Property<bool>("Baned")
+                        .HasColumnType("boolean");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("text");
@@ -268,37 +274,15 @@ namespace TestioProject.DAL.Migrations
                     b.ToTable("Questions");
                 });
 
-            modelBuilder.Entity("TestioProject.DAL.Models.Restricted", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
-                    b.Property<DateTime>("HowLong")
-                        .HasColumnType("timestamp without time zone");
-
-                    b.Property<string>("Reason")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Restricteds");
-                });
-
             modelBuilder.Entity("TestioProject.DAL.Models.Statistic", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<DateTime>("PassedAt")
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<int>("Result")
                         .HasColumnType("integer");
@@ -339,6 +323,9 @@ namespace TestioProject.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<Guid>("ReferrerToken")
+                        .HasColumnType("uuid");
+
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("text");
@@ -348,27 +335,6 @@ namespace TestioProject.DAL.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Tests");
-                });
-
-            modelBuilder.Entity("TestioProject.DAL.Models.UserAvatar", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
-                    b.Property<string>("AvatarUrl")
-                        .HasColumnType("text");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("UserAvatars");
                 });
 
             modelBuilder.Entity("TestioProject.DAL.Models.WrittenLetter", b =>
@@ -473,17 +439,6 @@ namespace TestioProject.DAL.Migrations
                     b.Navigation("Test");
                 });
 
-            modelBuilder.Entity("TestioProject.DAL.Models.Restricted", b =>
-                {
-                    b.HasOne("TestioProject.DAL.Models.ApplicationUser", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("TestioProject.DAL.Models.Statistic", b =>
                 {
                     b.HasOne("TestioProject.DAL.Models.Test", "Test")
@@ -504,17 +459,6 @@ namespace TestioProject.DAL.Migrations
                 });
 
             modelBuilder.Entity("TestioProject.DAL.Models.Test", b =>
-                {
-                    b.HasOne("TestioProject.DAL.Models.ApplicationUser", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("TestioProject.DAL.Models.UserAvatar", b =>
                 {
                     b.HasOne("TestioProject.DAL.Models.ApplicationUser", "User")
                         .WithMany()

@@ -36,6 +36,7 @@
         {
             this.logger.LogInformation("Index tests controller action");
             List<TestViewModel> models = this.servicesManager.Tests.GetTestsList();
+            
             if (search)
             {
                 List<TestViewModel> searchedModels = new List<TestViewModel>();
@@ -55,15 +56,13 @@
             }
             return this.View(models);
         }
-
+        
+        // FIX
         [HttpPost]
         public IActionResult Search(string search, bool display = false)
         {
             List<TestViewModel> searchModels = new List<TestViewModel>();
-            /*if (search != null)
-            {
-                string[] searchSplitForFullName = search.Split(" ");
-            }*/
+
             if (display)
             {
                 var Id = userManager.FindByEmailAsync(User.Identity.Name).Result.Id;
@@ -76,6 +75,17 @@
             List<int> Ids = new List<int>();
             searchModels.ForEach(x => Ids.Add(x.testId));
             return RedirectToAction("Index", new { search = (search != null || display) ? true: false, searchModelsIds = Ids });
+        }
+
+        [HttpPost]
+        public IActionResult GetTestByReferrerToken(Guid? referrerToken)
+        {
+            if (!referrerToken.HasValue)
+            {
+                return NotFound();
+            }
+            int Id = servicesManager.Tests.GetTestIdByReferrerToken(referrerToken.Value);
+            return RedirectToAction(nameof(ViewTest), new { testId = Id });
         }
         
         [HttpGet]
@@ -93,6 +103,12 @@
             var test = dataManager.Tests.GetTestById(testId);
             dataManager.Tests.DeleteTest(test);
             return Ok();
+        }
+
+        [HttpGet]
+        public IActionResult ReferrerModalWindow()
+        {
+            return PartialView("_ReferrerTokenPartial");
         }
         
         [HttpGet]
@@ -113,7 +129,6 @@
             
         }
 
-        // FIXME: incorrect form when answers more then 2
         [HttpPost]
         [Authorize]
         public IActionResult TestPassing(int testId, int currentQuestionIndex, int previousesQuestionCorrectAnswersAmount, QuestionEditModel model, ActionType actionType)
@@ -142,7 +157,13 @@
                         var currentAnswerChecked = model.Answers[i].isTruth;
                         if (listQuestionModels[currentQuestionIndex].Answers[i].isTruth && currentAnswerChecked)
                         {
-                            currentQuestionCorrectAnswersCounter++;
+                            if(currentQuestionCorrectAnswersCounter == 0) currentQuestionCorrectAnswersCounter++;
+                        }
+
+                        if (listQuestionModels[currentQuestionIndex].Answers[i].isTruth && !currentAnswerChecked)
+                        {
+                            currentQuestionCorrectAnswersCounter = 0;
+                            break;
                         }
                     }
 
@@ -171,7 +192,6 @@
             }
         }
 
-        // FIXME: Do not resaving the result into db. 
         [HttpPost]
         [Authorize]
         public IActionResult TestPassFinished(int testId, int previousesQuestionCorrectAnswersAmount)
@@ -228,12 +248,8 @@
             int testId = this.servicesManager.Tests.SaveTestFromViewIntoDb(model, owner);
             return this.RedirectToAction("CreateOrEditQuestion", new { testId });
         }
-
-        // FIXME (with CreateOrEditTest action): 
-        /*
-             After creating a test we can move to another page, but test has been created without questions,
-            and when we want to passing the test - there throws the exception.
-        */
+        
+        
         [Authorize(Roles = "Teacher")]
         public IActionResult CreateOrEditQuestion(int testId, QuestionEditModel questionModel, QuestionsActionType actionType, int answerIdToDelete)
         {

@@ -12,6 +12,7 @@ namespace TestioProject.BLL.Interfaces
         IEnumerable<Test> GetTestsByUserId(string userId, bool includeQuestionsWithAnswers = true);
         void SaveTest(Test test);
         void DeleteTest(Test test);
+        int GetTestIdByReferrerToken(Guid referrerToken);
         //void GetQuestionIndexFromList(int testId, int questionId);
     }
 }

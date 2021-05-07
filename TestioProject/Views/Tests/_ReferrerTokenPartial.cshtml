@@ -1,0 +1,22 @@
+﻿<div class="modal fade" id="referrerTokenId">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            @*<div class="modal-header">
+                <h4 class="modal-title" id="referrerTokenInfo">Enter the invitation token</h4>
+                <button type="button" class="close" data-dismiss="modal"><span>x</span></button>
+            </div>*@
+            <form asp-controller="Tests" asp-action="GetTestByReferrerToken" method="post">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Referrer token</label>
+                        <input class="form-control" name="referrerToken"/>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary" data-save="modal">Done</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

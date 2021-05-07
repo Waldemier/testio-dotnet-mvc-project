@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 using TestioProject.DAL.Models;
@@ -14,5 +15,9 @@ namespace TestioProject.PL.Models
         public string Experience { get; set; }
         [Required]
         public string Reason { get; set; }
+        
+        [DisplayName("Written at")]
+        [DefaultValue(null)]
+        public DateTime WrittenAt { get; set; }
     }
 }

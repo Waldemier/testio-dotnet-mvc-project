@@ -16,8 +16,6 @@
         public DbSet<Question> Questions { get; set; }
         public DbSet<Statistic> Statistics { get; set; }
         public DbSet<WrittenLetter> WrittenLetters { get; set; }
-        public DbSet<Restricted> Restricteds { get; set; }
-        public DbSet<UserAvatar> UserAvatars { get; set; }
 
         public TestioDbContext(DbContextOptions<TestioDbContext> options)
             : base(options)

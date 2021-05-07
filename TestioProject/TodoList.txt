@@ -2,20 +2,22 @@
 
 TODO :
 
-	- User profile panel //*
+    - History
+    
+    - Statistic for teacher
+    
+    - Search fix
+    
+    - Test Edit //NOT IMPORTANT
+        	
+	- Admin panel --> IMPORTANT
 	
-	- Modal window after sending letter
+	- Modal window after sending letter + test creating
 
-	- Fix all pages markup //*
+	- Fix all pages markup --> IMPORTANT
     
-    - Test actions bug fix
-    
-	- Fix tests date and other date in project data
-
-	- To set the max mark for question
-
-	- Reports table || remove table, add new property for user as boolean ban indicator
+	- To set the max mark for question //*
 
 	======
 
-	- System testing
+	- System testing --> IMPORTANT

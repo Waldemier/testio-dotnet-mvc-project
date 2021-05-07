@@ -14,4 +14,5 @@ $area.addEventListener("click", async event => {
         await fetch(`/Tests/Delete/${testId}`, { method: "DELETE" });
         window.location.reload()
     }
-}); 
+});
+

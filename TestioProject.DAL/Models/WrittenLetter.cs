@@ -18,7 +18,7 @@ namespace TestioProject.DAL.Models
         public string Experience { get; set; }
         [Required]
         public string Reason { get; set; }
-        [DefaultValue(DataType.DateTime)]
+        [DefaultValue(null)]
         public DateTime CreatedAt { get; set; }
     }
 }

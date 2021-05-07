@@ -12,6 +12,12 @@ namespace TestioProject.PL.Models
         public string Title { get; set; }
         public string Description { get; set; }
         public UserViewModel Owner { get; set; }
+        
+        [DisplayName("Created at")]
+        public DateTime CreatedAt { get; set; }
+        
+        [DisplayName("Referrer special link")]
+        public Guid ReferrerToken { get; set; }
     }
 
     public class TestEditModel
