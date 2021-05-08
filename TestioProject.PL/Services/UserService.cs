@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using TestioProject.BLL;
 using TestioProject.DAL.Models;
@@ -19,10 +20,35 @@ namespace TestioProject.PL.Services
         public UserViewModel GetUserModelFromDbToViewById(string Id)
         {
             ApplicationUser user = dataManager.Users.GetUserById(Id);
-            UserViewModel model = new UserViewModel() { Id = user.Id, FirstName = user.FirstName, LastName = user.LastName, AvatarUri = user.AvatarUri, Email = user.Email };
+            UserViewModel model = new UserViewModel() { Id = user.Id, FirstName = user.FirstName, LastName = user.LastName, AvatarUri = user.AvatarUri, Email = user.Email, Baned = user.Baned };
             return model;
         }
 
+        public IEnumerable<UserViewModel> GetAllUsersViewModelsFromDb()
+        {
+            var users = dataManager.Users.GetAll().Select(user => new UserViewModel()
+            {
+                Id = user.Id,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Email = user.Email,
+                AvatarUri = user.AvatarUri,
+                Baned = user.Baned
+            }).ToList();
+            
+            return users;
+        }
+
+        public void BanByUserId(string userId)
+        {
+            dataManager.Users.BanByUserId(userId);
+        }
+
+        public void UnbanByUserId(string userId)
+        {
+            dataManager.Users.UnbanByUserId(userId);
+        }
+        
         public void DeleteUserById(string userId)
         {
             dataManager.Users.DeleteUserById(userId);

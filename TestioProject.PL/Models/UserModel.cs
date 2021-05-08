@@ -21,7 +21,9 @@ namespace TestioProject.PL.Models
         [Required]
         //[RegularExpression(@"/\S+@\S+\.\S+/i", ErrorMessage = "Email didnt valid")]
         public string Email { get; set; }
+        public bool Baned { get; set; }
     }
+    
     public class UserEditModel
     {
     }

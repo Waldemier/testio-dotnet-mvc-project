@@ -1,3 +1,10 @@
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Identity;
+using TestioProject.BLL.Implementations;
+using TestioProject.BLL.Interfaces;
+using TestioProject.DAL.Data;
+using TestioProject.DAL.Models;
+
 namespace TestioProject
 {
     using System;
@@ -27,6 +34,16 @@ namespace TestioProject
         {
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddRazorPages();
+            
+            services.AddTransient<IAnswersRepository, EFAnswersRepository>();
+            services.AddTransient<IQuestionsRepository, EFQuestionsRepository>();
+            services.AddTransient<ITestsRepository, EFTestsRepository>();
+            services.AddTransient<IUsersRepository, EFUsersRepository>();
+            services.AddTransient<IStatisticRepository, EFStatisticRepository>();
+            services.AddTransient<IWrittenLettersRepository, EFWrittenLettersRepository>();
+
+            services.AddScoped<DataManager>();
+            //services.AddScoped<IUserClaimsPrincipalFactory<ApplicationUser>, ApplicationUserClaimsPrincipalFactory>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,6 +69,28 @@ namespace TestioProject
             app.UseAuthentication();
             app.UseAuthorization();
 
+            //Not works
+            /*app.Use(async (context, next) =>
+            {
+                try
+                {
+                    var db = context.RequestServices.GetRequiredService<IUsersRepository>();
+                    var email = context.User.Identity.Name;
+                    string userId = db.GetIdByEmail(email);
+                    bool isBaned = db.GetUserById(userId).Baned;
+
+                    if (isBaned)
+                    {
+                        await context.SignOutAsync();
+                    }
+                    await next();
+                }
+                catch (Exception e)
+                {
+                    await next();
+                }
+            });*/
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

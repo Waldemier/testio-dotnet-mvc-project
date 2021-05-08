@@ -484,3 +484,4 @@ E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Profile\_
 E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Profile\History.cshtml.g.cs
 E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Profile\Statistic.cshtml.g.cs
 E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Profile\StatisticMoreDetails.cshtml.g.cs
+E:\VSProjects\TestioProject\TestioProject\obj\Debug\net5.0\Razor\Views\Admin\MoreUserDetail.cshtml.g.cs

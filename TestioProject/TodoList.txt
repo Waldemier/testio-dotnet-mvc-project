@@ -3,13 +3,12 @@
 TODO :
 
     - Fix all pages markup --> IMPORTANT
-    - Admin panel --> IMPORTANT
     
     - To set the max mark for question //*
 
 
 
-    - Search fix 
+    - Search fix (Tests page)
     - Test Edit //NOT IMPORTANT
 	- Modal window after sending letter + test creating
 

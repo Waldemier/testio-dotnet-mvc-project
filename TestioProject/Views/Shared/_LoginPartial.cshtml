@@ -9,7 +9,10 @@
     {
         if (User?.IsInRole("Admin") ?? true)
         {
-            <li class="nav-item">
+            <li class="nav-item" style="margin-right: 20px;">
+                <a id="manage" class="nav-link text-dark" asp-controller="Admin" asp-action="Requests" title="Manage">Requests</a>
+            </li>
+            <li class="nav-item" style="margin-right: 20px;">
                 <a id="manage" class="nav-link text-dark" asp-controller="Admin" asp-action="Index" title="Manage">Admin panel</a>
             </li>
         }

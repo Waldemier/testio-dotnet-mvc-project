@@ -13,5 +13,8 @@ namespace TestioProject.BLL.Interfaces
         ApplicationUser GetUserById(string userId);
         void DeleteUserById(string userId);
         void Update(ApplicationUser user);
+        List<ApplicationUser> GetAll();
+        void BanByUserId(string userId);
+        void UnbanByUserId(string userId);
     }
 }

@@ -44,7 +44,7 @@ namespace TestioProject.PL.Services
         {
             List<TeacherStatisticViewModel> models = new List<TeacherStatisticViewModel>();
             ApplicationUser owner = dataManager.Users.GetUserById(userId);
-            UserViewModel ownerViewModel = new UserViewModel() { Id= owner.Id, Email = owner.Email, FirstName = owner.FirstName, LastName = owner.LastName, AvatarUri = owner.AvatarUri };
+            UserViewModel ownerViewModel = new UserViewModel() { Id= owner.Id, Email = owner.Email, FirstName = owner.FirstName, LastName = owner.LastName, AvatarUri = owner.AvatarUri, Baned = owner.Baned };
             IEnumerable<Test> tests = dataManager.Tests.GetTestsByUserId(userId);
             foreach (var test in tests)
             {

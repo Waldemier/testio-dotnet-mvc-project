@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using TestioProject.BLL;
 using TestioProject.BLL.Implementations;
 using TestioProject.BLL.Interfaces;
+using TestioProject.Claims;
 using TestioProject.DAL.Data;
 using TestioProject.DAL.Models;
 
@@ -32,20 +33,7 @@ namespace TestioProject.Areas.Identity
                 })
                     .AddRoles<IdentityRole>()
                     .AddEntityFrameworkStores<TestioDbContext>();
-
-                // services.AddTransient<Interface, Implementation>();
-                //To add datamanager 
-                //services.AddScoped<DataManager>();
-
-                services.AddTransient<IAnswersRepository, EFAnswersRepository>();
-                services.AddTransient<IQuestionsRepository, EFQuestionsRepository>();
-                services.AddTransient<ITestsRepository, EFTestsRepository>();
-                services.AddTransient<IUsersRepository, EFUsersRepository>();
-                services.AddTransient<IStatisticRepository, EFStatisticRepository>();
-                services.AddTransient<IWrittenLettersRepository, EFWrittenLettersRepository>();
-
-                services.AddScoped<DataManager>();
-
+                
             });
         }
     }
