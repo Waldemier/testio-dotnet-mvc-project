@@ -1,4 +1,7 @@
-﻿namespace TestioProject.Areas.Identity.Pages.Account
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+
+namespace TestioProject.Areas.Identity.Pages.Account
 {
     using System;
     using System.Collections.Generic;
@@ -83,6 +86,13 @@
             {
                 // This doesn't count login failures towards account lockout
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
+                
+                var user = _userManager.FindByEmailAsync(Input.Email).Result;
+                if (user.Baned)
+                {
+                    ModelState.AddModelError("LockedOutConfirmed", "Your account has been banned");
+                    return Page();
+                }
                 
                 var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)

@@ -9315,3 +9315,370 @@ System.IndexOutOfRangeException: Index was outside the bounds of the array.
 2021-05-08 08:48:55.294 +03:00 [INF] HTTP GET / responded 200 in 9.3030 ms
 2021-05-08 08:48:56.113 +03:00 [INF] Requests action
 2021-05-08 08:48:56.117 +03:00 [INF] HTTP GET /Admin/Requests responded 200 in 4.5518 ms
+2021-05-08 11:51:43.106 +03:00 [INF] Application starting up
+2021-05-08 11:51:52.017 +03:00 [INF] You are on the main page
+2021-05-08 11:51:52.330 +03:00 [INF] HTTP GET / responded 200 in 3591.7195 ms
+2021-05-08 11:52:11.015 +03:00 [INF] Admin panel page
+2021-05-08 11:52:20.618 +03:00 [INF] HTTP GET /Admin responded 200 in 9712.0141 ms
+2021-05-08 11:52:25.728 +03:00 [INF] HTTP POST /Admin/Ban responded 302 in 312.0258 ms
+2021-05-08 11:52:25.740 +03:00 [INF] Admin panel page
+2021-05-08 11:52:25.750 +03:00 [INF] HTTP GET /Admin responded 200 in 11.4192 ms
+2021-05-08 11:52:28.549 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 157.2004 ms
+2021-05-08 11:52:28.574 +03:00 [INF] HTTP GET / responded 302 in 12.8537 ms
+2021-05-08 11:52:28.810 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 226.8548 ms
+2021-05-08 11:52:36.137 +03:00 [INF] User logged in.
+2021-05-08 11:52:36.153 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 180.9281 ms
+2021-05-08 11:52:36.168 +03:00 [INF] You are on the main page
+2021-05-08 11:52:36.179 +03:00 [INF] HTTP GET / responded 200 in 11.8543 ms
+2021-05-08 11:52:38.297 +03:00 [INF] Index tests controller action
+2021-05-08 11:52:38.686 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-08 11:52:38.777 +03:00 [INF] HTTP GET /Tests responded 200 in 496.3450 ms
+2021-05-08 11:52:39.546 +03:00 [INF] You are on the main page
+2021-05-08 11:52:39.550 +03:00 [INF] HTTP GET / responded 200 in 5.4533 ms
+2021-05-08 11:52:40.324 +03:00 [INF] HTTP GET /Profile responded 200 in 89.0653 ms
+2021-05-08 11:52:41.761 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 2.7375 ms
+2021-05-08 11:52:41.771 +03:00 [INF] HTTP GET / responded 302 in 0.3633 ms
+2021-05-08 11:52:41.783 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 4.6819 ms
+2021-05-08 11:53:51.873 +03:00 [INF] Application starting up
+2021-05-08 11:53:54.889 +03:00 [INF] HTTP GET / responded 302 in 172.4744 ms
+2021-05-08 11:53:55.758 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 829.1023 ms
+2021-05-08 11:54:55.107 +03:00 [INF] User logged in.
+2021-05-08 11:54:55.116 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 32454.1371 ms
+2021-05-08 11:54:55.154 +03:00 [INF] You are on the main page
+2021-05-08 11:54:55.192 +03:00 [INF] HTTP GET / responded 200 in 68.3943 ms
+2021-05-08 11:57:10.685 +03:00 [INF] Application starting up
+2021-05-08 11:57:14.067 +03:00 [INF] You are on the main page
+2021-05-08 11:57:14.311 +03:00 [INF] HTTP GET / responded 200 in 649.8685 ms
+2021-05-08 11:57:20.401 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 241.0051 ms
+2021-05-08 11:57:20.430 +03:00 [INF] HTTP GET / responded 302 in 11.6764 ms
+2021-05-08 11:57:20.673 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 230.7201 ms
+2021-05-08 11:59:17.841 +03:00 [INF] Application starting up
+2021-05-08 11:59:21.233 +03:00 [INF] HTTP GET / responded 302 in 156.6830 ms
+2021-05-08 11:59:22.007 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 744.2955 ms
+2021-05-08 12:14:59.129 +03:00 [INF] Application starting up
+2021-05-08 12:15:04.205 +03:00 [INF] HTTP GET / responded 302 in 202.0448 ms
+2021-05-08 12:15:05.326 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 1049.7819 ms
+2021-05-08 12:15:30.515 +03:00 [WRN] Invalid password for user.
+2021-05-08 12:15:30.518 +03:00 [WRN] User failed to provide the correct password.
+2021-05-08 12:15:30.540 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 200 in 10095.7188 ms
+2021-05-08 12:18:34.512 +03:00 [INF] User logged in.
+2021-05-08 12:18:34.518 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 361.9959 ms
+2021-05-08 12:18:34.562 +03:00 [INF] You are on the main page
+2021-05-08 12:18:34.642 +03:00 [INF] HTTP GET / responded 200 in 112.8085 ms
+2021-05-08 12:18:35.963 +03:00 [INF] Admin panel page
+2021-05-08 12:18:35.974 +03:00 [INF] Admin panel page
+2021-05-08 12:18:36.035 +03:00 [INF] HTTP GET /Admin responded 200 in 98.9101 ms
+2021-05-08 12:18:36.051 +03:00 [INF] HTTP GET /Admin responded 200 in 79.9939 ms
+2021-05-08 12:18:38.205 +03:00 [INF] HTTP POST /Admin/Unban responded 302 in 204.3419 ms
+2021-05-08 12:18:38.212 +03:00 [INF] Admin panel page
+2021-05-08 12:18:38.217 +03:00 [INF] HTTP GET /Admin responded 200 in 5.4232 ms
+2021-05-08 12:18:50.987 +03:00 [INF] HTTP POST /Admin/Ban responded 302 in 177.3614 ms
+2021-05-08 12:18:51.045 +03:00 [INF] Admin panel page
+2021-05-08 12:18:51.055 +03:00 [INF] HTTP GET /Admin responded 200 in 11.9702 ms
+2021-05-08 12:18:51.057 +03:00 [INF] HTTP POST /Admin/Ban responded 302 in 274.2225 ms
+2021-05-08 12:18:54.464 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 27.5589 ms
+2021-05-08 12:18:54.473 +03:00 [INF] HTTP GET / responded 302 in 0.4393 ms
+2021-05-08 12:18:54.486 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 4.4002 ms
+2021-05-08 12:19:04.943 +03:00 [INF] User logged in.
+2021-05-08 12:19:04.945 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 37.6812 ms
+2021-05-08 12:19:04.954 +03:00 [INF] You are on the main page
+2021-05-08 12:19:04.960 +03:00 [INF] HTTP GET / responded 200 in 6.9906 ms
+2021-05-08 12:19:08.383 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 2.4016 ms
+2021-05-08 12:19:08.393 +03:00 [INF] HTTP GET / responded 302 in 0.3230 ms
+2021-05-08 12:19:08.408 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 3.0562 ms
+2021-05-08 12:21:42.751 +03:00 [INF] Application starting up
+2021-05-08 12:21:46.355 +03:00 [INF] HTTP GET / responded 302 in 135.2950 ms
+2021-05-08 12:21:47.140 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 754.8337 ms
+2021-05-08 12:22:31.563 +03:00 [WRN] Invalid password for user.
+2021-05-08 12:22:31.568 +03:00 [WRN] User failed to provide the correct password.
+2021-05-08 12:22:31.599 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 200 in 2379.3530 ms
+2021-05-08 12:22:36.443 +03:00 [INF] User logged in.
+2021-05-08 12:22:36.448 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 296.3549 ms
+2021-05-08 12:22:36.500 +03:00 [INF] You are on the main page
+2021-05-08 12:22:36.559 +03:00 [INF] HTTP GET / responded 200 in 101.9880 ms
+2021-05-08 12:22:37.651 +03:00 [INF] Admin panel page
+2021-05-08 12:22:37.702 +03:00 [INF] HTTP GET /Admin responded 200 in 77.0530 ms
+2021-05-08 12:25:34.069 +03:00 [INF] HTTP POST /Admin/Ban responded 302 in 174151.2714 ms
+2021-05-08 12:25:34.080 +03:00 [INF] Admin panel page
+2021-05-08 12:25:34.087 +03:00 [INF] HTTP GET /Admin responded 200 in 8.4648 ms
+2021-05-08 12:25:40.849 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 17.6824 ms
+2021-05-08 12:25:40.858 +03:00 [INF] HTTP GET / responded 302 in 0.2866 ms
+2021-05-08 12:25:40.887 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 18.6589 ms
+2021-05-08 12:36:41.313 +03:00 [INF] Application starting up
+2021-05-08 12:36:44.717 +03:00 [INF] HTTP GET / responded 302 in 155.3388 ms
+2021-05-08 12:36:45.439 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 681.1864 ms
+2021-05-08 12:36:58.450 +03:00 [INF] User logged in.
+2021-05-08 12:36:58.604 +03:00 [ERR] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 500 in 2727.1258 ms
+System.AggregateException: One or more errors occurred. (Value cannot be null. (Parameter 'email'))
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'email')
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByEmailAsync(String email)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at TestioProject.Areas.Identity.Pages.Account.LoginModel.OnPostAsync(String returnUrl) in E:\VSProjects\TestioProject\TestioProject\Areas\Identity\Pages\Account\Login.cshtml.cs:line 91
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-05-08 12:36:58.842 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.AggregateException: One or more errors occurred. (Value cannot be null. (Parameter 'email'))
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'email')
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByEmailAsync(String email)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at TestioProject.Areas.Identity.Pages.Account.LoginModel.OnPostAsync(String returnUrl) in E:\VSProjects\TestioProject\TestioProject\Areas\Identity\Pages\Account\Login.cshtml.cs:line 91
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-05-08 12:39:33.792 +03:00 [INF] Application starting up
+2021-05-08 12:39:37.299 +03:00 [INF] HTTP GET / responded 302 in 137.4583 ms
+2021-05-08 12:39:38.011 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 680.1932 ms
+2021-05-08 12:40:02.492 +03:00 [INF] User logged in.
+2021-05-08 12:47:21.396 +03:00 [INF] Application starting up
+2021-05-08 12:47:25.025 +03:00 [INF] HTTP GET / responded 302 in 143.1558 ms
+2021-05-08 12:47:25.835 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 776.1040 ms
+2021-05-08 12:48:02.977 +03:00 [INF] User logged in.
+2021-05-08 12:48:02.988 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 23689.8198 ms
+2021-05-08 12:48:03.036 +03:00 [INF] You are on the main page
+2021-05-08 12:48:03.114 +03:00 [INF] HTTP GET / responded 200 in 115.5704 ms
+2021-05-08 12:49:18.792 +03:00 [INF] Application starting up
+2021-05-08 12:49:22.817 +03:00 [INF] You are on the main page
+2021-05-08 12:49:23.080 +03:00 [INF] HTTP GET / responded 200 in 660.2480 ms
+2021-05-08 12:49:28.903 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 265.1611 ms
+2021-05-08 12:49:28.941 +03:00 [INF] HTTP GET / responded 302 in 17.2759 ms
+2021-05-08 12:49:29.152 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 201.7353 ms
+2021-05-08 12:49:44.434 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 10653.6175 ms
+2021-05-08 12:49:44.444 +03:00 [INF] HTTP GET / responded 302 in 0.5413 ms
+2021-05-08 12:49:44.455 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 4.3898 ms
+2021-05-08 13:00:43.501 +03:00 [INF] Application starting up
+2021-05-08 13:00:47.375 +03:00 [INF] HTTP GET / responded 302 in 155.7100 ms
+2021-05-08 13:00:48.058 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 649.3229 ms
+2021-05-08 13:07:19.450 +03:00 [INF] Application starting up
+2021-05-08 13:07:23.453 +03:00 [INF] HTTP GET / responded 302 in 142.3795 ms
+2021-05-08 13:07:24.563 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 1068.4088 ms
+2021-05-08 13:20:13.073 +03:00 [INF] Application starting up
+2021-05-08 13:20:15.954 +03:00 [INF] HTTP GET / responded 302 in 148.8281 ms
+2021-05-08 13:20:16.594 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 609.0344 ms
+2021-05-08 13:20:56.553 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 7087.4580 ms
+2021-05-08 13:20:56.566 +03:00 [INF] HTTP GET /?page=%2Fidentity%2Faccount%2Flogin responded 302 in 0.4807 ms
+2021-05-08 13:20:56.577 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F%3Fpage%3D%252Fidentity%252Faccount%252Flogin responded 200 in 5.5691 ms
+2021-05-08 13:21:41.927 +03:00 [INF] Application starting up
+2021-05-08 13:21:44.543 +03:00 [INF] HTTP GET / responded 302 in 176.7042 ms
+2021-05-08 13:54:18.525 +03:00 [INF] Application starting up
+2021-05-08 13:54:23.646 +03:00 [INF] HTTP GET / responded 302 in 155.7018 ms
+2021-05-08 13:55:28.235 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 64557.2579 ms
+2021-05-08 14:02:09.322 +03:00 [INF] Application starting up
+2021-05-08 14:02:12.953 +03:00 [INF] HTTP GET / responded 302 in 147.3992 ms
+2021-05-08 14:02:13.644 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 659.0794 ms
+2021-05-08 14:02:38.782 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 18513.3795 ms
+2021-05-08 14:02:38.804 +03:00 [INF] HTTP GET /?page=%2Fidentity%2Faccount%2Flogin responded 302 in 1.1246 ms
+2021-05-08 14:02:38.819 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F%3Fpage%3D%252Fidentity%252Faccount%252Flogin responded 200 in 8.4377 ms
+2021-05-08 14:02:53.703 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F%3Fpage%3D%252Fidentity%252Faccount%252Flogin responded 302 in 2053.4724 ms
+2021-05-08 14:02:53.712 +03:00 [INF] HTTP GET /?page=%2Fidentity%2Faccount%2Flogin responded 302 in 0.6588 ms
+2021-05-08 14:04:17.208 +03:00 [INF] Application starting up
+2021-05-08 14:04:20.350 +03:00 [INF] HTTP GET / responded 302 in 137.9771 ms
+2021-05-08 14:04:30.648 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 10267.8695 ms
+2021-05-08 14:04:50.013 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 14298.4181 ms
+2021-05-08 14:04:50.021 +03:00 [INF] HTTP GET /?page=%2Fidentity%2Faccount%2Flogin responded 302 in 0.5524 ms
+2021-05-08 14:08:25.068 +03:00 [INF] Application starting up
+2021-05-08 14:08:29.536 +03:00 [INF] HTTP GET / responded 302 in 148.2079 ms
+2021-05-08 14:08:40.039 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 10469.4970 ms
+2021-05-08 14:09:03.946 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 16351.6881 ms
+2021-05-08 14:09:03.954 +03:00 [INF] HTTP GET /?page=%2Fidentity%2Faccount%2Flogin responded 302 in 0.8047 ms
+2021-05-08 14:12:26.394 +03:00 [INF] Application starting up
+2021-05-08 14:12:31.954 +03:00 [INF] HTTP GET / responded 302 in 127.8807 ms
+2021-05-08 14:12:48.000 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 15942.7836 ms
+2021-05-08 14:13:10.583 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 16027.8722 ms
+2021-05-08 14:13:10.590 +03:00 [INF] HTTP GET /?page=%2Fidentity%2Faccount%2Flogin responded 302 in 0.3545 ms
+2021-05-08 14:21:25.068 +03:00 [INF] Application starting up
+2021-05-08 14:21:28.777 +03:00 [INF] HTTP GET / responded 302 in 131.4240 ms
+2021-05-08 14:22:15.491 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 46682.9699 ms
+2021-05-08 14:22:47.830 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 10472.8873 ms
+2021-05-08 14:22:47.842 +03:00 [INF] HTTP GET /?page=%2Fidentity%2Faccount%2Flogin responded 302 in 1.0766 ms
+2021-05-08 14:22:47.871 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F%3Fpage%3D%252Fidentity%252Faccount%252Flogin responded 200 in 23.9881 ms
+2021-05-08 14:22:54.394 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F%3Fpage%3D%252Fidentity%252Faccount%252Flogin responded 302 in 19.0281 ms
+2021-05-08 14:22:54.401 +03:00 [INF] HTTP GET /?page=%2Fidentity%2Faccount%2Flogin responded 302 in 0.4537 ms
+2021-05-08 14:22:54.408 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F%3Fpage%3D%252Fidentity%252Faccount%252Flogin responded 200 in 2.3576 ms
+2021-05-08 14:23:01.023 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F%3Fpage%3D%252Fidentity%252Faccount%252Flogin responded 302 in 9.4345 ms
+2021-05-08 14:23:01.028 +03:00 [INF] HTTP GET /?page=%2Fidentity%2Faccount%2Flogin responded 302 in 0.1944 ms
+2021-05-08 14:23:01.036 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F%3Fpage%3D%252Fidentity%252Faccount%252Flogin responded 200 in 2.0061 ms
+2021-05-08 14:23:04.958 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F%3Fpage%3D%252Fidentity%252Faccount%252Flogin responded 200 in 3.9674 ms
+2021-05-08 14:23:06.137 +03:00 [INF] HTTP GET /Identity/Account/Register responded 200 in 88.5527 ms
+2021-05-08 14:23:06.760 +03:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 5.6436 ms
+2021-05-08 14:23:12.721 +03:00 [INF] HTTP POST /Identity/Account/Login responded 302 in 5.2712 ms
+2021-05-08 14:23:12.726 +03:00 [INF] HTTP GET /?page=%2Fidentity%2Faccount%2Flogin responded 302 in 0.1967 ms
+2021-05-08 14:23:12.733 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F%3Fpage%3D%252Fidentity%252Faccount%252Flogin responded 200 in 1.6585 ms
+2021-05-08 14:23:37.921 +03:00 [INF] Application starting up
+2021-05-08 14:23:40.850 +03:00 [INF] HTTP GET / responded 302 in 130.6863 ms
+2021-05-08 14:23:41.487 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 604.4290 ms
+2021-05-08 14:24:05.051 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 17.5435 ms
+2021-05-08 14:25:12.227 +03:00 [INF] Application starting up
+2021-05-08 14:25:15.172 +03:00 [INF] HTTP GET / responded 302 in 133.4927 ms
+2021-05-08 14:25:15.803 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 601.6180 ms
+2021-05-08 14:27:02.526 +03:00 [INF] Application starting up
+2021-05-08 14:27:06.363 +03:00 [INF] HTTP GET / responded 302 in 153.2359 ms
+2021-05-08 14:27:07.045 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 647.7837 ms
+2021-05-08 14:27:42.275 +03:00 [INF] Application starting up
+2021-05-08 14:27:45.330 +03:00 [INF] HTTP GET / responded 302 in 127.5703 ms
+2021-05-08 14:27:46.029 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 669.1090 ms
+2021-05-08 14:31:39.755 +03:00 [INF] Application starting up
+2021-05-08 14:31:43.005 +03:00 [INF] HTTP GET / responded 302 in 137.0299 ms
+2021-05-08 14:31:57.732 +03:00 [INF] User logged in.
+2021-05-08 14:31:57.751 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F%3Fpage%3D%252Fidentity%252Faccount%252Flogin responded 302 in 2008.9828 ms
+2021-05-08 14:31:57.799 +03:00 [INF] You are on the main page
+2021-05-08 14:31:57.970 +03:00 [INF] HTTP GET /?page=%2Fidentity%2Faccount%2Flogin responded 200 in 202.0179 ms
+2021-05-08 14:32:01.618 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 67.3479 ms
+2021-05-08 14:32:01.630 +03:00 [INF] HTTP GET / responded 302 in 0.5995 ms
+2021-05-08 14:32:01.736 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 94.7944 ms
+2021-05-08 14:32:21.580 +03:00 [INF] User logged in.
+2021-05-08 14:32:21.582 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 9190.8384 ms
+2021-05-08 14:32:21.591 +03:00 [INF] You are on the main page
+2021-05-08 14:32:21.596 +03:00 [INF] HTTP GET / responded 200 in 7.2971 ms
+2021-05-08 14:32:25.459 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 1.2302 ms
+2021-05-08 14:32:25.467 +03:00 [INF] HTTP GET / responded 302 in 0.1756 ms
+2021-05-08 14:32:25.477 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 5.1811 ms
+2021-05-08 14:32:33.585 +03:00 [INF] User logged in.
+2021-05-08 14:32:33.587 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 2261.9047 ms
+2021-05-08 14:32:33.595 +03:00 [INF] You are on the main page
+2021-05-08 14:32:33.599 +03:00 [INF] HTTP GET / responded 200 in 5.2912 ms
+2021-05-08 14:32:35.449 +03:00 [INF] Admin panel page
+2021-05-08 14:32:35.477 +03:00 [INF] HTTP GET /Admin responded 200 in 44.4962 ms
+2021-05-08 14:32:38.219 +03:00 [INF] HTTP POST /Admin/Ban responded 302 in 215.9430 ms
+2021-05-08 14:32:38.226 +03:00 [INF] Admin panel page
+2021-05-08 14:32:38.230 +03:00 [INF] HTTP GET /Admin responded 200 in 4.7290 ms
+2021-05-08 14:32:40.656 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 1.2934 ms
+2021-05-08 14:32:40.664 +03:00 [INF] HTTP GET / responded 302 in 0.1786 ms
+2021-05-08 14:32:40.675 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 5.9654 ms
+2021-05-08 14:32:48.800 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 2938.1091 ms
+2021-05-08 14:32:48.808 +03:00 [INF] HTTP GET /?page=%2Fidentity%2Faccount%2Flogin responded 302 in 0.5691 ms
+2021-05-08 14:32:48.817 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F%3Fpage%3D%252Fidentity%252Faccount%252Flogin responded 200 in 2.1005 ms
+2021-05-08 14:34:10.103 +03:00 [INF] User logged in.
+2021-05-08 14:34:10.105 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F%3Fpage%3D%252Fidentity%252Faccount%252Flogin responded 302 in 23.2373 ms
+2021-05-08 14:34:10.112 +03:00 [INF] You are on the main page
+2021-05-08 14:34:10.115 +03:00 [INF] HTTP GET /?page=%2Fidentity%2Faccount%2Flogin responded 200 in 3.6516 ms
+2021-05-08 14:34:11.445 +03:00 [INF] Admin panel page
+2021-05-08 14:34:11.456 +03:00 [INF] HTTP GET /Admin responded 200 in 13.8860 ms
+2021-05-08 14:34:13.576 +03:00 [INF] HTTP POST /Admin/Unban responded 302 in 18.6419 ms
+2021-05-08 14:34:13.591 +03:00 [INF] Admin panel page
+2021-05-08 14:34:13.605 +03:00 [INF] HTTP GET /Admin responded 200 in 14.9192 ms
+2021-05-08 14:34:16.734 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 2.3188 ms
+2021-05-08 14:34:16.749 +03:00 [INF] HTTP GET / responded 302 in 0.3190 ms
+2021-05-08 14:34:16.770 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 4.0961 ms
+2021-05-08 14:34:23.992 +03:00 [INF] User logged in.
+2021-05-08 14:34:23.993 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 24.6371 ms
+2021-05-08 14:34:23.998 +03:00 [INF] You are on the main page
+2021-05-08 14:34:24.000 +03:00 [INF] HTTP GET / responded 200 in 2.5747 ms
+2021-05-08 14:34:25.408 +03:00 [INF] Index tests controller action
+2021-05-08 14:34:25.634 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-08 14:34:25.676 +03:00 [INF] HTTP GET /Tests responded 200 in 276.2900 ms
+2021-05-08 14:34:26.140 +03:00 [INF] You are on the main page
+2021-05-08 14:34:26.145 +03:00 [INF] HTTP GET / responded 200 in 5.4524 ms
+2021-05-08 14:34:28.359 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 1.7470 ms
+2021-05-08 14:34:28.366 +03:00 [INF] HTTP GET / responded 302 in 0.1681 ms
+2021-05-08 14:34:28.375 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 3.5791 ms
+2021-05-08 14:43:54.329 +03:00 [INF] Application starting up
+2021-05-08 14:43:58.206 +03:00 [INF] HTTP GET / responded 302 in 139.2444 ms
+2021-05-08 14:43:58.919 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 683.6795 ms
+2021-05-08 14:44:06.739 +03:00 [INF] User logged in.
+2021-05-08 14:44:06.747 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 1670.2479 ms
+2021-05-08 14:44:06.785 +03:00 [INF] You are on the main page
+2021-05-08 14:44:06.824 +03:00 [INF] HTTP GET / responded 200 in 67.3751 ms
+2021-05-08 14:44:08.552 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 20.2527 ms
+2021-05-08 14:44:08.560 +03:00 [INF] HTTP GET / responded 302 in 0.3675 ms
+2021-05-08 14:44:08.571 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 3.2273 ms
+2021-05-08 14:44:13.561 +03:00 [INF] User logged in.
+2021-05-08 14:44:13.562 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 40.2228 ms
+2021-05-08 14:44:13.569 +03:00 [INF] You are on the main page
+2021-05-08 14:44:13.572 +03:00 [INF] HTTP GET / responded 200 in 3.9370 ms
+2021-05-08 14:44:15.035 +03:00 [INF] Admin panel page
+2021-05-08 14:44:15.065 +03:00 [INF] HTTP GET /Admin responded 200 in 66.3532 ms
+2021-05-08 14:44:16.850 +03:00 [INF] HTTP POST /Admin/Ban responded 302 in 95.4083 ms
+2021-05-08 14:44:16.856 +03:00 [INF] Admin panel page
+2021-05-08 14:44:16.860 +03:00 [INF] HTTP GET /Admin responded 200 in 4.8663 ms
+2021-05-08 14:44:19.975 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 3.4095 ms
+2021-05-08 14:44:19.990 +03:00 [INF] HTTP GET / responded 302 in 0.4788 ms
+2021-05-08 14:44:20.006 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 4.4648 ms
+2021-05-08 14:44:24.719 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 6.4582 ms
+2021-05-08 14:44:24.726 +03:00 [INF] HTTP GET /?page=%2Fidentity%2Faccount%2Flogin responded 302 in 0.3488 ms
+2021-05-08 14:44:24.734 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F%3Fpage%3D%252Fidentity%252Faccount%252Flogin responded 200 in 2.0554 ms
+2021-05-08 14:45:09.521 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F%3Fpage%3D%252Fidentity%252Faccount%252Flogin responded 302 in 28425.4714 ms
+2021-05-08 14:45:09.539 +03:00 [INF] HTTP GET /?page=%2Fidentity%2Faccount%2Flogin responded 302 in 0.3908 ms
+2021-05-08 14:45:09.552 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F%3Fpage%3D%252Fidentity%252Faccount%252Flogin responded 200 in 3.3009 ms
+2021-05-08 14:47:11.065 +03:00 [INF] Application starting up
+2021-05-08 14:47:14.042 +03:00 [INF] HTTP GET / responded 302 in 137.0221 ms
+2021-05-08 14:47:14.681 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 605.8031 ms
+2021-05-08 14:47:24.929 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 1309.2579 ms
+2021-05-08 14:47:24.937 +03:00 [INF] HTTP GET /?page=%2Fidentity%2Faccount%2Flogin responded 302 in 1.4862 ms
+2021-05-08 14:47:24.950 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F%3Fpage%3D%252Fidentity%252Faccount%252Flogin responded 200 in 5.1810 ms
+2021-05-08 14:54:00.785 +03:00 [INF] Application starting up
+2021-05-08 14:54:03.790 +03:00 [INF] HTTP GET / responded 302 in 136.7148 ms
+2021-05-08 14:54:04.468 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 629.8526 ms
+2021-05-08 14:54:53.144 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 200 in 1290.2808 ms
+2021-05-08 14:55:24.738 +03:00 [INF] Application starting up
+2021-05-08 14:55:27.924 +03:00 [INF] HTTP GET / responded 302 in 130.9133 ms
+2021-05-08 14:55:28.568 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 616.9610 ms
+2021-05-08 14:55:44.410 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 200 in 2913.6855 ms
+2021-05-08 14:58:27.019 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 200 in 6234.4878 ms
+2021-05-08 14:58:53.177 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 200 in 391.4167 ms
+2021-05-08 14:59:05.262 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 200 in 375.8361 ms
+2021-05-08 15:00:01.534 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 200 in 451.6171 ms
+2021-05-08 15:00:16.162 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 200 in 631.5492 ms
+2021-05-08 15:00:30.791 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 200 in 340.2764 ms
+2021-05-08 15:00:47.357 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 200 in 534.9992 ms
+2021-05-08 15:01:05.908 +03:00 [INF] User logged in.
+2021-05-08 15:01:05.921 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 311.9621 ms
+2021-05-08 15:01:05.997 +03:00 [INF] You are on the main page
+2021-05-08 15:01:06.059 +03:00 [INF] HTTP GET / responded 200 in 96.8785 ms
+2021-05-08 15:01:07.403 +03:00 [INF] Admin panel page
+2021-05-08 15:01:07.473 +03:00 [INF] HTTP GET /Admin responded 200 in 90.9026 ms
+2021-05-08 15:01:09.022 +03:00 [INF] HTTP POST /Admin/Unban responded 302 in 181.6912 ms
+2021-05-08 15:01:09.028 +03:00 [INF] Admin panel page
+2021-05-08 15:01:09.035 +03:00 [INF] HTTP GET /Admin responded 200 in 7.3840 ms
+2021-05-08 15:01:11.084 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 73.4147 ms
+2021-05-08 15:01:11.100 +03:00 [INF] HTTP GET / responded 302 in 0.9458 ms
+2021-05-08 15:01:11.109 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 1.8878 ms
+2021-05-08 15:01:16.984 +03:00 [INF] User logged in.
+2021-05-08 15:01:16.986 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 23.7395 ms
+2021-05-08 15:01:16.991 +03:00 [INF] You are on the main page
+2021-05-08 15:01:16.994 +03:00 [INF] HTTP GET / responded 200 in 3.2089 ms
+2021-05-08 15:01:18.683 +03:00 [INF] HTTP GET /Profile responded 200 in 113.3926 ms
+2021-05-08 15:01:20.890 +03:00 [INF] HTTP GET /Profile/History responded 200 in 239.5996 ms
+2021-05-08 15:01:22.246 +03:00 [INF] You are on the main page
+2021-05-08 15:01:22.258 +03:00 [INF] HTTP GET / responded 200 in 14.1488 ms
+2021-05-08 15:01:23.770 +03:00 [INF] Index tests controller action
+2021-05-08 15:01:23.859 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-08 15:01:23.907 +03:00 [INF] HTTP GET /Tests responded 200 in 147.2842 ms
+2021-05-08 15:01:26.045 +03:00 [INF] You are on the main page
+2021-05-08 15:01:26.051 +03:00 [INF] HTTP GET / responded 200 in 6.2218 ms
+2021-05-08 15:01:28.151 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 1.4121 ms
+2021-05-08 15:01:28.158 +03:00 [INF] HTTP GET / responded 302 in 0.2246 ms
+2021-05-08 15:01:28.167 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 1.8003 ms
