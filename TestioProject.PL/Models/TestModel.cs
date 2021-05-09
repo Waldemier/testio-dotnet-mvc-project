@@ -18,6 +18,8 @@ namespace TestioProject.PL.Models
         
         [DisplayName("Referrer special link")]
         public Guid ReferrerToken { get; set; }
+        
+        public string CodeLock { get; set; }
     }
 
     public class TestEditModel

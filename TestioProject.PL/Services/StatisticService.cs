@@ -48,17 +48,17 @@ namespace TestioProject.PL.Services
             IEnumerable<Test> tests = dataManager.Tests.GetTestsByUserId(userId);
             foreach (var test in tests)
             {
-                TestViewModel testViewModel = new TestViewModel() { testId = test.Id, Title = test.Name, Description = test.Description, Owner = ownerViewModel, CreatedAt = test.CreatedAt, ReferrerToken = test.ReferrerToken };
+                TestViewModel testViewModel = new TestViewModel() { testId = test.Id, Title = test.Name, Description = test.Description, Owner = ownerViewModel, CreatedAt = test.CreatedAt, ReferrerToken = test.ReferrerToken, CodeLock = test.CodeLock };
                 var allTestStat = dataManager.Statistic.GetAllByTestId(test.Id);
                 var usersAmount = allTestStat.Count();
                 var allMarks = allTestStat.Select(x => x.Result).ToList();
-                var totalAmount = 0;
+                float totalAmount = 0;
                 foreach (var mark in allMarks)
                 {
                     totalAmount += mark;
                 }
 
-                var GPA = totalAmount / usersAmount;
+                float GPA = totalAmount / (float)usersAmount;
                 models.Add(new TeacherStatisticViewModel(){ Test = testViewModel, UsersAmount = usersAmount, GPA = GPA });
             }
 

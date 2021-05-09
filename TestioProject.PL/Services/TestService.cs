@@ -38,7 +38,7 @@ namespace TestioProject.PL.Services
             {
                 var user = this.dataManager.Users.GetUserById(test.UserId);
                 UserViewModel viewUser = new UserViewModel() { Id = user.Id, Email = user.Email, FirstName = user.FirstName, LastName = user.LastName, AvatarUri = user.AvatarUri, Baned = user.Baned };
-                viewModels.Append(new TestViewModel() { testId = test.Id, Title = test.Name, Description =  test.Description, Owner = viewUser, CreatedAt = test.CreatedAt, ReferrerToken = test.ReferrerToken });
+                viewModels.Append(new TestViewModel() { testId = test.Id, Title = test.Name, Description =  test.Description, Owner = viewUser, CreatedAt = test.CreatedAt, ReferrerToken = test.ReferrerToken, CodeLock = test.CodeLock });
             }
             return viewModels;
         }
@@ -54,7 +54,7 @@ namespace TestioProject.PL.Services
             var test = this.dataManager.Tests.GetTestById(testId);
             UserViewModel userModel = new UserViewModel() { Id = test.UserId, FirstName = test.User.FirstName, LastName = test.User.LastName, AvatarUri = test.User.AvatarUri, Email = test.User.Email, Baned = test.User.Baned };
 
-            TestViewModel model = new TestViewModel() { testId = testId, Title = test.Name, Description = test.Description, Owner = userModel, CreatedAt = test.CreatedAt, ReferrerToken = test.ReferrerToken };
+            TestViewModel model = new TestViewModel() { testId = testId, Title = test.Name, Description = test.Description, Owner = userModel, CreatedAt = test.CreatedAt, ReferrerToken = test.ReferrerToken, CodeLock = test.CodeLock };
             return model;
         }
 

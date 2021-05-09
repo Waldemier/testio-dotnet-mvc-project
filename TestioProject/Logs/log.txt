@@ -9682,3 +9682,1864 @@ System.AggregateException: One or more errors occurred. (Value cannot be null. (
 2021-05-08 15:01:28.151 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 1.4121 ms
 2021-05-08 15:01:28.158 +03:00 [INF] HTTP GET / responded 302 in 0.2246 ms
 2021-05-08 15:01:28.167 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 1.8003 ms
+2021-05-08 21:20:02.664 +03:00 [INF] Application starting up
+2021-05-08 21:20:09.692 +03:00 [INF] HTTP GET / responded 302 in 338.3555 ms
+2021-05-08 21:20:11.521 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 1706.0404 ms
+2021-05-08 21:20:53.463 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 400 in 34.6468 ms
+2021-05-08 21:20:58.111 +03:00 [INF] User logged in.
+2021-05-08 21:20:58.131 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 4690.4158 ms
+2021-05-08 21:20:58.205 +03:00 [INF] You are on the main page
+2021-05-08 21:20:58.296 +03:00 [INF] HTTP GET / responded 200 in 151.4912 ms
+2021-05-08 21:21:01.683 +03:00 [INF] HTTP GET /Profile responded 200 in 127.1334 ms
+2021-05-08 21:21:01.683 +03:00 [INF] HTTP GET /Profile responded 200 in 55.0200 ms
+2021-05-08 21:21:03.082 +03:00 [INF] Index tests controller action
+2021-05-08 21:21:03.112 +03:00 [INF] Index tests controller action
+2021-05-08 21:21:03.395 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-08 21:21:03.480 +03:00 [INF] HTTP GET /Tests responded 200 in 420.6747 ms
+2021-05-08 21:21:03.480 +03:00 [INF] HTTP GET /Tests responded 200 in 369.1941 ms
+2021-05-08 21:21:05.156 +03:00 [INF] ViewTest action
+2021-05-08 21:21:05.163 +03:00 [INF] ViewTest action
+2021-05-08 21:21:05.478 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=244 responded 200 in 362.0915 ms
+2021-05-08 21:21:05.478 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=244 responded 200 in 319.5280 ms
+2021-05-08 22:00:18.237 +03:00 [INF] Application starting up
+2021-05-08 22:00:22.467 +03:00 [INF] You are on the main page
+2021-05-08 22:00:22.659 +03:00 [INF] HTTP GET / responded 200 in 2421.4323 ms
+2021-05-08 22:00:27.495 +03:00 [INF] Index tests controller action
+2021-05-08 22:00:27.772 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-08 22:00:27.854 +03:00 [INF] HTTP GET /Tests responded 200 in 416.4839 ms
+2021-05-08 22:00:30.043 +03:00 [INF] ViewTest action
+2021-05-08 22:00:30.189 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=244 responded 200 in 172.4640 ms
+2021-05-08 22:00:51.604 +03:00 [INF] Index tests controller action
+2021-05-08 22:00:51.616 +03:00 [INF] HTTP GET /Tests responded 200 in 13.8063 ms
+2021-05-08 22:00:52.879 +03:00 [INF] PrivateChooser action
+2021-05-08 22:00:52.894 +03:00 [INF] HTTP GET /Tests/PrivateChooser responded 200 in 25.4129 ms
+2021-05-08 22:00:53.938 +03:00 [INF] CreateOrEditTest action
+2021-05-08 22:00:53.999 +03:00 [INF] HTTP GET /Tests/CreateOrEditTest?isPrivate=true responded 200 in 65.2596 ms
+2021-05-08 22:01:08.213 +03:00 [INF] CreateOrEditTest(post) action
+2021-05-08 22:01:08.624 +03:00 [INF] HTTP POST /Tests/CreateOrEditTest?actionType=1 responded 302 in 427.8667 ms
+2021-05-08 22:01:08.647 +03:00 [INF] CreateOrEditQuestion action
+2021-05-08 22:01:08.694 +03:00 [INF] HTTP GET /Tests/CreateOrEditQuestion?testId=245 responded 200 in 59.5686 ms
+2021-05-08 22:01:25.073 +03:00 [INF] CreateOrEditQuestion action
+2021-05-08 22:01:25.076 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-08 22:01:25.091 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 25.1682 ms
+2021-05-08 22:01:31.009 +03:00 [INF] CreateOrEditQuestion action
+2021-05-08 22:01:31.062 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=Finish responded 302 in 55.2176 ms
+2021-05-08 22:01:31.076 +03:00 [INF] FinishTestCreating action
+2021-05-08 22:01:31.090 +03:00 [INF] HTTP GET /Tests/FinishTestCreating?testId=245 responded 200 in 15.4827 ms
+2021-05-08 22:01:33.183 +03:00 [INF] ViewTest action
+2021-05-08 22:01:33.195 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 12.6946 ms
+2021-05-08 22:02:06.097 +03:00 [INF] ViewTest action
+2021-05-08 22:02:11.719 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 5625.7219 ms
+2021-05-08 22:02:34.889 +03:00 [INF] ViewTest action
+2021-05-08 22:02:34.901 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 13.2322 ms
+2021-05-08 22:02:57.570 +03:00 [INF] Application starting up
+2021-05-08 22:03:01.790 +03:00 [INF] You are on the main page
+2021-05-08 22:03:02.090 +03:00 [INF] HTTP GET / responded 200 in 802.1764 ms
+2021-05-08 22:03:20.020 +03:00 [INF] Index tests controller action
+2021-05-08 22:03:22.462 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-08 22:03:22.585 +03:00 [INF] HTTP GET /Tests responded 200 in 2729.8519 ms
+2021-05-08 22:03:24.800 +03:00 [INF] ViewTest action
+2021-05-08 22:03:32.900 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=244 responded 200 in 8137.1776 ms
+2021-05-08 22:03:34.902 +03:00 [INF] Index tests controller action
+2021-05-08 22:03:34.933 +03:00 [INF] HTTP GET /Tests responded 200 in 32.7871 ms
+2021-05-08 22:03:35.823 +03:00 [INF] ViewTest action
+2021-05-08 22:03:49.838 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 14019.8938 ms
+2021-05-08 22:05:43.476 +03:00 [INF] Application starting up
+2021-05-08 22:05:47.183 +03:00 [INF] You are on the main page
+2021-05-08 22:05:47.435 +03:00 [INF] HTTP GET / responded 200 in 712.9864 ms
+2021-05-08 22:05:48.852 +03:00 [INF] Index tests controller action
+2021-05-08 22:05:48.852 +03:00 [INF] Index tests controller action
+2021-05-08 22:05:50.338 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-08 22:05:50.427 +03:00 [INF] HTTP GET /Tests responded 200 in 1660.8473 ms
+2021-05-08 22:05:50.427 +03:00 [INF] HTTP GET /Tests responded 200 in 1629.7460 ms
+2021-05-08 22:05:51.813 +03:00 [INF] ViewTest action
+2021-05-08 22:05:51.868 +03:00 [INF] ViewTest action
+2021-05-08 22:05:52.230 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=244 responded 200 in 449.6015 ms
+2021-05-08 22:05:52.230 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=244 responded 200 in 367.0217 ms
+2021-05-08 22:05:53.040 +03:00 [INF] Index tests controller action
+2021-05-08 22:05:53.057 +03:00 [INF] HTTP GET /Tests responded 200 in 18.2573 ms
+2021-05-08 22:05:53.589 +03:00 [INF] ViewTest action
+2021-05-08 22:05:53.602 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 13.8922 ms
+2021-05-08 22:06:45.838 +03:00 [INF] ViewTest action
+2021-05-08 22:06:50.319 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 4482.1863 ms
+2021-05-08 22:07:52.212 +03:00 [INF] ViewTest action
+2021-05-08 22:07:52.668 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 457.2981 ms
+2021-05-08 22:08:07.600 +03:00 [INF] TestPassing(post) action
+2021-05-08 22:08:17.075 +03:00 [INF] TestPassing action: Switch Start
+2021-05-08 22:08:17.220 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 9733.4986 ms
+2021-05-08 22:08:38.054 +03:00 [INF] Index tests controller action
+2021-05-08 22:08:38.069 +03:00 [INF] HTTP GET /Tests responded 200 in 15.8059 ms
+2021-05-08 22:08:38.916 +03:00 [INF] ViewTest action
+2021-05-08 22:08:38.930 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 15.0181 ms
+2021-05-08 22:08:40.991 +03:00 [INF] TestPassing(post) action
+2021-05-08 22:10:37.737 +03:00 [INF] TestPassing action: Switch Start
+2021-05-08 22:10:37.747 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 116757.9819 ms
+2021-05-08 22:12:45.963 +03:00 [INF] Application starting up
+2021-05-08 22:12:51.564 +03:00 [INF] You are on the main page
+2021-05-08 22:12:51.906 +03:00 [INF] HTTP GET / responded 200 in 895.6478 ms
+2021-05-08 22:12:53.409 +03:00 [INF] Index tests controller action
+2021-05-08 22:12:53.409 +03:00 [INF] Index tests controller action
+2021-05-08 22:12:55.209 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-08 22:12:55.300 +03:00 [INF] HTTP GET /Tests responded 200 in 1988.8268 ms
+2021-05-08 22:12:55.300 +03:00 [INF] HTTP GET /Tests responded 200 in 1956.2532 ms
+2021-05-08 22:12:57.023 +03:00 [INF] ViewTest action
+2021-05-08 22:12:57.247 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 250.7893 ms
+2021-05-08 22:12:59.402 +03:00 [INF] TestPassing(post) action
+2021-05-08 22:13:10.845 +03:00 [INF] HTTP POST /Tests/TestPassing responded 302 in 11512.8837 ms
+2021-05-08 22:13:10.861 +03:00 [INF] ViewTest action
+2021-05-08 22:13:10.872 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245&ErrorMessage=Invalid%20code%20lock responded 200 in 14.2865 ms
+2021-05-08 22:14:18.123 +03:00 [INF] ViewTest action
+2021-05-08 22:14:24.234 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245&ErrorMessage=Invalid%20code%20lock responded 200 in 6111.9863 ms
+2021-05-08 22:14:36.480 +03:00 [INF] ViewTest action
+2021-05-08 22:14:37.381 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245&ErrorMessage=Invalid%20code%20lock responded 200 in 902.0796 ms
+2021-05-08 22:15:10.705 +03:00 [INF] TestPassing(post) action
+2021-05-08 22:15:14.752 +03:00 [INF] TestPassing action: Switch Start
+2021-05-08 22:15:14.955 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 4252.1944 ms
+2021-05-08 22:15:19.904 +03:00 [INF] TestPassing(post) action
+2021-05-08 22:17:55.257 +03:00 [INF] Application starting up
+2021-05-08 22:17:57.727 +03:00 [INF] You are on the main page
+2021-05-08 22:17:58.019 +03:00 [INF] HTTP GET / responded 200 in 664.1645 ms
+2021-05-08 22:18:01.195 +03:00 [INF] Index tests controller action
+2021-05-08 22:18:04.394 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-08 22:18:04.644 +03:00 [INF] HTTP GET /Tests responded 200 in 3495.3601 ms
+2021-05-08 22:18:06.529 +03:00 [INF] ViewTest action
+2021-05-08 22:18:06.534 +03:00 [INF] ViewTest action
+2021-05-08 22:18:06.742 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 212.0702 ms
+2021-05-08 22:18:06.742 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 243.7964 ms
+2021-05-08 22:18:11.733 +03:00 [INF] TestPassing(post) action
+2021-05-08 22:18:11.733 +03:00 [INF] TestPassing(post) action
+2021-05-08 22:18:11.755 +03:00 [INF] HTTP POST /Tests/TestPassing responded 302 in 24.1703 ms
+2021-05-08 22:18:11.755 +03:00 [INF] HTTP POST /Tests/TestPassing responded 302 in 68.1443 ms
+2021-05-08 22:18:11.764 +03:00 [INF] ViewTest action
+2021-05-08 22:18:11.773 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245&ErrorMessage=Invalid%20code%20lock responded 200 in 9.8603 ms
+2021-05-08 22:18:13.829 +03:00 [INF] TestPassing(post) action
+2021-05-08 22:18:13.864 +03:00 [INF] TestPassing action: Switch Start
+2021-05-08 22:18:13.892 +03:00 [INF] TestPassing(post) action
+2021-05-08 22:18:13.902 +03:00 [INF] TestPassing action: Switch Start
+2021-05-08 22:18:13.956 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 127.9520 ms
+2021-05-08 22:18:13.956 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 64.7314 ms
+2021-05-08 22:19:03.860 +03:00 [INF] Application starting up
+2021-05-08 22:19:09.178 +03:00 [INF] You are on the main page
+2021-05-08 22:19:09.435 +03:00 [INF] HTTP GET / responded 200 in 734.0907 ms
+2021-05-08 22:19:12.826 +03:00 [INF] Index tests controller action
+2021-05-08 22:19:14.318 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-08 22:19:14.402 +03:00 [INF] HTTP GET /Tests responded 200 in 1643.9613 ms
+2021-05-08 22:19:15.444 +03:00 [INF] ViewTest action
+2021-05-08 22:19:15.670 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 273.7500 ms
+2021-05-08 22:19:17.739 +03:00 [INF] TestPassing(post) action
+2021-05-08 22:19:26.544 +03:00 [INF] TestPassing action: Switch Start
+2021-05-08 22:19:26.702 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 9018.1299 ms
+2021-05-08 22:20:10.994 +03:00 [INF] Application starting up
+2021-05-08 22:20:14.471 +03:00 [INF] You are on the main page
+2021-05-08 22:20:14.792 +03:00 [INF] HTTP GET / responded 200 in 766.2396 ms
+2021-05-08 22:20:24.566 +03:00 [INF] Index tests controller action
+2021-05-08 22:20:26.108 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-08 22:20:26.202 +03:00 [INF] HTTP GET /Tests responded 200 in 1714.9363 ms
+2021-05-08 22:20:27.339 +03:00 [INF] ViewTest action
+2021-05-08 22:20:27.542 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 233.5938 ms
+2021-05-08 22:20:29.059 +03:00 [INF] TestPassing(post) action
+2021-05-08 22:20:48.492 +03:00 [INF] HTTP POST /Tests/TestPassing responded 302 in 19492.6145 ms
+2021-05-08 22:20:48.522 +03:00 [INF] ViewTest action
+2021-05-08 22:20:48.535 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245&ErrorMessage=Invalid%20code%20lock responded 200 in 17.3826 ms
+2021-05-08 22:20:50.879 +03:00 [INF] TestPassing(post) action
+2021-05-08 22:20:54.753 +03:00 [INF] HTTP POST /Tests/TestPassing responded 302 in 3875.0814 ms
+2021-05-08 22:20:54.775 +03:00 [INF] ViewTest action
+2021-05-08 22:20:54.796 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245&ErrorMessage=Invalid%20code%20lock responded 200 in 21.0758 ms
+2021-05-08 22:21:04.219 +03:00 [INF] TestPassing(post) action
+2021-05-08 22:21:07.902 +03:00 [INF] HTTP POST /Tests/TestPassing responded 302 in 3685.5899 ms
+2021-05-08 22:21:07.915 +03:00 [INF] ViewTest action
+2021-05-08 22:21:07.934 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245&ErrorMessage=Invalid%20code%20lock responded 200 in 20.6052 ms
+2021-05-08 22:21:13.088 +03:00 [INF] TestPassing(post) action
+2021-05-08 22:21:15.500 +03:00 [INF] HTTP POST /Tests/TestPassing responded 302 in 2411.9674 ms
+2021-05-08 22:21:15.509 +03:00 [INF] ViewTest action
+2021-05-08 22:21:15.535 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245&ErrorMessage=Invalid%20code%20lock responded 200 in 26.6931 ms
+2021-05-08 22:21:20.274 +03:00 [INF] TestPassing(post) action
+2021-05-08 22:21:22.696 +03:00 [INF] TestPassing action: Switch Start
+2021-05-08 22:21:22.864 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 2590.5930 ms
+2021-05-08 22:21:46.359 +03:00 [INF] TestPassing(post) action
+2021-05-08 22:23:01.662 +03:00 [INF] Application starting up
+2021-05-08 22:23:03.945 +03:00 [INF] You are on the main page
+2021-05-08 22:23:04.264 +03:00 [INF] HTTP GET / responded 200 in 746.0675 ms
+2021-05-08 22:23:26.744 +03:00 [INF] Index tests controller action
+2021-05-08 22:23:29.137 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-08 22:23:29.281 +03:00 [INF] HTTP GET /Tests responded 200 in 2596.8849 ms
+2021-05-08 22:23:30.167 +03:00 [INF] ViewTest action
+2021-05-08 22:23:30.355 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 207.4502 ms
+2021-05-08 22:23:33.306 +03:00 [INF] TestPassing(post) action
+2021-05-08 22:23:33.323 +03:00 [INF] HTTP POST /Tests/TestPassing responded 302 in 50.4767 ms
+2021-05-08 22:23:33.332 +03:00 [INF] ViewTest action
+2021-05-08 22:23:33.340 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245&ErrorMessage=Invalid%20code%20lock responded 200 in 8.8901 ms
+2021-05-08 22:23:37.553 +03:00 [INF] TestPassing(post) action
+2021-05-08 22:23:37.561 +03:00 [INF] HTTP POST /Tests/TestPassing responded 302 in 9.4042 ms
+2021-05-08 22:23:37.568 +03:00 [INF] ViewTest action
+2021-05-08 22:23:37.575 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245&ErrorMessage=Invalid%20code%20lock responded 200 in 7.1809 ms
+2021-05-08 22:23:41.740 +03:00 [INF] TestPassing(post) action
+2021-05-08 22:23:41.768 +03:00 [INF] TestPassing action: Switch Start
+2021-05-08 22:23:41.833 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 94.0180 ms
+2021-05-08 22:23:43.508 +03:00 [INF] TestPassing(post) action
+2021-05-08 22:23:43.518 +03:00 [INF] TestPassing action: Switch Next
+2021-05-08 22:23:43.532 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 30.6787 ms
+2021-05-08 22:23:44.709 +03:00 [INF] TestPassFinished(post) action
+2021-05-08 22:23:44.971 +03:00 [INF] HTTP POST /Tests/TestPassFinished responded 200 in 265.3338 ms
+2021-05-08 22:23:46.563 +03:00 [INF] You are on the main page
+2021-05-08 22:23:46.568 +03:00 [INF] HTTP GET / responded 200 in 6.4762 ms
+2021-05-08 22:23:58.303 +03:00 [INF] Index tests controller action
+2021-05-08 22:23:58.313 +03:00 [INF] HTTP GET /Tests responded 200 in 10.5129 ms
+2021-05-08 22:23:59.535 +03:00 [INF] ViewTest action
+2021-05-08 22:23:59.546 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 12.3160 ms
+2021-05-09 03:05:45.547 +03:00 [INF] Application starting up
+2021-05-09 03:05:52.565 +03:00 [INF] You are on the main page
+2021-05-09 03:05:52.867 +03:00 [INF] HTTP GET / responded 200 in 5244.1578 ms
+2021-05-09 03:05:57.753 +03:00 [INF] Index tests controller action
+2021-05-09 03:05:57.967 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-09 03:05:58.029 +03:00 [INF] HTTP GET /Tests responded 200 in 366.0351 ms
+2021-05-09 03:05:58.798 +03:00 [INF] HTTP GET /Profile responded 200 in 87.2575 ms
+2021-05-09 03:06:00.335 +03:00 [INF] Index tests controller action
+2021-05-09 03:06:00.348 +03:00 [INF] HTTP GET /Tests responded 200 in 14.6067 ms
+2021-05-09 03:06:01.653 +03:00 [INF] ViewTest action
+2021-05-09 03:06:01.745 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 108.9900 ms
+2021-05-09 03:07:42.689 +03:00 [INF] Application starting up
+2021-05-09 03:07:46.890 +03:00 [INF] You are on the main page
+2021-05-09 03:07:47.160 +03:00 [INF] HTTP GET / responded 200 in 746.1227 ms
+2021-05-09 03:07:56.127 +03:00 [INF] Index tests controller action
+2021-05-09 03:07:58.235 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-09 03:07:58.338 +03:00 [INF] HTTP GET /Tests responded 200 in 2337.1024 ms
+2021-05-09 03:07:59.166 +03:00 [INF] ViewTest action
+2021-05-09 03:07:59.394 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 257.9580 ms
+2021-05-09 03:08:26.024 +03:00 [INF] ViewTest action
+2021-05-09 03:08:34.391 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 8371.4106 ms
+2021-05-09 03:08:54.249 +03:00 [INF] ViewTest action
+2021-05-09 03:08:55.121 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 873.5026 ms
+2021-05-09 03:09:06.005 +03:00 [INF] TestPassing(post) action
+2021-05-09 03:09:06.425 +03:00 [ERR] HTTP POST /Tests/TestPassing responded 500 in 472.7447 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TestioProject.Controllers.TestsController.TestPassing(Int32 testId, Int32 currentQuestionIndex, Int32 previousesQuestionCorrectAnswersAmount, QuestionEditModel model, ActionType actionType, String codeLock, Boolean owner) in E:\VSProjects\TestioProject\TestioProject\Controllers\TestsController.cs:line 159
+   at lambda_method501(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-05-09 03:09:06.456 +03:00 [INF] TestPassing(post) action
+2021-05-09 03:09:06.791 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TestioProject.Controllers.TestsController.TestPassing(Int32 testId, Int32 currentQuestionIndex, Int32 previousesQuestionCorrectAnswersAmount, QuestionEditModel model, ActionType actionType, String codeLock, Boolean owner) in E:\VSProjects\TestioProject\TestioProject\Controllers\TestsController.cs:line 159
+   at lambda_method501(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-05-09 03:09:06.826 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 03:09:07.147 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 1186.4202 ms
+2021-05-09 03:09:12.626 +03:00 [INF] Index tests controller action
+2021-05-09 03:09:12.642 +03:00 [INF] HTTP GET /Tests responded 200 in 17.2859 ms
+2021-05-09 03:09:13.860 +03:00 [INF] HTTP GET /Profile responded 200 in 51.8707 ms
+2021-05-09 03:09:18.594 +03:00 [INF] HTTP GET /Profile/History responded 200 in 52.0036 ms
+2021-05-09 03:09:28.198 +03:00 [INF] ViewTest action
+2021-05-09 03:09:28.209 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 12.7265 ms
+2021-05-09 03:09:31.118 +03:00 [INF] TestPassing(post) action
+2021-05-09 03:09:31.130 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 03:09:31.142 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 28.3848 ms
+2021-05-09 03:09:32.522 +03:00 [INF] Index tests controller action
+2021-05-09 03:09:32.540 +03:00 [INF] HTTP GET /Tests responded 200 in 19.1751 ms
+2021-05-09 03:09:33.678 +03:00 [INF] HTTP GET /Profile responded 200 in 8.9956 ms
+2021-05-09 03:09:34.539 +03:00 [INF] HTTP GET /Profile/History responded 200 in 11.4054 ms
+2021-05-09 03:09:38.493 +03:00 [INF] Index tests controller action
+2021-05-09 03:09:38.507 +03:00 [INF] HTTP GET /Tests responded 200 in 15.0357 ms
+2021-05-09 03:09:39.146 +03:00 [INF] ViewTest action
+2021-05-09 03:09:39.158 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 13.2463 ms
+2021-05-09 03:09:43.541 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 126.7063 ms
+2021-05-09 03:09:43.560 +03:00 [INF] HTTP GET / responded 302 in 7.4306 ms
+2021-05-09 03:09:43.719 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 97.7544 ms
+2021-05-09 03:09:49.992 +03:00 [INF] User logged in.
+2021-05-09 03:09:50.005 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 214.3880 ms
+2021-05-09 03:09:50.017 +03:00 [INF] You are on the main page
+2021-05-09 03:09:50.022 +03:00 [INF] HTTP GET / responded 200 in 5.8984 ms
+2021-05-09 03:09:51.256 +03:00 [INF] Index tests controller action
+2021-05-09 03:09:51.271 +03:00 [INF] HTTP GET /Tests responded 200 in 16.6399 ms
+2021-05-09 03:09:51.963 +03:00 [INF] ViewTest action
+2021-05-09 03:09:51.975 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 13.2489 ms
+2021-05-09 03:09:56.489 +03:00 [INF] TestPassing(post) action
+2021-05-09 03:09:56.504 +03:00 [INF] HTTP POST /Tests/TestPassing responded 302 in 17.1442 ms
+2021-05-09 03:09:56.519 +03:00 [INF] ViewTest action
+2021-05-09 03:09:56.532 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245&ErrorMessage=Invalid%20code%20lock responded 200 in 13.9459 ms
+2021-05-09 03:09:59.393 +03:00 [INF] TestPassing(post) action
+2021-05-09 03:09:59.401 +03:00 [INF] HTTP POST /Tests/TestPassing responded 302 in 9.3352 ms
+2021-05-09 03:09:59.410 +03:00 [INF] ViewTest action
+2021-05-09 03:09:59.422 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245&ErrorMessage=Invalid%20code%20lock responded 200 in 13.0038 ms
+2021-05-09 03:10:00.973 +03:00 [INF] TestPassing(post) action
+2021-05-09 03:10:00.983 +03:00 [INF] HTTP POST /Tests/TestPassing responded 302 in 12.0718 ms
+2021-05-09 03:10:00.993 +03:00 [INF] ViewTest action
+2021-05-09 03:10:01.006 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245&ErrorMessage=Invalid%20code%20lock responded 200 in 14.1393 ms
+2021-05-09 03:10:03.399 +03:00 [INF] TestPassing(post) action
+2021-05-09 03:10:03.413 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 03:10:03.423 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 25.7794 ms
+2021-05-09 03:10:05.573 +03:00 [INF] TestPassing(post) action
+2021-05-09 03:10:05.585 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 03:10:05.608 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 58.2407 ms
+2021-05-09 03:10:06.248 +03:00 [INF] TestPassFinished(post) action
+2021-05-09 03:10:06.560 +03:00 [INF] HTTP POST /Tests/TestPassFinished responded 200 in 318.1728 ms
+2021-05-09 03:10:15.001 +03:00 [INF] Index tests controller action
+2021-05-09 03:10:15.020 +03:00 [INF] HTTP GET /Tests responded 200 in 20.1241 ms
+2021-05-09 03:10:19.727 +03:00 [INF] HTTP GET /Profile responded 200 in 11.5149 ms
+2021-05-09 03:10:20.599 +03:00 [INF] HTTP GET /Profile/History responded 200 in 12.7157 ms
+2021-05-09 03:10:37.499 +03:00 [INF] You are on the main page
+2021-05-09 03:10:37.503 +03:00 [INF] HTTP GET / responded 200 in 5.0939 ms
+2021-05-09 03:10:38.385 +03:00 [INF] Index tests controller action
+2021-05-09 03:10:38.400 +03:00 [INF] HTTP GET /Tests responded 200 in 15.9577 ms
+2021-05-09 03:10:39.532 +03:00 [INF] HTTP GET /Profile responded 200 in 12.1815 ms
+2021-05-09 03:10:39.985 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 1.8901 ms
+2021-05-09 03:10:39.996 +03:00 [INF] HTTP GET / responded 302 in 0.4829 ms
+2021-05-09 03:10:40.028 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 6.9212 ms
+2021-05-09 03:10:48.209 +03:00 [INF] User logged in.
+2021-05-09 03:10:48.211 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 41.1815 ms
+2021-05-09 03:10:48.221 +03:00 [INF] You are on the main page
+2021-05-09 03:10:48.226 +03:00 [INF] HTTP GET / responded 200 in 6.1489 ms
+2021-05-09 03:10:49.512 +03:00 [INF] Index tests controller action
+2021-05-09 03:10:49.527 +03:00 [INF] HTTP GET /Tests responded 200 in 15.2849 ms
+2021-05-09 03:10:50.271 +03:00 [INF] ViewTest action
+2021-05-09 03:10:50.282 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 12.7986 ms
+2021-05-09 03:10:54.753 +03:00 [INF] TestPassing(post) action
+2021-05-09 03:10:54.768 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 03:10:54.778 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 26.3430 ms
+2021-05-09 03:10:54.832 +03:00 [INF] TestPassing(post) action
+2021-05-09 03:10:54.845 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 03:10:54.852 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 23.2542 ms
+2021-05-09 03:10:58.438 +03:00 [INF] TestPassing(post) action
+2021-05-09 03:10:58.449 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 03:10:58.455 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 19.4425 ms
+2021-05-09 03:10:59.082 +03:00 [INF] TestPassFinished(post) action
+2021-05-09 03:10:59.106 +03:00 [INF] HTTP POST /Tests/TestPassFinished responded 200 in 26.4626 ms
+2021-05-09 03:11:00.276 +03:00 [INF] Index tests controller action
+2021-05-09 03:11:00.293 +03:00 [INF] HTTP GET /Tests responded 200 in 17.7132 ms
+2021-05-09 03:11:03.352 +03:00 [INF] HTTP GET /Profile responded 200 in 8.0556 ms
+2021-05-09 03:11:04.230 +03:00 [INF] HTTP GET /Profile/History responded 200 in 10.7839 ms
+2021-05-09 03:11:09.133 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 2.3536 ms
+2021-05-09 03:11:09.143 +03:00 [INF] HTTP GET / responded 302 in 0.1928 ms
+2021-05-09 03:11:09.156 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 4.0216 ms
+2021-05-09 03:11:17.700 +03:00 [INF] User logged in.
+2021-05-09 03:11:17.703 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 38.8466 ms
+2021-05-09 03:11:17.713 +03:00 [INF] You are on the main page
+2021-05-09 03:11:17.719 +03:00 [INF] HTTP GET / responded 200 in 6.3667 ms
+2021-05-09 03:11:19.062 +03:00 [INF] Index tests controller action
+2021-05-09 03:11:19.080 +03:00 [INF] HTTP GET /Tests responded 200 in 19.1336 ms
+2021-05-09 03:11:20.554 +03:00 [INF] ViewTest action
+2021-05-09 03:11:20.567 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 14.4621 ms
+2021-05-09 03:11:22.822 +03:00 [INF] HTTP GET /Profile responded 200 in 10.5314 ms
+2021-05-09 03:11:23.513 +03:00 [INF] HTTP GET /Profile/Statistic responded 200 in 61.5616 ms
+2021-05-09 03:11:41.705 +03:00 [INF] HTTP GET /Profile responded 200 in 15.7810 ms
+2021-05-09 03:11:43.285 +03:00 [INF] HTTP GET /Profile/History responded 200 in 10.4252 ms
+2021-05-09 03:11:48.980 +03:00 [INF] HTTP GET /Profile responded 200 in 8.6254 ms
+2021-05-09 03:11:50.989 +03:00 [INF] You are on the main page
+2021-05-09 03:11:50.994 +03:00 [INF] HTTP GET / responded 200 in 6.4262 ms
+2021-05-09 03:11:51.961 +03:00 [INF] Index tests controller action
+2021-05-09 03:11:51.976 +03:00 [INF] HTTP GET /Tests responded 200 in 15.9843 ms
+2021-05-09 03:11:53.838 +03:00 [INF] ViewTest action
+2021-05-09 03:11:53.852 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 15.5066 ms
+2021-05-09 03:11:56.305 +03:00 [INF] Index tests controller action
+2021-05-09 03:11:56.321 +03:00 [INF] HTTP GET /Tests responded 200 in 16.8697 ms
+2021-05-09 03:11:57.649 +03:00 [INF] ViewTest action
+2021-05-09 03:11:57.662 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 13.9007 ms
+2021-05-09 03:12:14.857 +03:00 [INF] TestPassing(post) action
+2021-05-09 03:12:14.871 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 03:12:14.880 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 24.1108 ms
+2021-05-09 03:12:18.325 +03:00 [INF] You are on the main page
+2021-05-09 03:12:18.330 +03:00 [INF] HTTP GET / responded 200 in 6.5640 ms
+2021-05-09 03:12:33.154 +03:00 [INF] HTTP GET /Profile responded 200 in 9.1958 ms
+2021-05-09 03:12:34.133 +03:00 [INF] HTTP GET /Profile/Statistic responded 200 in 16.3181 ms
+2021-05-09 03:12:38.619 +03:00 [INF] HTTP GET /Profile responded 200 in 8.7723 ms
+2021-05-09 03:12:39.550 +03:00 [INF] HTTP GET /Profile/History responded 200 in 10.8737 ms
+2021-05-09 03:12:48.923 +03:00 [INF] Index tests controller action
+2021-05-09 03:12:48.935 +03:00 [INF] HTTP GET /Tests responded 200 in 13.3604 ms
+2021-05-09 03:12:50.365 +03:00 [INF] ViewTest action
+2021-05-09 03:12:50.378 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 14.3044 ms
+2021-05-09 03:12:51.868 +03:00 [INF] TestPassing(post) action
+2021-05-09 03:12:51.882 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 03:12:51.893 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 26.5108 ms
+2021-05-09 03:12:53.084 +03:00 [INF] Index tests controller action
+2021-05-09 03:12:53.099 +03:00 [INF] HTTP GET /Tests responded 200 in 16.4540 ms
+2021-05-09 03:13:18.100 +03:00 [INF] ViewTest action
+2021-05-09 03:13:18.185 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 85.6934 ms
+2021-05-09 03:13:23.504 +03:00 [INF] You are on the main page
+2021-05-09 03:13:23.509 +03:00 [INF] HTTP GET / responded 200 in 5.7054 ms
+2021-05-09 03:13:24.540 +03:00 [INF] Index tests controller action
+2021-05-09 03:13:24.556 +03:00 [INF] HTTP GET /Tests responded 200 in 17.0118 ms
+2021-05-09 03:13:25.563 +03:00 [INF] HTTP GET /Tests/ReferrerModalWindow responded 200 in 17.5571 ms
+2021-05-09 03:13:25.567 +03:00 [INF] HTTP GET /Tests/ReferrerModalWindow responded 200 in 1.3254 ms
+2021-05-09 03:13:30.407 +03:00 [INF] HTTP POST /Tests/GetTestByReferrerToken responded 302 in 82.9736 ms
+2021-05-09 03:13:30.428 +03:00 [INF] HTTP POST /Tests/GetTestByReferrerToken responded 302 in 78.5854 ms
+2021-05-09 03:13:30.439 +03:00 [INF] ViewTest action
+2021-05-09 03:13:30.448 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 10.2584 ms
+2021-05-09 03:13:42.508 +03:00 [INF] TestPassing(post) action
+2021-05-09 03:13:42.525 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 03:13:42.534 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 27.2181 ms
+2021-05-09 03:13:47.979 +03:00 [INF] TestPassing(post) action
+2021-05-09 03:13:47.991 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 03:13:47.995 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 17.8587 ms
+2021-05-09 03:13:48.987 +03:00 [INF] TestPassFinished(post) action
+2021-05-09 03:13:49.021 +03:00 [INF] HTTP POST /Tests/TestPassFinished responded 200 in 35.9739 ms
+2021-05-09 03:13:51.700 +03:00 [INF] Index tests controller action
+2021-05-09 03:13:51.718 +03:00 [INF] HTTP GET /Tests responded 200 in 18.3023 ms
+2021-05-09 03:13:52.886 +03:00 [INF] HTTP GET /Profile responded 200 in 7.6755 ms
+2021-05-09 03:13:54.379 +03:00 [INF] HTTP GET /Profile/History responded 200 in 7.6829 ms
+2021-05-09 03:13:58.023 +03:00 [INF] HTTP GET /Profile responded 200 in 6.7780 ms
+2021-05-09 03:13:58.673 +03:00 [INF] HTTP GET /Profile/Statistic responded 200 in 16.3199 ms
+2021-05-09 03:15:22.844 +03:00 [INF] Index tests controller action
+2021-05-09 03:15:22.862 +03:00 [INF] HTTP GET /Tests responded 200 in 23.2291 ms
+2021-05-09 03:15:23.558 +03:00 [INF] HTTP GET /Profile responded 200 in 12.1921 ms
+2021-05-09 03:16:02.233 +03:00 [INF] HTTP GET /Profile/Statistic responded 200 in 34860.9455 ms
+2021-05-09 03:16:20.199 +03:00 [INF] HTTP GET /Profile/Statistic responded 200 in 36360.7338 ms
+2021-05-09 03:16:23.682 +03:00 [INF] Index tests controller action
+2021-05-09 03:16:23.695 +03:00 [INF] HTTP GET /Tests responded 200 in 14.2150 ms
+2021-05-09 03:16:24.719 +03:00 [INF] HTTP GET /Profile responded 200 in 17.0675 ms
+2021-05-09 03:16:26.179 +03:00 [INF] HTTP GET /Profile/History responded 200 in 14.9025 ms
+2021-05-09 03:16:27.759 +03:00 [INF] HTTP GET /Profile responded 200 in 7.6917 ms
+2021-05-09 03:16:33.328 +03:00 [INF] HTTP GET /Profile/Statistic responded 200 in 5050.0408 ms
+2021-05-09 03:17:27.173 +03:00 [INF] Application starting up
+2021-05-09 03:17:30.706 +03:00 [INF] You are on the main page
+2021-05-09 03:17:30.985 +03:00 [INF] HTTP GET / responded 200 in 767.2263 ms
+2021-05-09 03:17:33.958 +03:00 [INF] Index tests controller action
+2021-05-09 03:17:35.953 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-09 03:17:36.110 +03:00 [INF] HTTP GET /Tests responded 200 in 2256.3798 ms
+2021-05-09 03:17:38.038 +03:00 [INF] ViewTest action
+2021-05-09 03:17:38.408 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 411.5393 ms
+2021-05-09 03:17:49.904 +03:00 [INF] HTTP GET /Profile responded 200 in 82.7173 ms
+2021-05-09 03:17:50.963 +03:00 [INF] HTTP GET /Profile/History responded 200 in 64.3345 ms
+2021-05-09 03:17:52.780 +03:00 [INF] Index tests controller action
+2021-05-09 03:17:52.796 +03:00 [INF] HTTP GET /Tests responded 200 in 17.7785 ms
+2021-05-09 03:17:54.376 +03:00 [INF] HTTP GET /Profile responded 200 in 12.9342 ms
+2021-05-09 03:18:47.411 +03:00 [INF] HTTP GET /Profile/Statistic responded 200 in 52375.1721 ms
+2021-05-09 03:19:52.805 +03:00 [INF] Application starting up
+2021-05-09 03:19:56.706 +03:00 [INF] You are on the main page
+2021-05-09 03:19:57.120 +03:00 [INF] HTTP GET / responded 200 in 1140.7226 ms
+2021-05-09 03:19:59.523 +03:00 [INF] Index tests controller action
+2021-05-09 03:20:02.308 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-09 03:20:02.510 +03:00 [INF] HTTP GET /Tests responded 200 in 3111.4507 ms
+2021-05-09 03:20:04.313 +03:00 [INF] HTTP GET /Profile responded 200 in 196.0084 ms
+2021-05-09 03:20:22.862 +03:00 [INF] HTTP GET /Profile/Statistic responded 200 in 17013.2043 ms
+2021-05-09 03:21:39.329 +03:00 [INF] Application starting up
+2021-05-09 03:21:43.056 +03:00 [INF] You are on the main page
+2021-05-09 03:21:43.306 +03:00 [INF] HTTP GET / responded 200 in 648.7829 ms
+2021-05-09 03:21:52.622 +03:00 [INF] Index tests controller action
+2021-05-09 03:21:55.307 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-09 03:21:55.459 +03:00 [INF] HTTP GET /Tests responded 200 in 2986.0612 ms
+2021-05-09 03:21:57.760 +03:00 [INF] HTTP GET /Profile responded 200 in 190.0175 ms
+2021-05-09 03:21:59.045 +03:00 [INF] HTTP GET /Profile/History responded 200 in 52.5146 ms
+2021-05-09 03:22:01.313 +03:00 [INF] HTTP GET /Profile responded 200 in 35.7760 ms
+2021-05-09 03:22:10.955 +03:00 [INF] HTTP GET /Profile/Statistic responded 200 in 8950.4079 ms
+2021-05-09 03:22:21.324 +03:00 [INF] HTTP GET /Profile responded 200 in 8.3489 ms
+2021-05-09 03:22:22.405 +03:00 [INF] HTTP GET /Profile/History responded 200 in 9.1315 ms
+2021-05-09 03:22:30.908 +03:00 [INF] Index tests controller action
+2021-05-09 03:22:30.920 +03:00 [INF] HTTP GET /Tests responded 200 in 14.3886 ms
+2021-05-09 03:22:32.110 +03:00 [INF] You are on the main page
+2021-05-09 03:22:32.117 +03:00 [INF] HTTP GET / responded 200 in 8.0829 ms
+2021-05-09 03:22:32.780 +03:00 [INF] HTTP GET /Profile responded 200 in 9.1951 ms
+2021-05-09 03:22:34.166 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 205.0412 ms
+2021-05-09 03:22:34.199 +03:00 [INF] HTTP GET / responded 302 in 18.5679 ms
+2021-05-09 03:22:34.350 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 141.0278 ms
+2021-05-09 03:22:39.425 +03:00 [INF] User logged in.
+2021-05-09 03:22:39.436 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 266.4165 ms
+2021-05-09 03:22:39.447 +03:00 [INF] You are on the main page
+2021-05-09 03:22:39.450 +03:00 [INF] HTTP GET / responded 200 in 3.9818 ms
+2021-05-09 03:22:41.285 +03:00 [INF] Requests action
+2021-05-09 03:22:41.359 +03:00 [INF] HTTP GET /Admin/Requests responded 200 in 77.2880 ms
+2021-05-09 03:22:46.646 +03:00 [INF] Admin panel page
+2021-05-09 03:22:46.682 +03:00 [INF] HTTP GET /Admin responded 200 in 46.1752 ms
+2021-05-09 03:22:56.257 +03:00 [INF] More User Detail page
+2021-05-09 03:22:56.269 +03:00 [INF] HTTP GET /Admin/MoreUserDetail?userId=53067f14-a5f2-4f9f-9bb0-cf2bf0fe1e55 responded 200 in 16.7638 ms
+2021-05-09 03:22:59.591 +03:00 [INF] Admin panel page
+2021-05-09 03:22:59.600 +03:00 [INF] HTTP GET /Admin responded 200 in 9.8375 ms
+2021-05-09 03:23:10.021 +03:00 [INF] HTTP POST /Admin/Ban responded 302 in 189.4596 ms
+2021-05-09 03:23:10.032 +03:00 [INF] Admin panel page
+2021-05-09 03:23:10.039 +03:00 [INF] HTTP GET /Admin responded 200 in 8.3638 ms
+2021-05-09 03:23:14.446 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 1.4733 ms
+2021-05-09 03:23:14.457 +03:00 [INF] HTTP GET / responded 302 in 0.3175 ms
+2021-05-09 03:23:14.473 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 5.2678 ms
+2021-05-09 03:23:21.350 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 200 in 11.7918 ms
+2021-05-09 03:23:42.627 +03:00 [INF] User logged in.
+2021-05-09 03:23:42.631 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 45.4284 ms
+2021-05-09 03:23:42.642 +03:00 [INF] You are on the main page
+2021-05-09 03:23:42.646 +03:00 [INF] HTTP GET / responded 200 in 4.5108 ms
+2021-05-09 03:23:44.001 +03:00 [INF] Admin panel page
+2021-05-09 03:23:44.010 +03:00 [INF] HTTP GET /Admin responded 200 in 10.0974 ms
+2021-05-09 03:23:45.987 +03:00 [INF] HTTP POST /Admin/Unban responded 302 in 11.6306 ms
+2021-05-09 03:23:46.000 +03:00 [INF] Admin panel page
+2021-05-09 03:23:46.007 +03:00 [INF] HTTP GET /Admin responded 200 in 8.3473 ms
+2021-05-09 03:23:50.263 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 1.8413 ms
+2021-05-09 03:23:50.274 +03:00 [INF] HTTP GET / responded 302 in 0.4179 ms
+2021-05-09 03:23:50.290 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 4.6017 ms
+2021-05-09 03:24:00.399 +03:00 [INF] User logged in.
+2021-05-09 03:24:00.403 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 44.0931 ms
+2021-05-09 03:24:00.413 +03:00 [INF] You are on the main page
+2021-05-09 03:24:00.416 +03:00 [INF] HTTP GET / responded 200 in 3.8636 ms
+2021-05-09 03:24:02.215 +03:00 [INF] Index tests controller action
+2021-05-09 03:24:02.229 +03:00 [INF] HTTP GET /Tests responded 200 in 14.7223 ms
+2021-05-09 03:24:03.778 +03:00 [INF] HTTP GET /Profile responded 200 in 8.4797 ms
+2021-05-09 03:24:05.888 +03:00 [INF] HTTP GET /Profile/History responded 200 in 11.9228 ms
+2021-05-09 03:24:08.714 +03:00 [INF] You are on the main page
+2021-05-09 03:24:08.721 +03:00 [INF] HTTP GET / responded 200 in 7.7413 ms
+2021-05-09 03:24:17.266 +03:00 [INF] HTTP GET /Profile responded 200 in 11.0232 ms
+2021-05-09 03:24:26.042 +03:00 [INF] HTTP GET /Profile/History responded 200 in 9.1106 ms
+2021-05-09 03:24:33.843 +03:00 [INF] HTTP GET /Profile responded 200 in 10.6811 ms
+2021-05-09 03:24:35.322 +03:00 [INF] Index tests controller action
+2021-05-09 03:24:35.337 +03:00 [INF] HTTP GET /Tests responded 200 in 16.3712 ms
+2021-05-09 03:24:36.040 +03:00 [INF] You are on the main page
+2021-05-09 03:24:36.045 +03:00 [INF] HTTP GET / responded 200 in 6.0258 ms
+2021-05-09 03:24:50.037 +03:00 [INF] You are on the main page
+2021-05-09 03:24:50.041 +03:00 [INF] HTTP GET / responded 200 in 6.3503 ms
+2021-05-09 03:24:50.594 +03:00 [INF] Index tests controller action
+2021-05-09 03:24:50.609 +03:00 [INF] HTTP GET /Tests responded 200 in 15.9114 ms
+2021-05-09 03:28:50.086 +03:00 [INF] HTTP GET /Profile responded 200 in 7280.7234 ms
+2021-05-09 03:29:10.402 +03:00 [INF] HTTP GET /Profile responded 200 in 918.5133 ms
+2021-05-09 03:30:39.425 +03:00 [INF] You are on the main page
+2021-05-09 03:30:39.429 +03:00 [INF] HTTP GET / responded 200 in 5.5397 ms
+2021-05-09 03:30:40.159 +03:00 [INF] Index tests controller action
+2021-05-09 03:30:40.178 +03:00 [INF] HTTP GET /Tests responded 200 in 20.0676 ms
+2021-05-09 03:30:41.274 +03:00 [INF] You are on the main page
+2021-05-09 03:30:41.278 +03:00 [INF] HTTP GET / responded 200 in 5.3914 ms
+2021-05-09 03:30:42.617 +03:00 [INF] Index tests controller action
+2021-05-09 03:30:42.629 +03:00 [INF] HTTP GET /Tests responded 200 in 14.5653 ms
+2021-05-09 03:30:45.139 +03:00 [INF] You are on the main page
+2021-05-09 03:30:45.145 +03:00 [INF] HTTP GET / responded 200 in 6.9549 ms
+2021-05-09 04:04:53.161 +03:00 [INF] Application starting up
+2021-05-09 04:05:00.457 +03:00 [INF] You are on the main page
+2021-05-09 04:05:00.740 +03:00 [INF] HTTP GET / responded 200 in 3228.9844 ms
+2021-05-09 04:05:16.714 +03:00 [INF] Index tests controller action
+2021-05-09 04:05:16.991 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-09 04:05:17.076 +03:00 [INF] HTTP GET /Tests responded 200 in 468.7690 ms
+2021-05-09 04:05:25.570 +03:00 [INF] HTTP POST /Tests/Search responded 302 in 73.0884 ms
+2021-05-09 04:05:25.602 +03:00 [INF] Index tests controller action
+2021-05-09 04:05:25.620 +03:00 [INF] HTTP GET /Tests?search=True&searchModelsIds=244&searchModelsIds=245 responded 200 in 31.0888 ms
+2021-05-09 04:05:29.906 +03:00 [ERR] HTTP POST /Tests/Search responded 500 in 379.0602 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TestioProject.Controllers.TestsController.Search(String search, Boolean display) in E:\VSProjects\TestioProject\TestioProject\Controllers\TestsController.cs:line 65
+   at lambda_method521(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-05-09 04:05:30.230 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TestioProject.Controllers.TestsController.Search(String search, Boolean display) in E:\VSProjects\TestioProject\TestioProject\Controllers\TestsController.cs:line 65
+   at lambda_method521(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-05-09 04:06:25.454 +03:00 [INF] Index tests controller action
+2021-05-09 04:06:25.477 +03:00 [INF] HTTP GET /Tests?search=True&searchModelsIds=244&searchModelsIds=245 responded 200 in 30.9502 ms
+2021-05-09 04:06:26.329 +03:00 [INF] Index tests controller action
+2021-05-09 04:06:26.347 +03:00 [INF] HTTP GET /Tests?search=True&searchModelsIds=244&searchModelsIds=245 responded 200 in 19.2002 ms
+2021-05-09 04:06:45.219 +03:00 [ERR] HTTP POST /Tests/Search responded 500 in 6490.4467 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TestioProject.Controllers.TestsController.Search(String search, Boolean display)
+   at lambda_method521(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-05-09 04:06:45.234 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TestioProject.Controllers.TestsController.Search(String search, Boolean display)
+   at lambda_method521(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-05-09 04:08:37.406 +03:00 [INF] Index tests controller action
+2021-05-09 04:08:37.425 +03:00 [INF] HTTP GET /Tests?search=True&searchModelsIds=244&searchModelsIds=245 responded 200 in 20.1437 ms
+2021-05-09 04:08:38.195 +03:00 [INF] Index tests controller action
+2021-05-09 04:08:38.212 +03:00 [INF] HTTP GET /Tests?search=True&searchModelsIds=244&searchModelsIds=245 responded 200 in 17.4288 ms
+2021-05-09 04:09:49.772 +03:00 [INF] Application starting up
+2021-05-09 04:09:54.367 +03:00 [INF] You are on the main page
+2021-05-09 04:09:54.706 +03:00 [INF] HTTP GET / responded 200 in 865.4406 ms
+2021-05-09 04:10:09.047 +03:00 [INF] Index tests controller action
+2021-05-09 04:10:11.939 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-09 04:10:12.145 +03:00 [INF] HTTP GET /Tests responded 200 in 3221.1830 ms
+2021-05-09 04:10:13.418 +03:00 [INF] You are on the main page
+2021-05-09 04:10:13.425 +03:00 [INF] HTTP GET / responded 200 in 16.5412 ms
+2021-05-09 04:10:15.375 +03:00 [INF] HTTP GET /Profile responded 200 in 236.0909 ms
+2021-05-09 04:10:18.311 +03:00 [INF] Index tests controller action
+2021-05-09 04:10:18.330 +03:00 [INF] HTTP GET /Tests responded 200 in 20.8400 ms
+2021-05-09 04:10:19.922 +03:00 [INF] HTTP GET /Profile responded 200 in 11.8403 ms
+2021-05-09 04:10:23.630 +03:00 [INF] HTTP GET /Profile/DeleteAccountModalWindow responded 200 in 345.9615 ms
+2021-05-09 04:10:23.642 +03:00 [INF] HTTP GET /Profile/DeleteAccountModalWindow responded 200 in 9.3800 ms
+2021-05-09 04:10:23.649 +03:00 [INF] HTTP GET /Profile/DeleteAccountModalWindow responded 200 in 4.3132 ms
+2021-05-09 04:10:23.655 +03:00 [INF] HTTP GET /Profile/DeleteAccountModalWindow responded 200 in 4.5684 ms
+2021-05-09 04:10:33.611 +03:00 [INF] HTTP GET /Profile responded 200 in 11.8514 ms
+2021-05-09 04:10:34.762 +03:00 [INF] HTTP GET /Profile/DeleteAccountModalWindow responded 200 in 4.5308 ms
+2021-05-09 04:10:34.769 +03:00 [INF] HTTP GET /Profile/DeleteAccountModalWindow responded 200 in 4.8529 ms
+2021-05-09 04:10:45.842 +03:00 [INF] You are on the main page
+2021-05-09 04:10:45.847 +03:00 [INF] HTTP GET / responded 200 in 5.2723 ms
+2021-05-09 04:11:54.080 +03:00 [INF] Index tests controller action
+2021-05-09 04:11:54.099 +03:00 [INF] HTTP GET /Tests responded 200 in 20.3472 ms
+2021-05-09 04:11:55.684 +03:00 [ERR] HTTP POST /Tests/Search responded 500 in 378.3659 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TestioProject.Controllers.TestsController.Search(String search, Boolean display) in E:\VSProjects\TestioProject\TestioProject\Controllers\TestsController.cs:line 65
+   at lambda_method506(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-05-09 04:11:55.846 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TestioProject.Controllers.TestsController.Search(String search, Boolean display) in E:\VSProjects\TestioProject\TestioProject\Controllers\TestsController.cs:line 65
+   at lambda_method506(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-05-09 04:12:05.810 +03:00 [INF] Index tests controller action
+2021-05-09 04:12:05.830 +03:00 [INF] HTTP GET /Tests responded 200 in 22.4660 ms
+2021-05-09 04:12:08.447 +03:00 [ERR] HTTP POST /Tests/Search responded 500 in 59.9644 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TestioProject.Controllers.TestsController.Search(String search, Boolean display) in E:\VSProjects\TestioProject\TestioProject\Controllers\TestsController.cs:line 65
+   at lambda_method506(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-05-09 04:12:08.478 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TestioProject.Controllers.TestsController.Search(String search, Boolean display) in E:\VSProjects\TestioProject\TestioProject\Controllers\TestsController.cs:line 65
+   at lambda_method506(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-05-09 04:12:11.469 +03:00 [INF] Index tests controller action
+2021-05-09 04:12:11.484 +03:00 [INF] HTTP GET /Tests responded 200 in 15.2917 ms
+2021-05-09 04:13:38.503 +03:00 [INF] Application starting up
+2021-05-09 04:13:42.052 +03:00 [INF] You are on the main page
+2021-05-09 04:13:42.319 +03:00 [INF] HTTP GET / responded 200 in 705.0292 ms
+2021-05-09 04:13:45.165 +03:00 [INF] Index tests controller action
+2021-05-09 04:13:45.165 +03:00 [INF] Index tests controller action
+2021-05-09 04:13:46.565 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-09 04:13:46.649 +03:00 [INF] HTTP GET /Tests responded 200 in 1551.3418 ms
+2021-05-09 04:13:46.649 +03:00 [INF] HTTP GET /Tests responded 200 in 1523.9110 ms
+2021-05-09 04:13:48.385 +03:00 [ERR] HTTP POST /Tests/Search responded 500 in 203.2155 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TestioProject.Controllers.TestsController.Search(String search, Boolean display) in E:\VSProjects\TestioProject\TestioProject\Controllers\TestsController.cs:line 65
+   at lambda_method879(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-05-09 04:13:48.386 +03:00 [ERR] HTTP POST /Tests/Search responded 500 in 31.1054 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TestioProject.Controllers.TestsController.Search(String search, Boolean display) in E:\VSProjects\TestioProject\TestioProject\Controllers\TestsController.cs:line 65
+   at lambda_method879(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-05-09 04:13:48.501 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TestioProject.Controllers.TestsController.Search(String search, Boolean display) in E:\VSProjects\TestioProject\TestioProject\Controllers\TestsController.cs:line 65
+   at lambda_method879(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-05-09 04:13:48.515 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TestioProject.Controllers.TestsController.Search(String search, Boolean display) in E:\VSProjects\TestioProject\TestioProject\Controllers\TestsController.cs:line 65
+   at lambda_method879(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-05-09 04:17:23.454 +03:00 [INF] Application starting up
+2021-05-09 04:17:27.040 +03:00 [INF] You are on the main page
+2021-05-09 04:17:27.393 +03:00 [INF] HTTP GET / responded 200 in 799.6988 ms
+2021-05-09 04:17:29.971 +03:00 [INF] Index tests controller action
+2021-05-09 04:17:30.792 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-09 04:17:30.824 +03:00 [INF] HTTP GET /Profile responded 200 in 1555.5520 ms
+2021-05-09 04:17:30.842 +03:00 [INF] HTTP GET /Tests responded 200 in 951.6746 ms
+2021-05-09 04:17:40.054 +03:00 [INF] HTTP POST /Tests/Search responded 302 in 7131.3586 ms
+2021-05-09 04:17:40.068 +03:00 [INF] Index tests controller action
+2021-05-09 04:17:40.080 +03:00 [INF] HTTP GET /Tests?search=False responded 200 in 16.9622 ms
+2021-05-09 04:17:47.861 +03:00 [INF] HTTP POST /Tests/Search responded 302 in 3821.7327 ms
+2021-05-09 04:17:47.871 +03:00 [INF] Index tests controller action
+2021-05-09 04:17:47.881 +03:00 [INF] HTTP GET /Tests?search=False responded 200 in 11.3205 ms
+2021-05-09 04:17:57.381 +03:00 [INF] HTTP POST /Tests/Search responded 302 in 9.0440 ms
+2021-05-09 04:17:57.391 +03:00 [INF] Index tests controller action
+2021-05-09 04:17:57.404 +03:00 [INF] HTTP GET /Tests?search=True&searchModelsIds=244 responded 200 in 15.8108 ms
+2021-05-09 04:18:01.086 +03:00 [INF] Index tests controller action
+2021-05-09 04:18:01.094 +03:00 [INF] HTTP GET /Tests?search=True&searchModelsIds=244 responded 200 in 8.5567 ms
+2021-05-09 04:18:02.160 +03:00 [INF] HTTP POST /Tests/Search responded 302 in 0.5875 ms
+2021-05-09 04:18:02.170 +03:00 [INF] Index tests controller action
+2021-05-09 04:18:02.180 +03:00 [INF] HTTP GET /Tests?search=False responded 200 in 10.6563 ms
+2021-05-09 04:19:51.096 +03:00 [INF] Application starting up
+2021-05-09 04:19:53.254 +03:00 [INF] You are on the main page
+2021-05-09 04:19:53.447 +03:00 [INF] HTTP GET / responded 200 in 473.0940 ms
+2021-05-09 04:20:19.537 +03:00 [INF] Index tests controller action
+2021-05-09 04:20:21.612 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-09 04:20:21.733 +03:00 [INF] HTTP GET /Tests responded 200 in 2236.5473 ms
+2021-05-09 04:20:25.184 +03:00 [INF] ViewTest action
+2021-05-09 04:20:25.374 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=244 responded 200 in 218.0522 ms
+2021-05-09 04:20:28.305 +03:00 [INF] Index tests controller action
+2021-05-09 04:20:28.324 +03:00 [INF] HTTP GET /Tests responded 200 in 19.7127 ms
+2021-05-09 04:20:30.129 +03:00 [INF] You are on the main page
+2021-05-09 04:20:30.132 +03:00 [INF] HTTP GET / responded 200 in 4.6231 ms
+2021-05-09 04:20:34.440 +03:00 [INF] Index tests controller action
+2021-05-09 04:20:34.452 +03:00 [INF] HTTP GET /Tests responded 200 in 13.1006 ms
+2021-05-09 04:20:37.444 +03:00 [INF] Index tests controller action
+2021-05-09 04:20:37.456 +03:00 [INF] HTTP GET /Tests responded 200 in 11.9860 ms
+2021-05-09 04:20:40.757 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 75.0289 ms
+2021-05-09 04:20:40.766 +03:00 [INF] HTTP GET / responded 302 in 2.8889 ms
+2021-05-09 04:20:40.841 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 69.4842 ms
+2021-05-09 04:20:49.752 +03:00 [WRN] Invalid password for user.
+2021-05-09 04:20:49.754 +03:00 [WRN] User failed to provide the correct password.
+2021-05-09 04:20:49.779 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 200 in 94.0932 ms
+2021-05-09 04:20:58.589 +03:00 [INF] User logged in.
+2021-05-09 04:20:58.593 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 98.7548 ms
+2021-05-09 04:20:58.598 +03:00 [INF] You are on the main page
+2021-05-09 04:20:58.602 +03:00 [INF] HTTP GET / responded 200 in 4.6404 ms
+2021-05-09 04:21:00.215 +03:00 [INF] PrivateChooser action
+2021-05-09 04:21:00.241 +03:00 [INF] HTTP GET /Tests/PrivateChooser responded 200 in 29.7493 ms
+2021-05-09 04:21:02.554 +03:00 [INF] CreateOrEditTest action
+2021-05-09 04:21:02.638 +03:00 [INF] HTTP GET /Tests/CreateOrEditTest?isPrivate=false responded 200 in 87.4849 ms
+2021-05-09 04:21:17.066 +03:00 [INF] CreateOrEditTest(post) action
+2021-05-09 04:21:17.317 +03:00 [INF] HTTP POST /Tests/CreateOrEditTest?actionType=1 responded 302 in 258.6365 ms
+2021-05-09 04:21:17.331 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 04:21:17.401 +03:00 [INF] HTTP GET /Tests/CreateOrEditQuestion?testId=246 responded 200 in 77.6338 ms
+2021-05-09 04:21:23.293 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 04:21:23.295 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 04:21:23.306 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 19.1974 ms
+2021-05-09 04:21:26.649 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 04:21:26.651 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 04:21:26.665 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 17.9037 ms
+2021-05-09 04:21:37.272 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 04:21:37.275 +03:00 [INF] CreateOrEditQuestion action: Switch NextQuestion
+2021-05-09 04:21:37.322 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=NextQuestion responded 200 in 50.7347 ms
+2021-05-09 04:21:37.333 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 04:21:37.336 +03:00 [INF] CreateOrEditQuestion action: Switch NextQuestion
+2021-05-09 04:21:37.355 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=NextQuestion responded 200 in 22.9032 ms
+2021-05-09 04:21:43.040 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 04:21:43.042 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 04:21:43.056 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 04:21:43.057 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 18.2735 ms
+2021-05-09 04:21:43.058 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 04:21:43.072 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 17.2003 ms
+2021-05-09 04:21:45.488 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 04:21:45.490 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 04:21:45.505 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 17.6021 ms
+2021-05-09 04:21:50.029 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 04:21:50.031 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 04:21:50.044 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 16.5812 ms
+2021-05-09 04:21:56.553 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 04:21:56.555 +03:00 [INF] CreateOrEditQuestion action: Switch NextQuestion
+2021-05-09 04:21:56.576 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=NextQuestion responded 200 in 24.1995 ms
+2021-05-09 04:22:04.191 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 04:22:04.195 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 04:22:04.207 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 16.6985 ms
+2021-05-09 04:22:11.941 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 04:22:11.953 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=Finish responded 302 in 12.7579 ms
+2021-05-09 04:22:11.963 +03:00 [INF] FinishTestCreating action
+2021-05-09 04:22:12.008 +03:00 [INF] HTTP GET /Tests/FinishTestCreating?testId=246 responded 200 in 48.5535 ms
+2021-05-09 04:22:13.776 +03:00 [INF] ViewTest action
+2021-05-09 04:22:13.790 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 14.4994 ms
+2021-05-09 04:23:44.229 +03:00 [INF] ViewTest action
+2021-05-09 04:23:52.782 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 8553.8005 ms
+2021-05-09 04:25:23.563 +03:00 [INF] ViewTest action
+2021-05-09 04:25:23.637 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 73.9884 ms
+2021-05-09 04:25:54.316 +03:00 [INF] You are on the main page
+2021-05-09 04:25:54.320 +03:00 [INF] HTTP GET / responded 200 in 4.3335 ms
+2021-05-09 04:25:54.962 +03:00 [INF] Index tests controller action
+2021-05-09 04:25:54.973 +03:00 [INF] HTTP GET /Tests responded 200 in 11.5338 ms
+2021-05-09 04:25:56.849 +03:00 [INF] ViewTest action
+2021-05-09 04:25:56.858 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 8.9260 ms
+2021-05-09 04:26:43.788 +03:00 [INF] ViewTest action
+2021-05-09 04:26:43.797 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 9.4758 ms
+2021-05-09 04:28:12.757 +03:00 [INF] ViewTest action
+2021-05-09 04:28:13.243 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 486.6455 ms
+2021-05-09 04:29:08.001 +03:00 [INF] HTTP GET /Home/Privacy responded 200 in 11.7558 ms
+2021-05-09 04:29:15.637 +03:00 [INF] ViewTest action
+2021-05-09 04:29:15.646 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 9.6147 ms
+2021-05-09 04:29:24.860 +03:00 [INF] ViewTest action
+2021-05-09 04:29:25.079 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 219.8726 ms
+2021-05-09 04:29:52.547 +03:00 [INF] ViewTest action
+2021-05-09 04:29:52.707 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 161.1224 ms
+2021-05-09 04:30:07.281 +03:00 [INF] ViewTest action
+2021-05-09 04:30:07.499 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 217.9549 ms
+2021-05-09 04:30:26.647 +03:00 [INF] ViewTest action
+2021-05-09 04:30:26.875 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 229.4939 ms
+2021-05-09 04:30:35.207 +03:00 [INF] ViewTest action
+2021-05-09 04:30:35.367 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 160.9860 ms
+2021-05-09 04:30:51.993 +03:00 [INF] ViewTest action
+2021-05-09 04:30:52.214 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 221.6332 ms
+2021-05-09 04:31:04.345 +03:00 [INF] ViewTest action
+2021-05-09 04:31:04.564 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 220.1002 ms
+2021-05-09 04:31:16.557 +03:00 [INF] ViewTest action
+2021-05-09 04:31:16.722 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 165.8655 ms
+2021-05-09 04:31:21.665 +03:00 [INF] ViewTest action
+2021-05-09 04:31:21.845 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 180.0753 ms
+2021-05-09 04:31:26.316 +03:00 [INF] ViewTest action
+2021-05-09 04:31:26.493 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 178.8141 ms
+2021-05-09 04:31:35.133 +03:00 [INF] ViewTest action
+2021-05-09 04:31:35.286 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 152.8691 ms
+2021-05-09 04:31:53.514 +03:00 [INF] ViewTest action
+2021-05-09 04:31:53.698 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 184.5232 ms
+2021-05-09 04:32:09.511 +03:00 [INF] ViewTest action
+2021-05-09 04:32:09.696 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 185.7422 ms
+2021-05-09 04:34:21.529 +03:00 [INF] ViewTest action
+2021-05-09 04:34:21.757 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 228.2898 ms
+2021-05-09 04:34:25.086 +03:00 [INF] Index tests controller action
+2021-05-09 04:34:25.096 +03:00 [INF] HTTP GET /Tests responded 200 in 10.8922 ms
+2021-05-09 04:34:26.514 +03:00 [INF] ViewTest action
+2021-05-09 04:34:26.522 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 8.9824 ms
+2021-05-09 04:34:41.549 +03:00 [INF] Index tests controller action
+2021-05-09 04:34:41.565 +03:00 [INF] HTTP GET /Tests responded 200 in 16.4162 ms
+2021-05-09 04:34:44.348 +03:00 [INF] ViewTest action
+2021-05-09 04:34:44.355 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 7.2698 ms
+2021-05-09 04:34:46.082 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:34:46.105 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 04:34:46.195 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 120.9182 ms
+2021-05-09 04:42:20.028 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:42:20.102 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 04:42:20.627 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 599.4750 ms
+2021-05-09 04:42:21.898 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:42:21.906 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 04:42:21.914 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 16.4456 ms
+2021-05-09 04:42:41.581 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:42:41.593 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 04:42:41.799 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 219.0406 ms
+2021-05-09 04:42:43.438 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:42:43.447 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 04:42:43.457 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 19.1108 ms
+2021-05-09 04:43:00.594 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:43:00.605 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 04:43:00.813 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 219.6286 ms
+2021-05-09 04:43:01.410 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:43:01.415 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 04:43:01.423 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 14.3149 ms
+2021-05-09 04:43:01.929 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:43:01.938 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 04:43:01.944 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 15.3417 ms
+2021-05-09 04:43:02.130 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:43:02.139 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 04:43:02.145 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 15.2828 ms
+2021-05-09 04:43:02.491 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:43:02.497 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 04:43:02.507 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 16.2379 ms
+2021-05-09 04:43:18.275 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:43:18.287 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 04:43:18.507 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 232.9094 ms
+2021-05-09 04:46:00.538 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:46:00.553 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 04:46:00.723 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 186.2039 ms
+2021-05-09 04:46:03.090 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:46:03.100 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 04:46:03.106 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 16.2913 ms
+2021-05-09 04:46:15.052 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:46:15.062 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 04:46:15.069 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 17.1551 ms
+2021-05-09 04:46:24.365 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:46:24.370 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 04:46:24.545 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 181.0558 ms
+2021-05-09 04:49:55.224 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:49:55.313 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 04:49:55.573 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 349.7173 ms
+2021-05-09 04:50:01.619 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:50:01.637 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 04:50:01.654 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 37.9117 ms
+2021-05-09 04:50:04.963 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:50:04.971 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 04:50:04.980 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 18.0645 ms
+2021-05-09 04:52:04.898 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:52:04.905 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 04:52:05.141 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 291.8648 ms
+2021-05-09 04:52:10.952 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:52:10.957 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 04:52:10.967 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 15.8072 ms
+2021-05-09 04:52:21.753 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:52:21.772 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 04:52:21.781 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 29.8302 ms
+2021-05-09 04:52:24.355 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:52:24.366 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 04:52:24.373 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 18.7289 ms
+2021-05-09 04:52:25.267 +03:00 [INF] TestPassFinished(post) action
+2021-05-09 04:52:25.431 +03:00 [INF] HTTP POST /Tests/TestPassFinished responded 200 in 165.9292 ms
+2021-05-09 04:52:26.716 +03:00 [INF] Index tests controller action
+2021-05-09 04:52:26.730 +03:00 [INF] HTTP GET /Tests responded 200 in 14.4527 ms
+2021-05-09 04:52:28.234 +03:00 [INF] ViewTest action
+2021-05-09 04:52:28.243 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 8.9151 ms
+2021-05-09 04:52:29.362 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:52:29.373 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 04:52:29.383 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 21.5291 ms
+2021-05-09 04:52:39.199 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:52:39.206 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 04:52:39.429 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 231.0972 ms
+2021-05-09 04:54:43.243 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:54:43.255 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 04:54:43.523 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 280.6315 ms
+2021-05-09 04:54:48.121 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:54:48.143 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 04:54:48.159 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 39.1595 ms
+2021-05-09 04:54:52.260 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:54:52.268 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 04:54:52.279 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 19.4865 ms
+2021-05-09 04:55:57.767 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:55:57.828 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 04:55:57.835 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 67.9087 ms
+2021-05-09 04:58:27.775 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:58:27.786 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 04:58:27.956 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 181.4500 ms
+2021-05-09 04:58:32.190 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:58:32.211 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 04:58:32.225 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 36.5436 ms
+2021-05-09 04:58:33.040 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:58:33.050 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 04:58:33.058 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 18.9759 ms
+2021-05-09 04:59:14.311 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:59:14.330 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 04:59:14.355 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 44.4792 ms
+2021-05-09 04:59:25.784 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:59:25.793 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 04:59:25.936 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 152.6361 ms
+2021-05-09 04:59:30.743 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:59:30.749 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 04:59:30.757 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 14.8896 ms
+2021-05-09 04:59:38.400 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:59:38.413 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 04:59:38.426 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 26.5668 ms
+2021-05-09 04:59:39.459 +03:00 [INF] TestPassFinished(post) action
+2021-05-09 04:59:39.525 +03:00 [INF] HTTP POST /Tests/TestPassFinished responded 200 in 66.2770 ms
+2021-05-09 04:59:42.582 +03:00 [INF] Index tests controller action
+2021-05-09 04:59:42.597 +03:00 [INF] HTTP GET /Tests responded 200 in 15.4470 ms
+2021-05-09 04:59:43.463 +03:00 [INF] ViewTest action
+2021-05-09 04:59:43.480 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 17.7146 ms
+2021-05-09 04:59:45.189 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:59:45.197 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 04:59:45.206 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 17.3699 ms
+2021-05-09 04:59:57.493 +03:00 [INF] TestPassing(post) action
+2021-05-09 04:59:57.506 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 04:59:57.518 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 25.9916 ms
+2021-05-09 05:00:00.475 +03:00 [INF] TestPassing(post) action
+2021-05-09 05:00:00.489 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 05:00:00.505 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 31.0723 ms
+2021-05-09 05:00:07.770 +03:00 [INF] TestPassing(post) action
+2021-05-09 05:00:07.778 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 05:00:07.787 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 17.1955 ms
+2021-05-09 05:00:11.003 +03:00 [INF] TestPassing(post) action
+2021-05-09 05:00:11.012 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 05:00:11.018 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 16.6370 ms
+2021-05-09 05:00:11.807 +03:00 [INF] TestPassFinished(post) action
+2021-05-09 05:00:11.827 +03:00 [INF] HTTP POST /Tests/TestPassFinished responded 200 in 20.6136 ms
+2021-05-09 05:00:15.548 +03:00 [INF] You are on the main page
+2021-05-09 05:00:15.551 +03:00 [INF] HTTP GET / responded 200 in 3.9927 ms
+2021-05-09 05:00:20.477 +03:00 [INF] Index tests controller action
+2021-05-09 05:00:20.510 +03:00 [INF] HTTP GET /Tests responded 200 in 34.0136 ms
+2021-05-09 05:00:22.389 +03:00 [INF] PrivateChooser action
+2021-05-09 05:00:22.393 +03:00 [INF] HTTP GET /Tests/PrivateChooser responded 200 in 4.4783 ms
+2021-05-09 05:00:25.577 +03:00 [INF] CreateOrEditTest action
+2021-05-09 05:00:25.587 +03:00 [INF] HTTP GET /Tests/CreateOrEditTest?isPrivate=false responded 200 in 10.0156 ms
+2021-05-09 05:00:40.232 +03:00 [INF] PrivateChooser action
+2021-05-09 05:00:40.240 +03:00 [INF] HTTP GET /Tests/PrivateChooser responded 200 in 9.3914 ms
+2021-05-09 05:00:41.220 +03:00 [INF] CreateOrEditTest action
+2021-05-09 05:00:41.228 +03:00 [INF] HTTP GET /Tests/CreateOrEditTest?isPrivate=true responded 200 in 8.5766 ms
+2021-05-09 05:01:00.480 +03:00 [INF] CreateOrEditTest(post) action
+2021-05-09 05:01:00.566 +03:00 [INF] HTTP POST /Tests/CreateOrEditTest?actionType=1 responded 302 in 86.4937 ms
+2021-05-09 05:01:00.571 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 05:01:00.582 +03:00 [INF] HTTP GET /Tests/CreateOrEditQuestion?testId=247 responded 200 in 10.9085 ms
+2021-05-09 05:01:14.683 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 05:01:14.685 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 05:01:14.697 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 14.7404 ms
+2021-05-09 05:01:18.896 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 05:01:18.900 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 05:01:18.912 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 16.2554 ms
+2021-05-09 05:01:22.414 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 05:01:22.418 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 05:01:22.441 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 27.9605 ms
+2021-05-09 05:01:27.963 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 05:01:27.967 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 05:01:27.993 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 30.5711 ms
+2021-05-09 05:01:33.241 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 05:01:33.244 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 05:01:33.260 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 19.4979 ms
+2021-05-09 05:05:53.239 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 05:05:53.243 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 05:05:53.257 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 20.3389 ms
+2021-05-09 05:06:56.485 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 05:06:56.489 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 05:06:56.570 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 85.4095 ms
+2021-05-09 05:12:44.092 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 05:12:44.097 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 05:12:44.190 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 99.7256 ms
+2021-05-09 05:12:53.457 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 05:12:53.466 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 05:12:53.520 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 63.8126 ms
+2021-05-09 05:18:28.292 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 05:18:28.295 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 05:18:28.706 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 415.6169 ms
+2021-05-09 05:26:10.718 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 05:26:10.720 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 05:26:10.924 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 327.2885 ms
+2021-05-09 05:26:17.633 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 05:26:17.636 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 05:26:17.654 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 20.8151 ms
+2021-05-09 05:26:27.729 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 05:26:27.731 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 05:26:27.750 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 21.5441 ms
+2021-05-09 05:26:36.333 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 05:26:36.335 +03:00 [INF] CreateOrEditQuestion action: Switch NextQuestion
+2021-05-09 05:26:36.402 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=NextQuestion responded 200 in 69.8115 ms
+2021-05-09 05:26:41.238 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 05:26:41.242 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 05:26:41.253 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 15.7533 ms
+2021-05-09 05:26:43.943 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 05:26:43.946 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 05:26:43.966 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 24.3517 ms
+2021-05-09 05:26:49.047 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 05:26:49.050 +03:00 [INF] CreateOrEditQuestion action: Switch AddAnswer
+2021-05-09 05:26:49.078 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=AddAnswer responded 200 in 32.6770 ms
+2021-05-09 05:26:54.194 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 05:26:54.200 +03:00 [INF] CreateOrEditQuestion action: Switch NextQuestion
+2021-05-09 05:26:54.233 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=NextQuestion responded 200 in 40.5597 ms
+2021-05-09 05:27:01.866 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 05:27:01.870 +03:00 [INF] CreateOrEditQuestion action: Switch PreviousQuestion
+2021-05-09 05:27:01.899 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=PreviousQuestion responded 200 in 33.0714 ms
+2021-05-09 05:27:19.610 +03:00 [INF] CreateOrEditQuestion action
+2021-05-09 05:27:19.644 +03:00 [INF] HTTP POST /Tests/CreateOrEditQuestion?actionType=Finish responded 302 in 35.2741 ms
+2021-05-09 05:27:19.652 +03:00 [INF] FinishTestCreating action
+2021-05-09 05:27:19.657 +03:00 [INF] HTTP GET /Tests/FinishTestCreating?testId=247 responded 200 in 6.6476 ms
+2021-05-09 05:27:27.742 +03:00 [INF] ViewTest action
+2021-05-09 05:27:27.756 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=247 responded 200 in 14.0080 ms
+2021-05-09 05:27:33.863 +03:00 [INF] TestPassing(post) action
+2021-05-09 05:27:33.873 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 05:27:33.890 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 27.8051 ms
+2021-05-09 05:27:59.987 +03:00 [INF] TestPassing(post) action
+2021-05-09 05:27:59.996 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 05:28:00.005 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 19.3533 ms
+2021-05-09 05:28:04.710 +03:00 [INF] TestPassing(post) action
+2021-05-09 05:28:04.732 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 05:28:04.739 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 29.7123 ms
+2021-05-09 05:28:05.750 +03:00 [INF] TestPassFinished(post) action
+2021-05-09 05:28:05.776 +03:00 [INF] HTTP POST /Tests/TestPassFinished responded 200 in 26.3769 ms
+2021-05-09 05:28:08.945 +03:00 [INF] Index tests controller action
+2021-05-09 05:28:08.966 +03:00 [INF] HTTP GET /Tests responded 200 in 21.3855 ms
+2021-05-09 05:28:09.970 +03:00 [INF] ViewTest action
+2021-05-09 05:28:09.981 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=247 responded 200 in 11.5048 ms
+2021-05-09 05:28:12.111 +03:00 [INF] TestPassing(post) action
+2021-05-09 05:28:12.131 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 05:28:12.196 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 86.6715 ms
+2021-05-09 05:28:22.075 +03:00 [INF] TestPassing(post) action
+2021-05-09 05:28:22.084 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 05:28:22.093 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 18.7549 ms
+2021-05-09 05:28:27.769 +03:00 [INF] TestPassing(post) action
+2021-05-09 05:28:27.783 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 05:28:27.787 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 19.6536 ms
+2021-05-09 05:28:28.661 +03:00 [INF] TestPassFinished(post) action
+2021-05-09 05:28:28.680 +03:00 [INF] HTTP POST /Tests/TestPassFinished responded 200 in 19.7743 ms
+2021-05-09 05:28:51.382 +03:00 [INF] Index tests controller action
+2021-05-09 05:28:51.411 +03:00 [INF] HTTP GET /Tests responded 200 in 30.4576 ms
+2021-05-09 05:28:52.979 +03:00 [INF] ViewTest action
+2021-05-09 05:28:52.988 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=244 responded 200 in 9.3433 ms
+2021-05-09 05:28:55.568 +03:00 [INF] You are on the main page
+2021-05-09 05:28:55.575 +03:00 [INF] HTTP GET / responded 200 in 6.7389 ms
+2021-05-09 05:28:57.215 +03:00 [INF] PrivateChooser action
+2021-05-09 05:28:57.225 +03:00 [INF] HTTP GET /Tests/PrivateChooser responded 200 in 11.1186 ms
+2021-05-09 05:29:51.623 +03:00 [INF] PrivateChooser action
+2021-05-09 05:29:51.730 +03:00 [INF] HTTP GET /Tests/PrivateChooser responded 200 in 107.2604 ms
+2021-05-09 05:30:41.458 +03:00 [INF] PrivateChooser action
+2021-05-09 05:30:41.628 +03:00 [INF] HTTP GET /Tests/PrivateChooser responded 200 in 171.6275 ms
+2021-05-09 05:30:46.142 +03:00 [INF] PrivateChooser action
+2021-05-09 05:30:46.147 +03:00 [INF] HTTP GET /Tests/PrivateChooser responded 200 in 6.9150 ms
+2021-05-09 05:32:11.506 +03:00 [INF] PrivateChooser action
+2021-05-09 05:32:11.509 +03:00 [INF] HTTP GET /Tests/PrivateChooser responded 200 in 3.5275 ms
+2021-05-09 05:33:49.973 +03:00 [INF] CreateOrEditTest action
+2021-05-09 05:33:49.977 +03:00 [INF] HTTP GET /Tests/CreateOrEditTest?isPrivate=true responded 200 in 5.1361 ms
+2021-05-09 05:34:58.307 +03:00 [INF] CreateOrEditTest action
+2021-05-09 05:34:58.317 +03:00 [INF] HTTP GET /Tests/CreateOrEditTest?isPrivate=true responded 200 in 11.1848 ms
+2021-05-09 05:36:30.207 +03:00 [INF] CreateOrEditTest action
+2021-05-09 05:36:30.369 +03:00 [INF] HTTP GET /Tests/CreateOrEditTest?isPrivate=true responded 200 in 163.1374 ms
+2021-05-09 05:36:50.327 +03:00 [INF] CreateOrEditTest action
+2021-05-09 05:36:50.458 +03:00 [INF] HTTP GET /Tests/CreateOrEditTest?isPrivate=true responded 200 in 131.3459 ms
+2021-05-09 05:36:59.039 +03:00 [INF] CreateOrEditTest action
+2021-05-09 05:36:59.267 +03:00 [INF] HTTP GET /Tests/CreateOrEditTest?isPrivate=true responded 200 in 227.9391 ms
+2021-05-09 05:37:31.882 +03:00 [INF] CreateOrEditTest action
+2021-05-09 05:37:32.029 +03:00 [INF] HTTP GET /Tests/CreateOrEditTest?isPrivate=true responded 200 in 147.3176 ms
+2021-05-09 05:37:45.198 +03:00 [INF] CreateOrEditTest action
+2021-05-09 05:37:45.203 +03:00 [INF] HTTP GET /Tests/CreateOrEditTest?isPrivate=true responded 200 in 5.4390 ms
+2021-05-09 05:37:57.829 +03:00 [INF] CreateOrEditTest action
+2021-05-09 05:37:57.964 +03:00 [INF] HTTP GET /Tests/CreateOrEditTest?isPrivate=true responded 200 in 134.9503 ms
+2021-05-09 05:38:04.554 +03:00 [INF] You are on the main page
+2021-05-09 05:38:04.557 +03:00 [INF] HTTP GET / responded 200 in 2.7784 ms
+2021-05-09 05:38:07.832 +03:00 [INF] Index tests controller action
+2021-05-09 05:38:07.958 +03:00 [INF] HTTP GET /Tests responded 200 in 126.8585 ms
+2021-05-09 05:38:40.721 +03:00 [INF] Index tests controller action
+2021-05-09 05:38:40.894 +03:00 [INF] HTTP GET /Tests responded 200 in 174.3144 ms
+2021-05-09 05:38:42.963 +03:00 [INF] ViewTest action
+2021-05-09 05:38:42.983 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=247 responded 200 in 20.5931 ms
+2021-05-09 05:38:46.805 +03:00 [INF] Index tests controller action
+2021-05-09 05:38:46.819 +03:00 [INF] HTTP GET /Tests responded 200 in 13.8220 ms
+2021-05-09 05:38:59.702 +03:00 [INF] PrivateChooser action
+2021-05-09 05:38:59.705 +03:00 [INF] HTTP GET /Tests/PrivateChooser responded 200 in 3.4410 ms
+2021-05-09 05:43:39.501 +03:00 [INF] PrivateChooser action
+2021-05-09 05:43:39.621 +03:00 [INF] HTTP GET /Tests/PrivateChooser responded 200 in 120.0401 ms
+2021-05-09 05:44:29.974 +03:00 [INF] PrivateChooser action
+2021-05-09 05:44:30.107 +03:00 [INF] HTTP GET /Tests/PrivateChooser responded 200 in 133.6255 ms
+2021-05-09 05:45:28.500 +03:00 [INF] PrivateChooser action
+2021-05-09 05:45:28.646 +03:00 [INF] HTTP GET /Tests/PrivateChooser responded 200 in 146.3499 ms
+2021-05-09 05:45:43.944 +03:00 [INF] PrivateChooser action
+2021-05-09 05:45:43.949 +03:00 [INF] HTTP GET /Tests/PrivateChooser responded 200 in 6.0870 ms
+2021-05-09 05:45:44.939 +03:00 [INF] CreateOrEditTest action
+2021-05-09 05:45:44.946 +03:00 [INF] HTTP GET /Tests/CreateOrEditTest?isPrivate=true responded 200 in 7.6888 ms
+2021-05-09 05:46:03.183 +03:00 [INF] Index tests controller action
+2021-05-09 05:46:03.252 +03:00 [INF] HTTP GET /Tests responded 200 in 68.4650 ms
+2021-05-09 05:46:04.011 +03:00 [INF] You are on the main page
+2021-05-09 05:46:04.015 +03:00 [INF] HTTP GET / responded 200 in 4.2585 ms
+2021-05-09 05:47:21.572 +03:00 [INF] You are on the main page
+2021-05-09 05:47:21.577 +03:00 [INF] HTTP GET / responded 200 in 5.9934 ms
+2021-05-09 05:47:46.984 +03:00 [INF] You are on the main page
+2021-05-09 05:47:47.102 +03:00 [INF] HTTP GET / responded 200 in 118.7108 ms
+2021-05-09 05:48:16.781 +03:00 [INF] Index tests controller action
+2021-05-09 05:48:16.800 +03:00 [INF] HTTP GET /Tests responded 200 in 19.4100 ms
+2021-05-09 05:48:17.640 +03:00 [INF] You are on the main page
+2021-05-09 05:48:17.647 +03:00 [INF] HTTP GET / responded 200 in 8.2871 ms
+2021-05-09 05:48:18.244 +03:00 [INF] Index tests controller action
+2021-05-09 05:48:18.266 +03:00 [INF] HTTP GET /Tests responded 200 in 22.3493 ms
+2021-05-09 05:48:18.860 +03:00 [INF] You are on the main page
+2021-05-09 05:48:18.864 +03:00 [INF] HTTP GET / responded 200 in 4.9086 ms
+2021-05-09 05:48:27.673 +03:00 [INF] Index tests controller action
+2021-05-09 05:48:27.690 +03:00 [INF] HTTP GET /Tests responded 200 in 19.0204 ms
+2021-05-09 05:48:29.018 +03:00 [INF] HTTP GET /Profile responded 200 in 99.4442 ms
+2021-05-09 05:49:44.526 +03:00 [INF] Index tests controller action
+2021-05-09 05:49:44.545 +03:00 [INF] HTTP GET /Tests responded 200 in 19.3310 ms
+2021-05-09 05:49:45.339 +03:00 [INF] You are on the main page
+2021-05-09 05:49:45.342 +03:00 [INF] HTTP GET / responded 200 in 3.3234 ms
+2021-05-09 05:50:03.933 +03:00 [INF] Index tests controller action
+2021-05-09 05:50:03.959 +03:00 [INF] HTTP GET /Tests responded 200 in 26.0489 ms
+2021-05-09 05:50:04.735 +03:00 [INF] You are on the main page
+2021-05-09 05:50:04.741 +03:00 [INF] HTTP GET / responded 200 in 6.5562 ms
+2021-05-09 05:51:19.149 +03:00 [INF] You are on the main page
+2021-05-09 05:51:19.285 +03:00 [INF] HTTP GET / responded 200 in 138.2442 ms
+2021-05-09 05:51:40.917 +03:00 [INF] You are on the main page
+2021-05-09 05:51:41.019 +03:00 [INF] HTTP GET / responded 200 in 102.5959 ms
+2021-05-09 05:51:47.767 +03:00 [INF] You are on the main page
+2021-05-09 05:51:47.928 +03:00 [INF] HTTP GET / responded 200 in 161.5634 ms
+2021-05-09 05:52:03.570 +03:00 [INF] You are on the main page
+2021-05-09 05:52:03.701 +03:00 [INF] HTTP GET / responded 200 in 131.5178 ms
+2021-05-09 05:52:23.880 +03:00 [INF] You are on the main page
+2021-05-09 05:52:23.999 +03:00 [INF] HTTP GET / responded 200 in 119.0470 ms
+2021-05-09 05:52:29.076 +03:00 [INF] You are on the main page
+2021-05-09 05:52:29.178 +03:00 [INF] HTTP GET / responded 200 in 102.0617 ms
+2021-05-09 05:52:34.159 +03:00 [INF] You are on the main page
+2021-05-09 05:52:34.277 +03:00 [INF] HTTP GET / responded 200 in 118.0638 ms
+2021-05-09 05:52:55.323 +03:00 [INF] You are on the main page
+2021-05-09 05:52:55.431 +03:00 [INF] HTTP GET / responded 200 in 108.7863 ms
+2021-05-09 05:53:02.242 +03:00 [INF] You are on the main page
+2021-05-09 05:53:02.406 +03:00 [INF] HTTP GET / responded 200 in 164.6510 ms
+2021-05-09 05:53:03.831 +03:00 [INF] You are on the main page
+2021-05-09 05:53:03.837 +03:00 [INF] HTTP GET / responded 200 in 7.1514 ms
+2021-05-09 05:53:07.189 +03:00 [INF] You are on the main page
+2021-05-09 05:53:07.191 +03:00 [INF] HTTP GET / responded 200 in 2.7814 ms
+2021-05-09 05:53:11.545 +03:00 [INF] You are on the main page
+2021-05-09 05:53:11.655 +03:00 [INF] HTTP GET / responded 200 in 110.9087 ms
+2021-05-09 05:53:16.329 +03:00 [INF] You are on the main page
+2021-05-09 05:53:16.425 +03:00 [INF] HTTP GET / responded 200 in 96.3807 ms
+2021-05-09 05:53:30.243 +03:00 [INF] You are on the main page
+2021-05-09 05:53:30.357 +03:00 [INF] HTTP GET / responded 200 in 114.6913 ms
+2021-05-09 05:54:02.516 +03:00 [INF] You are on the main page
+2021-05-09 05:54:02.633 +03:00 [INF] HTTP GET / responded 200 in 117.7866 ms
+2021-05-09 05:54:09.207 +03:00 [INF] You are on the main page
+2021-05-09 05:54:09.339 +03:00 [INF] HTTP GET / responded 200 in 132.7942 ms
+2021-05-09 05:54:52.756 +03:00 [INF] You are on the main page
+2021-05-09 05:54:52.920 +03:00 [INF] HTTP GET / responded 200 in 164.9718 ms
+2021-05-09 05:55:45.988 +03:00 [INF] You are on the main page
+2021-05-09 05:55:46.119 +03:00 [INF] HTTP GET / responded 200 in 131.1111 ms
+2021-05-09 05:55:57.974 +03:00 [INF] You are on the main page
+2021-05-09 05:55:58.135 +03:00 [INF] HTTP GET / responded 200 in 161.2604 ms
+2021-05-09 05:55:59.519 +03:00 [INF] You are on the main page
+2021-05-09 05:55:59.521 +03:00 [INF] HTTP GET / responded 200 in 2.4655 ms
+2021-05-09 05:57:44.399 +03:00 [INF] You are on the main page
+2021-05-09 05:57:44.539 +03:00 [INF] HTTP GET / responded 200 in 223.9957 ms
+2021-05-09 05:57:56.879 +03:00 [INF] You are on the main page
+2021-05-09 05:57:57.032 +03:00 [INF] HTTP GET / responded 200 in 154.0347 ms
+2021-05-09 05:57:58.684 +03:00 [INF] You are on the main page
+2021-05-09 05:57:58.688 +03:00 [INF] HTTP GET / responded 200 in 3.8503 ms
+2021-05-09 05:58:03.291 +03:00 [INF] You are on the main page
+2021-05-09 05:58:03.554 +03:00 [INF] HTTP GET / responded 200 in 263.7236 ms
+2021-05-09 05:58:04.363 +03:00 [INF] You are on the main page
+2021-05-09 05:58:04.370 +03:00 [INF] HTTP GET / responded 200 in 7.0727 ms
+2021-05-09 05:58:10.898 +03:00 [INF] You are on the main page
+2021-05-09 05:58:11.013 +03:00 [INF] HTTP GET / responded 200 in 115.4345 ms
+2021-05-09 05:58:11.440 +03:00 [INF] You are on the main page
+2021-05-09 05:58:11.445 +03:00 [INF] HTTP GET / responded 200 in 5.6048 ms
+2021-05-09 05:58:11.708 +03:00 [INF] You are on the main page
+2021-05-09 05:58:11.713 +03:00 [INF] HTTP GET / responded 200 in 5.1967 ms
+2021-05-09 05:58:25.556 +03:00 [INF] You are on the main page
+2021-05-09 05:58:25.715 +03:00 [INF] HTTP GET / responded 200 in 160.2581 ms
+2021-05-09 05:58:26.334 +03:00 [INF] You are on the main page
+2021-05-09 05:58:26.337 +03:00 [INF] HTTP GET / responded 200 in 2.9125 ms
+2021-05-09 05:58:26.585 +03:00 [INF] You are on the main page
+2021-05-09 05:58:26.587 +03:00 [INF] HTTP GET / responded 200 in 2.4004 ms
+2021-05-09 05:58:32.156 +03:00 [INF] You are on the main page
+2021-05-09 05:58:32.277 +03:00 [INF] HTTP GET / responded 200 in 121.9512 ms
+2021-05-09 05:58:42.904 +03:00 [INF] You are on the main page
+2021-05-09 05:58:43.006 +03:00 [INF] HTTP GET / responded 200 in 103.1229 ms
+2021-05-09 05:59:22.377 +03:00 [INF] You are on the main page
+2021-05-09 05:59:22.503 +03:00 [INF] HTTP GET / responded 200 in 127.2402 ms
+2021-05-09 05:59:52.015 +03:00 [INF] You are on the main page
+2021-05-09 05:59:52.134 +03:00 [INF] HTTP GET / responded 200 in 118.9629 ms
+2021-05-09 06:00:19.655 +03:00 [INF] You are on the main page
+2021-05-09 06:00:19.795 +03:00 [INF] HTTP GET / responded 200 in 140.8988 ms
+2021-05-09 06:01:51.221 +03:00 [INF] You are on the main page
+2021-05-09 06:01:51.408 +03:00 [INF] HTTP GET / responded 200 in 187.7600 ms
+2021-05-09 06:02:34.447 +03:00 [INF] You are on the main page
+2021-05-09 06:02:34.552 +03:00 [INF] HTTP GET / responded 200 in 105.6086 ms
+2021-05-09 06:02:39.568 +03:00 [INF] You are on the main page
+2021-05-09 06:02:39.719 +03:00 [INF] HTTP GET / responded 200 in 151.2701 ms
+2021-05-09 06:02:48.518 +03:00 [INF] You are on the main page
+2021-05-09 06:02:48.630 +03:00 [INF] HTTP GET / responded 200 in 112.8703 ms
+2021-05-09 06:02:58.031 +03:00 [INF] You are on the main page
+2021-05-09 06:02:58.156 +03:00 [INF] HTTP GET / responded 200 in 125.2583 ms
+2021-05-09 06:03:04.322 +03:00 [INF] You are on the main page
+2021-05-09 06:03:04.482 +03:00 [INF] HTTP GET / responded 200 in 160.3918 ms
+2021-05-09 06:03:28.285 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 2.2774 ms
+2021-05-09 06:03:28.293 +03:00 [INF] HTTP GET / responded 302 in 0.4332 ms
+2021-05-09 06:03:28.306 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 6.6506 ms
+2021-05-09 06:03:33.532 +03:00 [INF] User logged in.
+2021-05-09 06:03:33.535 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 74.4479 ms
+2021-05-09 06:03:33.540 +03:00 [INF] You are on the main page
+2021-05-09 06:03:33.543 +03:00 [INF] HTTP GET / responded 200 in 3.1620 ms
+2021-05-09 06:03:37.667 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 2.0903 ms
+2021-05-09 06:03:37.684 +03:00 [INF] HTTP GET / responded 302 in 0.3898 ms
+2021-05-09 06:03:37.698 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 1.8796 ms
+2021-05-09 06:03:42.412 +03:00 [WRN] Invalid password for user.
+2021-05-09 06:03:42.413 +03:00 [WRN] User failed to provide the correct password.
+2021-05-09 06:03:42.417 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 200 in 17.3973 ms
+2021-05-09 06:03:51.727 +03:00 [INF] User logged in.
+2021-05-09 06:03:51.729 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 12.9193 ms
+2021-05-09 06:03:51.735 +03:00 [INF] You are on the main page
+2021-05-09 06:03:51.740 +03:00 [INF] HTTP GET / responded 200 in 5.7045 ms
+2021-05-09 06:03:54.152 +03:00 [INF] Admin panel page
+2021-05-09 06:03:54.223 +03:00 [INF] HTTP GET /Admin responded 200 in 83.4092 ms
+2021-05-09 06:04:01.425 +03:00 [INF] Requests action
+2021-05-09 06:04:01.532 +03:00 [INF] HTTP GET /Admin/Requests responded 200 in 112.8877 ms
+2021-05-09 06:04:04.120 +03:00 [INF] Index tests controller action
+2021-05-09 06:04:04.135 +03:00 [INF] HTTP GET /Tests responded 200 in 15.2491 ms
+2021-05-09 06:04:04.718 +03:00 [INF] You are on the main page
+2021-05-09 06:04:04.726 +03:00 [INF] HTTP GET / responded 200 in 9.1105 ms
+2021-05-09 06:04:05.920 +03:00 [INF] You are on the main page
+2021-05-09 06:04:05.927 +03:00 [INF] HTTP GET / responded 200 in 8.2671 ms
+2021-05-09 06:04:06.402 +03:00 [INF] Index tests controller action
+2021-05-09 06:04:06.422 +03:00 [INF] HTTP GET /Tests responded 200 in 20.4348 ms
+2021-05-09 06:04:08.593 +03:00 [INF] ViewTest action
+2021-05-09 06:04:08.607 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=244 responded 200 in 14.9287 ms
+2021-05-09 06:04:10.876 +03:00 [INF] Requests action
+2021-05-09 06:04:10.882 +03:00 [INF] HTTP GET /Admin/Requests responded 200 in 8.1250 ms
+2021-05-09 06:04:12.037 +03:00 [INF] Admin panel page
+2021-05-09 06:04:12.050 +03:00 [INF] HTTP GET /Admin responded 200 in 13.6383 ms
+2021-05-09 06:04:14.900 +03:00 [INF] Index tests controller action
+2021-05-09 06:04:14.916 +03:00 [INF] HTTP GET /Tests responded 200 in 15.4151 ms
+2021-05-09 06:04:15.661 +03:00 [INF] ViewTest action
+2021-05-09 06:04:15.673 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 12.0910 ms
+2021-05-09 06:04:25.082 +03:00 [INF] Index tests controller action
+2021-05-09 06:04:25.103 +03:00 [INF] HTTP GET /Tests responded 200 in 22.2695 ms
+2021-05-09 06:04:27.221 +03:00 [INF] ViewTest action
+2021-05-09 06:04:27.233 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=247 responded 200 in 12.1717 ms
+2021-05-09 06:04:28.931 +03:00 [INF] Index tests controller action
+2021-05-09 06:04:28.955 +03:00 [INF] HTTP GET /Tests responded 200 in 24.6920 ms
+2021-05-09 06:04:29.876 +03:00 [INF] ViewTest action
+2021-05-09 06:04:29.894 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=246 responded 200 in 18.3863 ms
+2021-05-09 06:04:31.561 +03:00 [INF] Index tests controller action
+2021-05-09 06:04:31.573 +03:00 [INF] HTTP GET /Tests responded 200 in 12.6448 ms
+2021-05-09 06:04:32.670 +03:00 [INF] ViewTest action
+2021-05-09 06:04:32.678 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=245 responded 200 in 8.4708 ms
+2021-05-09 06:04:51.117 +03:00 [INF] Requests action
+2021-05-09 06:04:51.127 +03:00 [INF] HTTP GET /Admin/Requests responded 200 in 9.9312 ms
+2021-05-09 06:04:51.817 +03:00 [INF] Admin panel page
+2021-05-09 06:04:51.827 +03:00 [INF] HTTP GET /Admin responded 200 in 10.2872 ms
+2021-05-09 06:04:53.568 +03:00 [INF] Requests action
+2021-05-09 06:04:53.571 +03:00 [INF] HTTP GET /Admin/Requests responded 200 in 4.1504 ms
+2021-05-09 06:04:54.308 +03:00 [INF] Index tests controller action
+2021-05-09 06:04:54.333 +03:00 [INF] HTTP GET /Tests responded 200 in 26.3819 ms
+2021-05-09 06:04:55.551 +03:00 [INF] ViewTest action
+2021-05-09 06:04:55.559 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=244 responded 200 in 9.2788 ms
+2021-05-09 06:05:02.393 +03:00 [INF] Index tests controller action
+2021-05-09 06:05:02.404 +03:00 [INF] HTTP GET /Tests responded 200 in 12.2878 ms
+2021-05-09 06:06:00.875 +03:00 [INF] Index tests controller action
+2021-05-09 06:06:01.103 +03:00 [INF] HTTP GET /Tests responded 200 in 229.1555 ms
+2021-05-09 06:06:01.962 +03:00 [INF] You are on the main page
+2021-05-09 06:06:01.971 +03:00 [INF] HTTP GET / responded 200 in 10.1299 ms
+2021-05-09 06:06:02.842 +03:00 [INF] Requests action
+2021-05-09 06:06:02.851 +03:00 [INF] HTTP GET /Admin/Requests responded 200 in 9.3077 ms
+2021-05-09 06:06:03.397 +03:00 [INF] You are on the main page
+2021-05-09 06:06:03.402 +03:00 [INF] HTTP GET / responded 200 in 5.0885 ms
+2021-05-09 06:06:04.565 +03:00 [INF] You are on the main page
+2021-05-09 06:06:04.568 +03:00 [INF] HTTP GET / responded 200 in 4.6122 ms
+2021-05-09 06:06:16.286 +03:00 [INF] Index tests controller action
+2021-05-09 06:06:16.303 +03:00 [INF] HTTP GET /Tests responded 200 in 17.9690 ms
+2021-05-09 06:06:17.550 +03:00 [INF] You are on the main page
+2021-05-09 06:06:17.553 +03:00 [INF] HTTP GET / responded 200 in 3.4276 ms
+2021-05-09 06:07:13.315 +03:00 [INF] You are on the main page
+2021-05-09 06:07:13.317 +03:00 [INF] HTTP GET / responded 200 in 3.1356 ms
+2021-05-09 06:07:18.448 +03:00 [INF] Index tests controller action
+2021-05-09 06:07:18.465 +03:00 [INF] HTTP GET /Tests responded 200 in 17.5070 ms
+2021-05-09 06:07:44.542 +03:00 [INF] Application starting up
+2021-05-09 06:07:45.974 +03:00 [INF] You are on the main page
+2021-05-09 06:07:46.148 +03:00 [INF] HTTP GET / responded 200 in 418.5753 ms
+2021-05-09 06:07:50.514 +03:00 [INF] HTTP GET /Tests responded 302 in 6.7387 ms
+2021-05-09 06:07:50.595 +03:00 [INF] HTTP GET /Identity/Account/AccessDenied?ReturnUrl=%2FTests responded 200 in 69.6263 ms
+2021-05-09 06:07:53.659 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 55.9064 ms
+2021-05-09 06:07:53.670 +03:00 [INF] HTTP GET / responded 302 in 3.7658 ms
+2021-05-09 06:07:53.742 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 66.5418 ms
+2021-05-09 06:08:02.876 +03:00 [INF] User logged in.
+2021-05-09 06:08:02.890 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 2641.8510 ms
+2021-05-09 06:08:02.899 +03:00 [INF] You are on the main page
+2021-05-09 06:08:02.903 +03:00 [INF] HTTP GET / responded 200 in 5.2722 ms
+2021-05-09 06:08:04.240 +03:00 [INF] Index tests controller action
+2021-05-09 06:08:04.446 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-09 06:08:04.507 +03:00 [INF] HTTP GET /Tests responded 200 in 289.4279 ms
+2021-05-09 06:08:06.022 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 1.0258 ms
+2021-05-09 06:08:06.033 +03:00 [INF] HTTP GET / responded 302 in 1.1597 ms
+2021-05-09 06:08:06.044 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 4.1420 ms
+2021-05-09 06:08:13.645 +03:00 [INF] User logged in.
+2021-05-09 06:08:13.648 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 25.2218 ms
+2021-05-09 06:08:13.653 +03:00 [INF] You are on the main page
+2021-05-09 06:08:13.656 +03:00 [INF] HTTP GET / responded 200 in 3.2587 ms
+2021-05-09 06:08:14.966 +03:00 [INF] Index tests controller action
+2021-05-09 06:08:15.003 +03:00 [INF] HTTP GET /Tests responded 200 in 42.3201 ms
+2021-05-09 06:08:15.931 +03:00 [INF] You are on the main page
+2021-05-09 06:08:15.935 +03:00 [INF] HTTP GET / responded 200 in 3.5766 ms
+2021-05-09 06:10:02.236 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 15.7320 ms
+2021-05-09 06:10:02.250 +03:00 [INF] HTTP GET / responded 302 in 0.8699 ms
+2021-05-09 06:10:07.408 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 5148.5033 ms
+2021-05-09 06:10:34.178 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 272.9565 ms
+2021-05-09 06:10:39.310 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 174.0229 ms
+2021-05-09 06:10:45.858 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 189.9229 ms
+2021-05-09 06:11:00.424 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 212.8298 ms
+2021-05-09 06:11:18.502 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 168.7932 ms
+2021-05-09 06:11:24.651 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 317.0230 ms
+2021-05-09 06:11:40.383 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 170.2967 ms
+2021-05-09 06:11:48.931 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 130.5686 ms
+2021-05-09 06:11:50.183 +03:00 [INF] HTTP GET /Identity/Account/Register responded 200 in 67.0037 ms
+2021-05-09 06:11:50.966 +03:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 2.3716 ms
+2021-05-09 06:11:53.939 +03:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 128.3163 ms
+2021-05-09 06:11:54.668 +03:00 [INF] HTTP GET /Identity/Account/Register responded 200 in 14.2731 ms
+2021-05-09 06:11:59.097 +03:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 1.6448 ms
+2021-05-09 06:12:06.408 +03:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 163.4699 ms
+2021-05-09 06:12:10.089 +03:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 115.2564 ms
+2021-05-09 06:12:11.386 +03:00 [INF] HTTP GET /Identity/Account/Register responded 200 in 21.3673 ms
+2021-05-09 06:12:13.198 +03:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 1.8332 ms
+2021-05-09 06:12:22.843 +03:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 169.6626 ms
+2021-05-09 06:12:24.313 +03:00 [INF] HTTP GET /Identity/Account/Register responded 200 in 8.0575 ms
+2021-05-09 06:12:29.718 +03:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 5.4123 ms
+2021-05-09 06:12:30.983 +03:00 [INF] HTTP GET /Identity/Account/Register responded 200 in 1.4215 ms
+2021-05-09 06:12:32.265 +03:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 1.3280 ms
+2021-05-09 06:12:34.257 +03:00 [INF] HTTP GET /Identity/Account/Register responded 200 in 1.8447 ms
+2021-05-09 06:12:53.124 +03:00 [INF] HTTP GET /Identity/Account/Register responded 200 in 264.5304 ms
+2021-05-09 06:13:01.599 +03:00 [INF] HTTP GET /Identity/Account/Register responded 200 in 187.8516 ms
+2021-05-09 06:13:21.318 +03:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 8.1031 ms
+2021-05-09 06:13:23.189 +03:00 [INF] HTTP GET /Identity/Account/Register responded 200 in 2.7892 ms
+2021-05-09 06:13:33.343 +03:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 4.1922 ms
+2021-05-09 06:13:35.426 +03:00 [INF] HTTP GET /Identity/Account/Register responded 200 in 2.7712 ms
+2021-05-09 06:13:36.108 +03:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 3.2733 ms
+2021-05-09 06:13:46.168 +03:00 [INF] HTTP GET /Identity/Account/Register responded 200 in 1.4523 ms
+2021-05-09 06:13:47.284 +03:00 [INF] HTTP GET /Identity/Account/Login responded 200 in 1.2260 ms
+2021-05-09 06:13:52.587 +03:00 [INF] User logged in.
+2021-05-09 06:13:52.589 +03:00 [INF] HTTP POST /Identity/Account/Login responded 302 in 167.6767 ms
+2021-05-09 06:13:52.595 +03:00 [INF] You are on the main page
+2021-05-09 06:13:52.598 +03:00 [INF] HTTP GET / responded 200 in 4.2594 ms
+2021-05-09 06:13:54.773 +03:00 [INF] Admin panel page
+2021-05-09 06:13:54.826 +03:00 [INF] HTTP GET /Admin responded 200 in 62.0889 ms
+2021-05-09 06:13:56.370 +03:00 [INF] Requests action
+2021-05-09 06:13:56.407 +03:00 [INF] HTTP GET /Admin/Requests responded 200 in 39.6405 ms
+2021-05-09 06:13:57.588 +03:00 [INF] You are on the main page
+2021-05-09 06:13:57.590 +03:00 [INF] HTTP GET / responded 200 in 3.1192 ms
+2021-05-09 06:13:58.379 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 6.8192 ms
+2021-05-09 06:13:58.387 +03:00 [INF] HTTP GET / responded 302 in 0.2417 ms
+2021-05-09 06:13:58.394 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 1.0900 ms
+2021-05-09 06:14:19.408 +03:00 [ERR] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 500 in 5.3711 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TestioProject.Areas.Identity.Pages.Account.LoginModel.OnPostAsync(String returnUrl) in E:\VSProjects\TestioProject\TestioProject\Areas\Identity\Pages\Account\Login.cshtml.cs:line 91
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-05-09 06:14:19.671 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TestioProject.Areas.Identity.Pages.Account.LoginModel.OnPostAsync(String returnUrl) in E:\VSProjects\TestioProject\TestioProject\Areas\Identity\Pages\Account\Login.cshtml.cs:line 91
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-05-09 06:16:31.186 +03:00 [INF] Application starting up
+2021-05-09 06:16:32.594 +03:00 [INF] HTTP GET / responded 302 in 67.1314 ms
+2021-05-09 06:16:33.081 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 460.4976 ms
+2021-05-09 06:16:42.249 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 200 in 1792.8753 ms
+2021-05-09 06:17:24.981 +03:00 [INF] User logged in.
+2021-05-09 06:17:24.984 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 304.9479 ms
+2021-05-09 06:17:24.999 +03:00 [INF] You are on the main page
+2021-05-09 06:17:25.024 +03:00 [INF] HTTP GET / responded 200 in 34.6474 ms
+2021-05-09 06:17:29.034 +03:00 [INF] Index tests controller action
+2021-05-09 06:17:29.206 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-09 06:17:29.258 +03:00 [INF] HTTP GET /Tests responded 200 in 236.5827 ms
+2021-05-09 06:17:31.651 +03:00 [INF] ViewTest action
+2021-05-09 06:17:31.732 +03:00 [INF] ViewTest action
+2021-05-09 06:17:31.738 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=247 responded 200 in 8.4955 ms
+2021-05-09 06:17:31.738 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=247 responded 200 in 99.1706 ms
+2021-05-09 06:17:50.776 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:17:50.802 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 06:17:50.893 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 131.7976 ms
+2021-05-09 06:17:58.800 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:17:58.809 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 06:17:58.822 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 30.2631 ms
+2021-05-09 06:18:01.783 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:18:01.793 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 06:18:01.808 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:18:01.810 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 31.4490 ms
+2021-05-09 06:18:01.815 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 06:18:01.817 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 10.6002 ms
+2021-05-09 06:18:02.650 +03:00 [INF] TestPassFinished(post) action
+2021-05-09 06:18:02.956 +03:00 [INF] HTTP POST /Tests/TestPassFinished responded 200 in 309.4834 ms
+2021-05-09 06:18:12.027 +03:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 10.6388 ms
+2021-05-09 06:18:12.034 +03:00 [INF] HTTP GET / responded 302 in 0.3638 ms
+2021-05-09 06:18:12.048 +03:00 [INF] HTTP GET /Identity/Account/Login?ReturnUrl=%2F responded 200 in 3.2373 ms
+2021-05-09 06:18:17.122 +03:00 [INF] User logged in.
+2021-05-09 06:18:17.124 +03:00 [INF] HTTP POST /Identity/Account/Login?ReturnUrl=%2F responded 302 in 24.7597 ms
+2021-05-09 06:18:17.129 +03:00 [INF] You are on the main page
+2021-05-09 06:18:17.132 +03:00 [INF] HTTP GET / responded 200 in 2.8639 ms
+2021-05-09 06:18:18.440 +03:00 [INF] HTTP GET /Profile responded 200 in 45.9311 ms
+2021-05-09 06:18:20.469 +03:00 [INF] HTTP GET /Profile/Statistic responded 200 in 53.3954 ms
+2021-05-09 06:18:29.094 +03:00 [INF] HTTP GET /Profile responded 200 in 5.9069 ms
+2021-05-09 06:18:29.938 +03:00 [INF] HTTP GET /Profile/History responded 200 in 29.7740 ms
+2021-05-09 06:18:40.161 +03:00 [INF] HTTP GET /Profile responded 200 in 4.6345 ms
+2021-05-09 06:18:42.219 +03:00 [INF] HTTP GET /Profile/DeleteAccountModalWindow responded 200 in 14.4912 ms
+2021-05-09 06:18:42.222 +03:00 [INF] HTTP GET /Profile/DeleteAccountModalWindow responded 200 in 2.3449 ms
+2021-05-09 06:18:46.039 +03:00 [INF] Index tests controller action
+2021-05-09 06:18:46.054 +03:00 [INF] HTTP GET /Tests responded 200 in 15.6507 ms
+2021-05-09 06:18:46.855 +03:00 [INF] You are on the main page
+2021-05-09 06:18:46.858 +03:00 [INF] HTTP GET / responded 200 in 4.0392 ms
+2021-05-09 06:18:48.562 +03:00 [INF] Index tests controller action
+2021-05-09 06:18:48.578 +03:00 [INF] HTTP GET /Tests responded 200 in 16.8903 ms
+2021-05-09 06:18:49.321 +03:00 [INF] HTTP GET /Profile responded 200 in 5.8199 ms
+2021-05-09 06:18:58.081 +03:00 [INF] HTTP GET /Profile/Statistic responded 200 in 15.2153 ms
+2021-05-09 06:18:59.916 +03:00 [INF] HTTP GET /Profile responded 200 in 5.3806 ms
+2021-05-09 06:19:00.535 +03:00 [INF] HTTP GET /Profile/History responded 200 in 9.1264 ms
+2021-05-09 06:19:02.815 +03:00 [INF] Index tests controller action
+2021-05-09 06:19:02.827 +03:00 [INF] HTTP GET /Tests responded 200 in 12.9085 ms
+2021-05-09 06:19:03.526 +03:00 [INF] You are on the main page
+2021-05-09 06:19:03.530 +03:00 [INF] HTTP GET / responded 200 in 4.3864 ms
+2021-05-09 06:20:37.239 +03:00 [INF] You are on the main page
+2021-05-09 06:20:42.841 +03:00 [INF] HTTP GET / responded 200 in 5602.9456 ms
+2021-05-09 06:20:52.378 +03:00 [INF] You are on the main page
+2021-05-09 06:20:52.642 +03:00 [INF] HTTP GET / responded 200 in 265.0932 ms
+2021-05-09 06:21:00.209 +03:00 [INF] You are on the main page
+2021-05-09 06:21:00.404 +03:00 [INF] HTTP GET / responded 200 in 195.7112 ms
+2021-05-09 06:21:15.290 +03:00 [INF] You are on the main page
+2021-05-09 06:21:15.451 +03:00 [INF] HTTP GET / responded 200 in 162.0730 ms
+2021-05-09 06:21:32.871 +03:00 [INF] You are on the main page
+2021-05-09 06:21:33.002 +03:00 [INF] HTTP GET / responded 200 in 132.3340 ms
+2021-05-09 06:21:34.635 +03:00 [INF] You are on the main page
+2021-05-09 06:21:34.638 +03:00 [INF] HTTP GET / responded 200 in 3.5749 ms
+2021-05-09 06:21:35.373 +03:00 [INF] You are on the main page
+2021-05-09 06:21:35.378 +03:00 [INF] HTTP GET / responded 200 in 4.7447 ms
+2021-05-09 06:21:47.951 +03:00 [INF] You are on the main page
+2021-05-09 06:21:48.270 +03:00 [INF] HTTP GET / responded 200 in 321.8634 ms
+2021-05-09 06:22:04.374 +03:00 [INF] You are on the main page
+2021-05-09 06:22:04.523 +03:00 [INF] HTTP GET / responded 200 in 149.8459 ms
+2021-05-09 06:22:32.730 +03:00 [INF] You are on the main page
+2021-05-09 06:22:32.897 +03:00 [INF] HTTP GET / responded 200 in 168.0267 ms
+2021-05-09 06:22:37.615 +03:00 [INF] You are on the main page
+2021-05-09 06:22:37.620 +03:00 [INF] HTTP GET / responded 200 in 5.3003 ms
+2021-05-09 06:22:49.149 +03:00 [INF] You are on the main page
+2021-05-09 06:22:49.154 +03:00 [INF] HTTP GET / responded 200 in 4.8909 ms
+2021-05-09 06:22:50.003 +03:00 [INF] Index tests controller action
+2021-05-09 06:22:50.118 +03:00 [INF] HTTP GET /Tests responded 200 in 115.3585 ms
+2021-05-09 06:22:54.881 +03:00 [INF] ViewTest action
+2021-05-09 06:22:54.905 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=247 responded 200 in 26.1835 ms
+2021-05-09 06:22:57.004 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:22:57.013 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 06:22:57.030 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 27.4686 ms
+2021-05-09 06:23:00.185 +03:00 [INF] Index tests controller action
+2021-05-09 06:23:00.203 +03:00 [INF] HTTP GET /Tests responded 200 in 18.7029 ms
+2021-05-09 06:23:45.494 +03:00 [INF] You are on the main page
+2021-05-09 06:23:45.612 +03:00 [INF] HTTP GET / responded 200 in 117.9282 ms
+2021-05-09 06:23:47.398 +03:00 [INF] You are on the main page
+2021-05-09 06:23:47.402 +03:00 [INF] HTTP GET / responded 200 in 4.7764 ms
+2021-05-09 06:23:53.975 +03:00 [INF] You are on the main page
+2021-05-09 06:23:53.985 +03:00 [INF] HTTP GET / responded 200 in 10.5663 ms
+2021-05-09 06:23:54.882 +03:00 [INF] Index tests controller action
+2021-05-09 06:23:54.897 +03:00 [INF] HTTP GET /Tests responded 200 in 16.0128 ms
+2021-05-09 06:23:55.654 +03:00 [INF] You are on the main page
+2021-05-09 06:23:55.657 +03:00 [INF] HTTP GET / responded 200 in 3.4866 ms
+2021-05-09 06:23:58.188 +03:00 [INF] HTTP GET /Profile responded 200 in 10.5843 ms
+2021-05-09 06:24:00.670 +03:00 [INF] HTTP GET /Profile/Statistic responded 200 in 20.2182 ms
+2021-05-09 06:24:03.416 +03:00 [INF] HTTP GET /Profile responded 200 in 3.3070 ms
+2021-05-09 06:24:04.629 +03:00 [INF] HTTP GET /Profile/History responded 200 in 7.1211 ms
+2021-05-09 06:24:09.429 +03:00 [INF] You are on the main page
+2021-05-09 06:24:09.432 +03:00 [INF] HTTP GET / responded 200 in 3.3912 ms
+2021-05-09 06:32:36.994 +03:00 [INF] Application starting up
+2021-05-09 06:32:38.559 +03:00 [INF] You are on the main page
+2021-05-09 06:32:38.736 +03:00 [INF] HTTP GET / responded 200 in 455.9544 ms
+2021-05-09 06:32:41.458 +03:00 [INF] Index tests controller action
+2021-05-09 06:32:43.926 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'
+2021-05-09 06:32:44.072 +03:00 [INF] HTTP GET /Tests responded 200 in 2665.1886 ms
+2021-05-09 06:32:45.276 +03:00 [INF] You are on the main page
+2021-05-09 06:32:45.279 +03:00 [INF] HTTP GET / responded 200 in 16.7515 ms
+2021-05-09 06:32:45.960 +03:00 [INF] Index tests controller action
+2021-05-09 06:32:46.005 +03:00 [INF] HTTP GET /Tests responded 200 in 47.1227 ms
+2021-05-09 06:32:47.105 +03:00 [INF] ViewTest action
+2021-05-09 06:32:47.232 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=247 responded 200 in 141.2164 ms
+2021-05-09 06:32:48.981 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:32:49.005 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 06:32:49.066 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 117.0971 ms
+2021-05-09 06:32:54.529 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:32:54.535 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 06:32:54.548 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 23.7966 ms
+2021-05-09 06:32:58.273 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:32:58.281 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 06:32:58.293 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 21.6025 ms
+2021-05-09 06:33:00.032 +03:00 [INF] TestPassFinished(post) action
+2021-05-09 06:33:00.196 +03:00 [INF] HTTP POST /Tests/TestPassFinished responded 200 in 167.8504 ms
+2021-05-09 06:33:05.101 +03:00 [INF] Index tests controller action
+2021-05-09 06:33:05.118 +03:00 [INF] HTTP GET /Tests responded 200 in 19.3200 ms
+2021-05-09 06:33:06.588 +03:00 [INF] ViewTest action
+2021-05-09 06:33:06.598 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=247 responded 200 in 10.5293 ms
+2021-05-09 06:33:07.921 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:33:07.931 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 06:33:07.948 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 28.6620 ms
+2021-05-09 06:33:15.628 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:33:15.639 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 06:33:15.646 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 18.9628 ms
+2021-05-09 06:33:18.104 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:33:18.113 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 06:33:18.119 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 15.9480 ms
+2021-05-09 06:33:18.959 +03:00 [INF] TestPassFinished(post) action
+2021-05-09 06:33:18.972 +03:00 [INF] HTTP POST /Tests/TestPassFinished responded 200 in 13.2385 ms
+2021-05-09 06:33:20.909 +03:00 [INF] Index tests controller action
+2021-05-09 06:33:20.923 +03:00 [INF] HTTP GET /Tests responded 200 in 14.3399 ms
+2021-05-09 06:33:22.679 +03:00 [INF] ViewTest action
+2021-05-09 06:33:22.687 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=247 responded 200 in 8.5950 ms
+2021-05-09 06:33:23.868 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:33:23.875 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 06:33:23.891 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 24.6861 ms
+2021-05-09 06:33:30.941 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:33:30.947 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 06:33:30.957 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 16.8584 ms
+2021-05-09 06:33:36.628 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:33:36.640 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 06:33:36.643 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 16.1524 ms
+2021-05-09 06:33:37.384 +03:00 [INF] TestPassFinished(post) action
+2021-05-09 06:33:37.406 +03:00 [INF] HTTP POST /Tests/TestPassFinished responded 200 in 22.0031 ms
+2021-05-09 06:33:38.854 +03:00 [INF] Index tests controller action
+2021-05-09 06:33:38.868 +03:00 [INF] HTTP GET /Tests responded 200 in 14.9734 ms
+2021-05-09 06:33:40.534 +03:00 [INF] ViewTest action
+2021-05-09 06:33:40.541 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=247 responded 200 in 7.9530 ms
+2021-05-09 06:33:42.105 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:33:42.111 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 06:33:42.128 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 23.4692 ms
+2021-05-09 06:33:54.583 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:33:54.591 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 06:33:54.602 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 20.4490 ms
+2021-05-09 06:33:58.637 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:33:58.642 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 06:33:58.646 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 9.6497 ms
+2021-05-09 06:33:59.509 +03:00 [INF] TestPassFinished(post) action
+2021-05-09 06:33:59.521 +03:00 [INF] HTTP POST /Tests/TestPassFinished responded 200 in 12.4401 ms
+2021-05-09 06:34:00.630 +03:00 [INF] Index tests controller action
+2021-05-09 06:34:00.642 +03:00 [INF] HTTP GET /Tests responded 200 in 12.4797 ms
+2021-05-09 06:34:02.032 +03:00 [INF] ViewTest action
+2021-05-09 06:34:02.038 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=247 responded 200 in 6.7691 ms
+2021-05-09 06:34:03.286 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:34:03.298 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 06:34:03.313 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 27.9550 ms
+2021-05-09 06:34:13.539 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:34:13.549 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 06:34:13.558 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 21.1595 ms
+2021-05-09 06:34:16.648 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:34:16.655 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 06:34:16.657 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 9.9050 ms
+2021-05-09 06:34:17.552 +03:00 [INF] TestPassFinished(post) action
+2021-05-09 06:34:17.565 +03:00 [INF] HTTP POST /Tests/TestPassFinished responded 200 in 13.2577 ms
+2021-05-09 06:34:23.304 +03:00 [INF] Index tests controller action
+2021-05-09 06:34:23.316 +03:00 [INF] HTTP GET /Tests responded 200 in 13.3281 ms
+2021-05-09 06:34:24.401 +03:00 [INF] ViewTest action
+2021-05-09 06:34:24.411 +03:00 [INF] HTTP GET /Tests/ViewTest?testId=247 responded 200 in 10.7107 ms
+2021-05-09 06:34:26.406 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:34:26.415 +03:00 [INF] TestPassing action: Switch Start
+2021-05-09 06:34:26.429 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 24.0778 ms
+2021-05-09 06:34:33.472 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:34:33.482 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 06:34:33.489 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 17.9344 ms
+2021-05-09 06:34:37.488 +03:00 [INF] TestPassing(post) action
+2021-05-09 06:34:37.498 +03:00 [INF] TestPassing action: Switch Next
+2021-05-09 06:34:37.502 +03:00 [INF] HTTP POST /Tests/TestPassing responded 200 in 14.7407 ms
+2021-05-09 06:34:38.205 +03:00 [INF] TestPassFinished(post) action
+2021-05-09 06:34:38.275 +03:00 [INF] HTTP POST /Tests/TestPassFinished responded 200 in 71.1776 ms
+2021-05-09 06:34:39.577 +03:00 [INF] Index tests controller action
+2021-05-09 06:34:39.588 +03:00 [INF] HTTP GET /Tests responded 200 in 10.7747 ms

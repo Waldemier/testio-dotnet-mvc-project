@@ -3,7 +3,6 @@
 @model QuestionEditModel
 
 <div class="d-flex justify-content-center main">
-    @*<input type="hidden" name="questionId" value=@Model.questionId />*@
     @if (ViewBag.Finish != null)
     {
         <div class="card" style="width: 700px; margin-top: 50px; height: 300px;">
@@ -31,53 +30,51 @@
     }
     else
     {
-        <div style="margin-top: 50px">
+        <div style="margin-top: 30px">
             <div style="margin-bottom: 9px;">
                 <h5>Test name: @ViewData["TestTitle"]</h5>
             </div>
             <div class="card">
                 <div class="card-body">
-                    <div>
-                        <form asp-action="TestPassing" method="post">
-                            <div style=" width: 700px; height: 300px;">
-                                <input type="hidden" name="currentQuestionIndex" value=@ViewBag.QuestionIndex />
-                                <input type="hidden" name="previousesQuestionCorrectAnswersAmount" value=@ViewBag.TotalCorrectAnswers />
-                                <input type="hidden" name="testId" value=@ViewBag.testId />
-                                @Html.HiddenFor(model => model.testId, new { value = ViewBag.testId })
-                                <div class="main__block">
-                                    <div class="main__block__content">
-                                        <div class="main__block__content__question">
-                                            @{ string name = ViewBag.Questions[ViewBag.QuestionIndex].Name; }
-                                            @Html.HiddenFor(model => model.Name, new { value = name })
-                                            <span>@ViewBag.Questions[ViewBag.QuestionIndex].Name</span>
-                                        </div>
-                                        <div>
-                                            @{ int counter = -1; }
-                                            @foreach (var item in ViewBag.Questions[ViewBag.QuestionIndex].Answers)
-                                            {
-                                                <hr />
-                                                <div class="d-flex">
-                                                    @{ counter++; }
-                                                    @Html.HiddenFor(model => model.Answers[counter], new { value = item.Name })
-                                                    <div class="card" style="width: 700px;">
-                                                        <div class="card-body">
-                                                            <div class="d-flex">
-                                                                @Html.CheckBoxFor(model => model.Answers[counter].isTruth, new { value = "true", style = "margin-top: 6px; margin-right: 8px;" })
-                                                                <p style="margin-bottom: 0;">@item.Name</p>
-                                                            </div>
+                    <form asp-action="TestPassing" method="post">
+                        <div style=" width: 700px;">
+                            <input type="hidden" name="currentQuestionIndex" value=@ViewBag.QuestionIndex />
+                            <input type="hidden" name="previousesQuestionCorrectAnswersAmount" value=@ViewBag.TotalCorrectAnswers />
+                            <input type="hidden" name="testId" value=@ViewBag.testId />
+                            @Html.HiddenFor(model => model.testId, new { value = ViewBag.testId })
+                            <div class="main__block">
+                                <div class="main__block__content">
+                                    <div class="main__block__content__question">
+                                        @{ string name = ViewBag.Questions[ViewBag.QuestionIndex].Name; }
+                                        @Html.HiddenFor(model => model.Name, new { value = name })
+                                        <span>@ViewBag.Questions[ViewBag.QuestionIndex].Name</span>
+                                    </div>
+                                    <div>
+                                        @{ int counter = -1; }
+                                        @foreach (var item in ViewBag.Questions[ViewBag.QuestionIndex].Answers)
+                                        {
+                                            <hr />
+                                            <div class="d-flex">
+                                                @{ counter++; }
+                                                @Html.HiddenFor(model => model.Answers[counter], new { value = item.Name })
+                                                <div class="card" style="width: 700px;">
+                                                    <div class="card-body">
+                                                        <div class="d-flex">
+                                                            @Html.CheckBoxFor(model => model.Answers[counter].isTruth, new { value = "true", style = "margin-top: 6px; margin-right: 8px;" })
+                                                            <p style="margin-bottom: 0;">@item.Name</p>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            }
-                                        </div>
+                                            </div>
+                                        }
                                     </div>
                                 </div>
-                                <div class="block_footer" style="margin-top: 30px;">
-                                    <button class="btn btn-primary" name="actionType" value=@ActionType.Next type="submit">Next</button>
-                                </div>
                             </div>
-                        </form>
-                    </div>
+                            <div class="block_footer" style="margin-top: 30px;">
+                                <button class="btn btn-primary" name="actionType" value=@ActionType.Next type="submit">Next</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

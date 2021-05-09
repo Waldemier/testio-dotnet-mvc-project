@@ -10,15 +10,15 @@
             <div>
                 <form asp-action="TestPassing" method="post">
                     <div class="d-flex justify-content-center">
-                        <div style="margin-top: 30px">
-                            <input type="hidden" name="testId" value="@Model.testId" />
-                                
+                        <div style="margin-top: 20px">
+                            <input type="hidden" name="testId" value="@Model.testId"/>
+                            <div asp-validation-summary="All" class="text-danger"></div>
                             <div class="d-flex justify-content-center">
                                 <div>
                                     <h2>@Model.Title</h2>
                                 </div>
                             </div>
-                            <hr />
+                            <hr/>
                             <div>
                                 <div class="d-flex justify-content-center" style="margin-top: 20px">
                                     <h4>Description</h4>
@@ -31,17 +31,36 @@
                                     </div>
                                 </div>
                             </div>
-                            @if ((string)ViewBag.CurrentUserId == Model.Owner.Id)
+                            @if ((string) ViewBag.CurrentUserId == Model.Owner.Id)
                             {
-                                <div style="margin-top: 20px">
-                                    <label asp-for="ReferrerToken"></label>
+                                <div style="margin-top: 15px">
+                                    <input type="text" hidden name="owner" value="true">
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="container">
+                                                <label asp-for="ReferrerToken"></label>
                                                 <input class="form-control" disabled id="referrer" type="text" value="@Model.ReferrerToken"/>
                                             </div>
                                         </div>
                                     </div>
+                                    @if (Model.CodeLock != null)
+                                    {
+                                        <div class="card" style="margin-top: 15px">
+                                            <div class="card-body">
+                                                <div class="container">
+                                                    <label asp-for="CodeLock"></label>
+                                                    <input class="form-control" disabled id="codelock" type="text" value="@Model.CodeLock"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            }
+                            @if ((string) ViewBag.CurrentUserId != Model.Owner.Id && Model.CodeLock != null)
+                            {
+                                <div style="margin-top: 20px">
+                                    <label for="codeLockId">Codelock :</label>
+                                    <input class="form-control" id="codeLockId" type="text" name="codeLock" style="width: 200px">
                                 </div>
                             }
                             <div>
@@ -56,7 +75,7 @@
                             </div>
                             <div class="d-flex justify-content-between flex-row-reverse" id="viewTestButtonsArea" style="margin-top: 30px">
                                 <button class="btn btn-success" name="actionType" value="@ActionType.Start" type="submit">Start</button>
-                                @if ((string)ViewBag.CurrentUserId == Model.Owner.Id)
+                                @if ((string) ViewBag.CurrentUserId == Model.Owner.Id)
                                 {
                                     <button class="btn btn-danger delete-test" data-Id="@Model.testId">Delete</button>
                                 }

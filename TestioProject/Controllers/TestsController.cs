@@ -15,6 +15,7 @@
     using static TestioProject.PL.Models.AnswerModel;
 
     [Authorize]
+    [Authorize(Roles = "Learner, Teacher")]
     public class TestsController : Controller
     {
         private readonly ILogger<TestsController> logger;
@@ -36,41 +37,62 @@
         {
             this.logger.LogInformation("Index tests controller action");
             List<TestViewModel> models = this.servicesManager.Tests.GetTestsList();
-            
             if (search)
             {
                 List<TestViewModel> searchedModels = new List<TestViewModel>();
-                
-                    foreach (var Id in searchModelsIds)
+                foreach (var Id in searchModelsIds)
+                {
+                    foreach (var model in models)
                     {
-                        foreach (var model in models)
+                        if (Id == model.testId)
                         {
-                            if (Id == model.testId)
-                            {
-                                searchedModels.Add(model);
-                            }
+                            searchedModels.Add(model);
                         }
                     }
+                }
 
-                    models = searchedModels;
+                models = searchedModels;
             }
+            
             return this.View(models);
         }
-        
-        // FIX
+
         [HttpPost]
         public IActionResult Search(string search, bool display = false)
         {
             List<TestViewModel> searchModels = new List<TestViewModel>();
-
             if (display)
             {
-                var Id = userManager.FindByEmailAsync(User.Identity.Name).Result.Id;
+                var Id = this.userManager.FindByEmailAsync(User.Identity.Name).Result.Id;
                 searchModels = this.servicesManager.Tests.GetTestsList().Where(x => x.Owner.Id == Id).ToList();
             }
             else
             {
-                searchModels = this.servicesManager.Tests.GetTestsList().Where(x => x.Title == search || x.Owner.FirstName == search || x.Owner.LastName == search /* || x.testId == int.Parse(search)*/).ToList();
+                if (search != null)
+                {
+                    search = search.Trim();
+                    int n;
+                    bool isNumeric = int.TryParse(search, out n);
+                    if (!isNumeric)
+                    {
+                        if (search.Contains(" "))
+                        {
+                            string[] splittable = search.Split(" ");
+                            if (splittable.Length > 1)
+                                searchModels = this.servicesManager.Tests.GetTestsList().Where(x => x.Title == search || x.Owner.FirstName == splittable[0] || x.Owner.LastName == splittable[1]).ToList();
+                            else
+                                searchModels = this.servicesManager.Tests.GetTestsList().Where(x => x.Title == search || x.Owner.FirstName == splittable[0] || x.Owner.LastName == splittable[0]).ToList();
+                        }
+                        else
+                        {
+                            searchModels = this.servicesManager.Tests.GetTestsList().Where(x => x.Title == search || x.Owner.FirstName == search || x.Owner.LastName == search).ToList();
+                        }
+                    }
+                    else
+                    {
+                        searchModels = this.servicesManager.Tests.GetTestsList().Where(x => x.testId == n).ToList();
+                    }
+                }
             }
             List<int> Ids = new List<int>();
             searchModels.ForEach(x => Ids.Add(x.testId));
@@ -112,13 +134,19 @@
         }
         
         [HttpGet]
-        public IActionResult ViewTest(int testId)
+        public IActionResult ViewTest(int testId, string ErrorMessage = null)
         {
             try
             {
                 this.logger.LogInformation("ViewTest action");
+                if (ErrorMessage != null)
+                {
+                    this.ModelState.AddModelError("Invalid lock", ErrorMessage);
+                }
+
                 TestViewModel model = this.servicesManager.Tests.TestFromDbToViewModelById(testId);
-                ViewBag.CurrentUserId = userManager.FindByEmailAsync(User.Identity.Name).Result.Id;
+                
+                this.ViewBag.CurrentUserId = this.userManager.FindByEmailAsync(User.Identity.Name).Result.Id;
                 return this.View(model);
             }
             catch (Exception e)
@@ -131,10 +159,24 @@
 
         [HttpPost]
         [Authorize]
-        public IActionResult TestPassing(int testId, int currentQuestionIndex, int previousesQuestionCorrectAnswersAmount, QuestionEditModel model, ActionType actionType)
+        public IActionResult TestPassing(int testId, int currentQuestionIndex, int previousesQuestionCorrectAnswersAmount, QuestionEditModel model, ActionType actionType, string codeLock = null, bool owner = false)
         {
             this.logger.LogInformation("TestPassing(post) action");
 
+            var eTest = this.servicesManager.Tests.GetTestEditModel(testId);
+            
+            if (!owner)
+            {
+                if (actionType == ActionType.Start && eTest.CodeLock != null)
+                {
+                    if (eTest.CodeLock != codeLock)
+                    {
+                        const string _errorMessage = "Invalid code lock";
+                        return this.RedirectToAction(nameof(this.ViewTest), new { testId = testId, ErrorMessage = _errorMessage });
+                    }
+                }
+            }
+            
             List<QuestionViewModel> listQuestionModels = this.servicesManager.Questions.GetAllViewQuestionsByTestId(model.testId);
             this.ViewData["TestTitle"] = this.servicesManager.Tests.TestFromDbToViewModelById(model.testId).Title;
             this.ViewBag.testId = testId != 0 ? testId : model.testId;
@@ -159,8 +201,8 @@
                         {
                             if(currentQuestionCorrectAnswersCounter == 0) currentQuestionCorrectAnswersCounter++;
                         }
-
-                        if (listQuestionModels[currentQuestionIndex].Answers[i].isTruth && !currentAnswerChecked)
+                        
+                        if (listQuestionModels[currentQuestionIndex].Answers[i].isTruth != currentAnswerChecked || listQuestionModels[currentQuestionIndex].Answers[i].isTruth && !currentAnswerChecked)
                         {
                             currentQuestionCorrectAnswersCounter = 0;
                             break;
@@ -248,7 +290,6 @@
             int testId = this.servicesManager.Tests.SaveTestFromViewIntoDb(model, owner);
             return this.RedirectToAction("CreateOrEditQuestion", new { testId });
         }
-        
         
         [Authorize(Roles = "Teacher")]
         public IActionResult CreateOrEditQuestion(int testId, QuestionEditModel questionModel, QuestionsActionType actionType, int answerIdToDelete)

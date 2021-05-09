@@ -2,17 +2,4 @@
 
 TODO :
 
-    - Fix all pages markup --> IMPORTANT
-    
-    - To set the max mark for question //*
-
-
-
-    - Search fix (Tests page)
-    - Test Edit //NOT IMPORTANT
-	- Modal window after sending letter + test creating
-
-	
-	======
-
-	- System testing --> IMPORTANT
+	- System testing --> IMPORTANT || After finish project creating
