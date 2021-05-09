@@ -11,8 +11,8 @@ namespace TestioProject.PL.Services
     using TestioProject.PL.Models;
     public class TestService
     {
-        private readonly DataManager dataManager;
-        public TestService(DataManager dataManager)
+        private readonly IDataManager dataManager;
+        public TestService(IDataManager dataManager)
         {
             this.dataManager = dataManager;
         }
@@ -53,7 +53,6 @@ namespace TestioProject.PL.Services
         {
             var test = this.dataManager.Tests.GetTestById(testId);
             UserViewModel userModel = new UserViewModel() { Id = test.UserId, FirstName = test.User.FirstName, LastName = test.User.LastName, AvatarUri = test.User.AvatarUri, Email = test.User.Email, Baned = test.User.Baned };
-
             TestViewModel model = new TestViewModel() { testId = testId, Title = test.Name, Description = test.Description, Owner = userModel, CreatedAt = test.CreatedAt, ReferrerToken = test.ReferrerToken, CodeLock = test.CodeLock };
             return model;
         }
