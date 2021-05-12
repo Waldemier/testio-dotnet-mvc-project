@@ -10,8 +10,8 @@ namespace TestioProject.PL.Services
 {
     public class QuestionService
     {
-        private readonly DataManager dataManager;
-        public QuestionService(DataManager _dataManager)
+        private readonly IDataManager dataManager;
+        public QuestionService(IDataManager _dataManager)
         {
             dataManager = _dataManager;
         }

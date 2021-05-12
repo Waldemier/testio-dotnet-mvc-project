@@ -9,8 +9,8 @@ namespace TestioProject.PL.Services
 {
     public class WrittenLetterService
     {
-        private readonly DataManager dataManager;
-        public WrittenLetterService(DataManager _dataManager)
+        private readonly IDataManager dataManager;
+        public WrittenLetterService(IDataManager _dataManager)
         {
             dataManager = _dataManager;
         }
@@ -25,6 +25,7 @@ namespace TestioProject.PL.Services
             }
             return _listModel;
         }
+        
         public void SaveWrittenLetterModelIntoDb(WrittenLetterModel _model)
         {
             WrittenLetter letter = new WrittenLetter() { UserId = _model.User.Id, Reason = _model.Reason, Experience = _model.Experience };

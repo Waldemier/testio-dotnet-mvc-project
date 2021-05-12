@@ -32,21 +32,21 @@
             </thead>
             <tbody id="table-body-area">
             @foreach(var item in Model)
-                {
-                    <tr>
-                        <td width="25%">@item.Test.Title</td>
-                        <td class="text-center" width="15%">@item.UsersAmount</td>
-                        <td class="text-center" width="15%">
-                            @item.GPA
-                        </td>
-                        <td class="text-center" width="15%">
-                            @item.Test.CreatedAt
-                        </td>
-                        <td class="text-center" width="15%">
-                            <a class="btn" asp-controller="Profile" asp-action="StatisticMoreDetails" asp-route-testId="@item.Test.testId" style="background-color: #6310CB; color:white;">More Details</a>
-                        </td>
-                    </tr>
-                }
+            {
+                <tr>
+                    <td width="25%">@item.Test.Title</td>
+                    <td class="text-center" width="15%">@item.UsersAmount</td>
+                    <td class="text-center" width="15%">
+                        @item.GPA
+                    </td>
+                    <td class="text-center" width="15%">
+                        @item.Test.CreatedAt
+                    </td>
+                    <td class="text-center" width="15%">
+                        <a class="btn" asp-controller="Profile" asp-action="StatisticMoreDetails" asp-route-testId="@item.Test.testId" style="background-color: #6310CB; color:white;">More Details</a>
+                    </td>
+                </tr>
+            }
             </tbody>
         </table>
     }

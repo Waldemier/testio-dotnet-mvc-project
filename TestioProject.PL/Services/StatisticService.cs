@@ -12,9 +12,9 @@ namespace TestioProject.PL.Services
 
     public class StatisticService
     {
-        private readonly DataManager dataManager;
+        private readonly IDataManager dataManager;
 
-        public StatisticService(DataManager dataManager)
+        public StatisticService(IDataManager dataManager)
         {
             this.dataManager = dataManager;
         }

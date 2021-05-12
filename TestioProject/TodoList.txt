@@ -1,5 +1,2 @@
 ﻿
 
-TODO :
-
-	- System testing --> IMPORTANT || After finish project creating

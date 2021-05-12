@@ -1,18 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using TestioProject.BLL;
-using TestioProject.DAL.Models;
-using TestioProject.PL.Models;
-
-namespace TestioProject.PL.Services
+﻿namespace TestioProject.PL.Services
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using TestioProject.BLL;
+    using TestioProject.DAL.Models;
+    using TestioProject.PL.Models;
+
     public class UserService
     {
-        private readonly DataManager dataManager;
+        private readonly IDataManager dataManager;
 
-        public UserService(DataManager dataManager)
+        public UserService(IDataManager dataManager)
         {
             this.dataManager = dataManager;
         }

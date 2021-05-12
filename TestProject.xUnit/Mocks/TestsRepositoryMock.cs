@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using TestioProject.BLL.Interfaces;
 using TestioProject.DAL.Models;
 
@@ -7,11 +8,13 @@ namespace TestProject.xUnit.Mocks
 {
     public class TestsRepositoryMock: ITestsRepository
     {
+        public static readonly Guid referrer = new Guid();
+
         public IEnumerable<Test> GetAllTests(bool includeQuestionsWithAnswers = true)
         {
             return new List<Test>()
             {
-                new Test() { Id = 1, Name = "TEST1", Description = "DESC1", User = new ApplicationUser(){ Id = "1" , FirstName = "FIRSTNAME1", LastName = "LASTNAME1", Email = "user1@gmail.com" }, CodeLock = "111", UserId = "1" },
+                new Test() { Id = 1, Name = "TEST1", Description = "DESC1", User = new ApplicationUser(){ Id = "1" , FirstName = "FIRSTNAME1", LastName = "LASTNAME1", Email = "user1@gmail.com" }, CodeLock = "111", UserId = "1", ReferrerToken = referrer },
                 new Test() { Id = 2, Name = "TEST2", Description = "DESC2", User = new ApplicationUser(){ Id="2", FirstName = "FIRSTNAME2", LastName = "LASTNAME2", Email = "user2@gmail.com" }, UserId = "2" }
             };
         }
@@ -46,7 +49,7 @@ namespace TestProject.xUnit.Mocks
 
         public IEnumerable<Test> GetTestsByUserId(string userId, bool includeQuestionsWithAnswers = true)
         {
-            throw new NotImplementedException();
+            return this.GetAllTests().Where(x => x.UserId == userId);
         }
 
         public void SaveTest(Test test)
@@ -61,7 +64,7 @@ namespace TestProject.xUnit.Mocks
 
         public int GetTestIdByReferrerToken(Guid referrerToken)
         {
-            throw new NotImplementedException();
+            return this.GetAllTests().FirstOrDefault(x => x.ReferrerToken == referrerToken).Id;
         }
     }
 }
